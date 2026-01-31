@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+
+@layer base {
+  :root {
+    /* Fondos - Marfil y beige */
+    --background: 35 33% 97%;
+    --background-secondary: 35 25% 93%;
+    
+    /* Textos - Gris antracita y grises */
+    --foreground: 0 0% 29%;
+    --foreground-muted: 0 0% 55%;
+    
+    /* Cards y superficies */
+    --card: 35 33% 97%;
+    --card-foreground: 0 0% 29%;
+    
+    --popover: 35 33% 97%;
+    --popover-foreground: 0 0% 29%;
+    
+    /* Primario - Granate intenso */
+    --primary: 345 55% 35%;
+    --primary-foreground: 35 33% 97%;
+    
+    /* Secundario - Morado medio */
+    --secondary: 280 22% 39%;
+    --secondary-foreground: 35 33% 97%;
+    
+    /* Terciario - Morado claro */
+    --tertiary: 280 25% 58%;
+    --tertiary-foreground: 0 0% 29%;
+    
+    /* Acento - Plata metálico */
+    --accent: 230 3% 67%;
+    --accent-foreground: 0 0% 29%;
+    
+    /* Muted */
+    --muted: 35 25% 93%;
+    --muted-foreground: 0 0% 45%;
+    
+    /* Destructive */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 35 33% 97%;
+    
+    /* Borders y inputs */
+    --border: 35 15% 85%;
+    --input: 35 15% 85%;
+    --ring: 345 55% 35%;
+    
+    --radius: 0.5rem;
+    
+    /* Sidebar */
+    --sidebar-background: 35 33% 97%;
+    --sidebar-foreground: 0 0% 29%;
+    --sidebar-primary: 345 55% 35%;
+    --sidebar-primary-foreground: 35 33% 97%;
+    --sidebar-accent: 35 25% 93%;
+    --sidebar-accent-foreground: 0 0% 29%;
+    --sidebar-border: 35 15% 85%;
+    --sidebar-ring: 345 55% 35%;
+  }
+
+  .dark {
+    --background: 0 0% 12%;
+    --background-secondary: 0 0% 16%;
+    --foreground: 35 33% 97%;
+    --foreground-muted: 0 0% 70%;
+    
+    --card: 0 0% 14%;
+    --card-foreground: 35 33% 97%;
+    
+    --popover: 0 0% 14%;
+    --popover-foreground: 35 33% 97%;
+    
+    --primary: 345 55% 45%;
+    --primary-foreground: 35 33% 97%;
+    
+    --secondary: 280 22% 50%;
+    --secondary-foreground: 35 33% 97%;
+    
+    --tertiary: 280 25% 65%;
+    --tertiary-foreground: 35 33% 97%;
+    
+    --accent: 230 5% 60%;
+    --accent-foreground: 35 33% 97%;
+    
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 65%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 35 33% 97%;
+    
+    --border: 0 0% 22%;
+    --input: 0 0% 22%;
+    --ring: 345 55% 45%;
+    
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 35 33% 97%;
+    --sidebar-primary: 345 55% 45%;
+    --sidebar-primary-foreground: 35 33% 97%;
+    --sidebar-accent: 0 0% 18%;
+    --sidebar-accent-foreground: 35 33% 97%;
+    --sidebar-border: 0 0% 22%;
+    --sidebar-ring: 345 55% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+    @apply font-medium tracking-tight;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Cormorant Garamond', serif;
+  }
+  
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text text-transparent;
+  }
+  
+  .bg-gradient-hero {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--background)) 0%,
+      hsl(var(--background-secondary)) 50%,
+      hsl(var(--background)) 100%
+    );
+  }
+  
+  .border-silver {
+    border-color: hsl(var(--accent));
+  }
+  
+  .shadow-elegant {
+    box-shadow: 
+      0 4px 6px -1px hsl(var(--accent) / 0.1),
+      0 2px 4px -2px hsl(var(--accent) / 0.1);
+  }
+  
+  .shadow-elegant-lg {
+    box-shadow: 
+      0 10px 15px -3px hsl(var(--accent) / 0.15),
+      0 4px 6px -4px hsl(var(--accent) / 0.1);
+  }
+  
+  .animate-fade-up {
+    animation: fadeUp 0.8s ease-out forwards;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+  
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
