@@ -40,7 +40,7 @@ const Header = () => {
               alt="Pilar Beleña Logo" 
               className="h-10 w-10 rounded-lg object-cover"
             />
-            <span className="font-display text-2xl font-semibold text-foreground group-hover:text-primary transition-colors">
+            <span className="font-display text-3xl font-normal text-foreground group-hover:text-primary transition-colors">
               Pilar Beleña
             </span>
           </a>
