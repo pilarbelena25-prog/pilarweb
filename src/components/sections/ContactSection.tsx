@@ -49,7 +49,7 @@ const ContactSection = () => {
               {/* Contact methods */}
               <div className="space-y-6 mb-10">
                 <a
-                  href="mailto:hola@pilarbelena.com"
+                  href="mailto:pilarbelena25@gmail.com"
                   className="flex items-center gap-4 p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-muted/50 transition-all group"
                 >
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
@@ -57,15 +57,15 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-body text-sm text-foreground-muted">Email</p>
-                    <p className="font-body text-foreground group-hover:text-primary transition-colors">
-                      hola@pilarbelena.com
-                    </p>
+                    {/* <p className="font-body text-foreground group-hover:text-primary transition-colors">
+                      pilarbelena25@gmail.com
+                    </p> */}
                   </div>
                   <ArrowUpRight className="w-5 h-5 text-foreground-muted ml-auto group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
                 </a>
 
                 <a
-                  href="https://linkedin.com/in/pilarbelena"
+                  href="https://www.linkedin.com/in/mar%C3%ADa-pilar-bele%C3%B1a-gasent-178b145a/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 rounded-xl border border-border hover:border-secondary/50 hover:bg-muted/50 transition-all group"
@@ -75,9 +75,9 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-body text-sm text-foreground-muted">LinkedIn</p>
-                    <p className="font-body text-foreground group-hover:text-secondary transition-colors">
-                      /in/pilarbelena
-                    </p>
+                    {/* <p className="font-body text-foreground group-hover:text-secondary transition-colors">
+                      https://www.linkedin.com/in/maría-pilar-beleña-gasent-178b145a/
+                    </p> */}
                   </div>
                   <ArrowUpRight className="w-5 h-5 text-foreground-muted ml-auto group-hover:text-secondary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
                 </a>

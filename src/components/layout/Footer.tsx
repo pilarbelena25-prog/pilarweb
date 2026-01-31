@@ -69,9 +69,6 @@ const Footer = () => {
                 <Mail className="w-5 h-5" />
               </a>
             </div>
-            <p className="text-primary-foreground/70 font-body text-sm">
-              pilarbelena25@gmail.com
-            </p>
           </div>
         </div>
 
