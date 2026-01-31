@@ -63,22 +63,22 @@ const HeroSection = () => {
             <p className="text-sm text-foreground-muted mb-6 font-body">
               Más de 10 años ayudando a empresas Fintech a dominar los buscadores
             </p>
-            <div className="flex flex-wrap justify-center gap-8 items-center opacity-60">
+            <div className="flex flex-wrap justify-center gap-8 items-center">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-primary" />
-                <span className="text-sm font-body text-foreground-muted">Banca Digital</span>
+                <span className="text-sm font-body text-foreground">Banca Digital</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-secondary" />
-                <span className="text-sm font-body text-foreground-muted">Pagos Online</span>
+                <span className="text-sm font-body text-foreground">Pagos Online</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-tertiary" />
-                <span className="text-sm font-body text-foreground-muted">Insurtech</span>
+                <span className="text-sm font-body text-foreground">Insurtech</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-accent" />
-                <span className="text-sm font-body text-foreground-muted">Criptomonedas</span>
+                <span className="text-sm font-body text-foreground">Criptomonedas</span>
               </div>
             </div>
           </div>
