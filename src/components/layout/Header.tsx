@@ -16,11 +16,11 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { href: "#inicio", label: "Inicio" },
-    { href: "#quien-soy", label: "Quién soy" },
-    { href: "#servicios", label: "Servicios" },
-    { href: "#guia-gpt", label: "Guía GPT" },
-    { href: "#contacto", label: "Contacto" },
+    { href: "/#inicio", label: "Inicio" },
+    { href: "/#quien-soy", label: "Quién soy" },
+    { href: "/#servicios", label: "Servicios" },
+    { href: "/#guia-gpt", label: "Guía GPT" },
+    { href: "/#contacto", label: "Contacto" },
   ];
 
   return (
@@ -34,7 +34,7 @@ const Header = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#inicio" className="flex items-center gap-3 group">
+          <a href="/" className="flex items-center gap-3 group">
             <img 
               src={logoPB} 
               alt="Pilar Beleña Logo" 
