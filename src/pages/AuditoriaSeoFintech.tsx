@@ -159,7 +159,7 @@ const AuditoriaSeoFintech = () => {
       </section>
 
       {/* Qué Incluye Section */}
-      <section className="py-20 bg-secondary text-secondary-foreground">
+      <section className="py-20 bg-soft-pink text-soft-pink-foreground">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="font-display text-3xl md:text-4xl text-center mb-16 text-primary">
@@ -173,17 +173,17 @@ const AuditoriaSeoFintech = () => {
               <h3 className="font-display text-xl mb-4 text-primary">
                 Análisis Técnico Para Destacar En Google
               </h3>
-              <ul className="text-left space-y-3 font-body text-secondary-foreground">
+              <ul className="text-left space-y-3 font-body text-soft-pink-foreground">
                 <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-secondary-foreground mt-2 flex-shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
                   <span>Primero, Detectamos los errores que frenan tu visibilidad: velocidad lenta, problemas de indexación o fallos técnicos.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-secondary-foreground mt-2 flex-shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
                   <span>Después, Optimizamos tu web para móviles y mejoramos su estructura para que Google la entienda mejor.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-secondary-foreground mt-2 flex-shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
                   <span>Por último, Revisamos aspectos clave como HTTPS, rastreo y estabilidad general.</span>
                 </li>
               </ul>
@@ -195,17 +195,17 @@ const AuditoriaSeoFintech = () => {
               <h3 className="font-display text-xl mb-4 text-primary">
                 Estudio Estratégico De Tu Competencia
               </h3>
-              <ul className="text-left space-y-3 font-body text-secondary-foreground">
+              <ul className="text-left space-y-3 font-body text-soft-pink-foreground">
                 <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-secondary-foreground mt-2 flex-shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
                   <span>Comenzamos Analizando a tus competidores Fintech mejor posicionados.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-secondary-foreground mt-2 flex-shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
                   <span>Luego, Identificamos las brechas de contenido y autoridad que puedes aprovechar para adelantarte.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-secondary-foreground mt-2 flex-shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
                   <span>Finalmente, Comparamos enlaces externos y reputación de dominio para encontrar ventajas ocultas.</span>
                 </li>
               </ul>
@@ -217,17 +217,17 @@ const AuditoriaSeoFintech = () => {
               <h3 className="font-display text-xl mb-4 text-primary">
                 Link Building Con Medios Fintech
               </h3>
-              <ul className="text-left space-y-3 font-body text-secondary-foreground">
+              <ul className="text-left space-y-3 font-body text-soft-pink-foreground">
                 <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-secondary-foreground mt-2 flex-shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
                   <span>Primero, Auditamos tus enlaces actuales y eliminamos los que dañan tu posicionamiento.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-secondary-foreground mt-2 flex-shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
                   <span>Después, Diseñamos una estrategia de backlinks con medios Fintech y portales relevantes.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-secondary-foreground mt-2 flex-shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
                   <span>Y por último, Reforzamos tu autoridad digital con enlaces de alto valor que multiplican tu visibilidad.</span>
                 </li>
               </ul>
@@ -235,7 +235,7 @@ const AuditoriaSeoFintech = () => {
           </div>
 
             <div className="text-center">
-              <p className="font-display text-xl mb-6 text-secondary-foreground">
+              <p className="font-display text-xl mb-6 text-soft-pink-foreground">
                 ¿Quieres ver estos errores en tu web?
               </p>
               <Button variant="hero" size="lg" asChild>
@@ -543,12 +543,12 @@ const AuditoriaSeoFintech = () => {
                   <p className="font-semibold mb-2">Enlaces útiles:</p>
                   <ul className="space-y-1">
                     <li>
-                      <a href="/posicionamiento-fintech" className="text-primary hover:underline">
+                      <a href="/posicionamiento-fintech" className="text-secondary-foreground underline hover:opacity-80">
                         Qué incluye el posicionamiento de una Fintech como autoridad de marca
                       </a>
                     </li>
                     <li>
-                      <a href="/blog" className="text-primary hover:underline">
+                      <a href="/blog" className="text-secondary-foreground underline hover:opacity-80">
                         Conoce más sobre cómo destacar en Google con tu Fintech
                       </a>
                     </li>

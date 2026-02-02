@@ -37,6 +37,10 @@ export default {
           DEFAULT: "hsl(var(--tertiary))",
           foreground: "hsl(var(--tertiary-foreground))",
         },
+        "soft-pink": {
+          DEFAULT: "hsl(var(--soft-pink))",
+          foreground: "hsl(var(--soft-pink-foreground))",
+        },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",

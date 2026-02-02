@@ -33,6 +33,10 @@
     --tertiary: 280 25% 58%;
     --tertiary-foreground: 0 0% 18%;
 
+    /* Rosa suave - para secciones destacadas */
+    --soft-pink: 345 30% 92%;
+    --soft-pink-foreground: 0 0% 22%;
+
     /* Acento - Plata metálico */
     --accent: 230 3% 67%;
     --accent-foreground: 0 0% 18%;
