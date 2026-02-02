@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Search, TrendingUp, MessageSquare, Bot, ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ServicesSection = () => {
   const services = [
@@ -10,6 +11,7 @@ const ServicesSection = () => {
         "Análisis profundo de tu presencia digital. Identifico oportunidades, errores técnicos y gaps de contenido específicos del sector financiero.",
       features: ["Análisis técnico completo", "Estudio de competencia", "Roadmap de mejora prioritizado"],
       accent: "primary",
+      href: "/auditoria-seo-fintech",
     },
     {
       icon: TrendingUp,
@@ -126,13 +128,19 @@ const ServicesSection = () => {
                 </ul>
 
                 {/* CTA */}
-                <Button
-                  variant="elegant"
-                  className="group/btn"
-                >
-                  Saber más
-                  <ArrowUpRight className="w-4 h-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
-                </Button>
+                {service.href ? (
+                  <Button variant="elegant" className="group/btn" asChild>
+                    <Link to={service.href}>
+                      Saber más
+                      <ArrowUpRight className="w-4 h-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+                    </Link>
+                  </Button>
+                ) : (
+                  <Button variant="elegant" className="group/btn">
+                    Saber más
+                    <ArrowUpRight className="w-4 h-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+                  </Button>
+                )}
               </div>
             );
           })}
