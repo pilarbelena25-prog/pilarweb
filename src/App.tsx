@@ -23,9 +23,9 @@ const ScrollToHash = () => {
           element.scrollIntoView({ behavior: "smooth" });
         }
       }, 100);
-    } else if (pathname === "/") {
-      // Scroll to top when navigating to home without hash
-      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      // Scroll to top when navigating to any page without hash
+      window.scrollTo({ top: 0, behavior: "instant" });
     }
   }, [hash, pathname]);
 
