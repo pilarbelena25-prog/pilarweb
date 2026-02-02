@@ -103,11 +103,12 @@ const AuditoriaSeoFintech = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-
-      {/* Hero Section */}
+      <main>
+        {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-hero">
         <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 text-primary">
                 Impulsa Tu Fintech En Google Con Una Auditoría SEO Diseñada Para Liderar Con IA
@@ -152,6 +153,7 @@ const AuditoriaSeoFintech = () => {
                 className="max-w-md w-full rounded-lg"
               />
             </div>
+            </div>
           </div>
         </div>
       </section>
@@ -159,7 +161,8 @@ const AuditoriaSeoFintech = () => {
       {/* Qué Incluye Section */}
       <section className="py-20 bg-secondary text-secondary-foreground">
         <div className="container mx-auto px-6">
-          <h2 className="font-display text-3xl md:text-4xl text-center mb-16 text-primary">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="font-display text-3xl md:text-4xl text-center mb-16 text-primary">
             ¿Qué Incluye La Auditoría SEO Fintech?
           </h2>
 
@@ -231,15 +234,16 @@ const AuditoriaSeoFintech = () => {
             </div>
           </div>
 
-          <div className="text-center">
-            <p className="font-display text-xl mb-6 text-secondary-foreground">
-              ¿Quieres ver estos errores en tu web?
-            </p>
-            <Button variant="hero" size="lg" asChild>
-              <a href={CALENDAR_URL} target="_blank" rel="noopener noreferrer">
-                Solicita tu Diagnóstico
-              </a>
-            </Button>
+            <div className="text-center">
+              <p className="font-display text-xl mb-6 text-secondary-foreground">
+                ¿Quieres ver estos errores en tu web?
+              </p>
+              <Button variant="hero" size="lg" asChild>
+                <a href={CALENDAR_URL} target="_blank" rel="noopener noreferrer">
+                  Solicita tu Diagnóstico
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -247,7 +251,8 @@ const AuditoriaSeoFintech = () => {
       {/* Método Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
-          <h2 className="font-display text-3xl md:text-4xl text-center mb-4 text-primary">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="font-display text-3xl md:text-4xl text-center mb-4 text-primary">
             Nuestro Método Para Posicionar Tu Fintech Como Autoridad
           </h2>
           <p className="font-body text-center text-foreground-muted mb-16 max-w-3xl mx-auto">
@@ -309,13 +314,15 @@ const AuditoriaSeoFintech = () => {
               </a>
             </Button>
           </div>
+          </div>
         </div>
       </section>
 
       {/* Beneficios Section */}
       <section className="py-20 bg-background-secondary">
         <div className="container mx-auto px-6">
-          <h2 className="font-display text-3xl md:text-4xl text-center mb-16 text-primary">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="font-display text-3xl md:text-4xl text-center mb-16 text-primary">
             Beneficios Clave De Una Auditoría SEO Fintech
           </h2>
 
@@ -370,16 +377,18 @@ const AuditoriaSeoFintech = () => {
             </div>
           </div>
 
-          <p className="text-center font-body text-lg text-foreground">
-            Cada <strong>ACCIÓN</strong> está pensada para <strong>GENERAR IMPACTO</strong>: MÁS VISIBILIDAD, MÁS AUTORIDAD, MÁS CLIENTES.
-          </p>
+            <p className="text-center font-body text-lg text-foreground">
+              Cada <strong>ACCIÓN</strong> está pensada para <strong>GENERAR IMPACTO</strong>: MÁS VISIBILIDAD, MÁS AUTORIDAD, MÁS CLIENTES.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Por Qué Elegir Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
-          <h2 className="font-display text-3xl md:text-4xl text-center mb-16 text-foreground">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="font-display text-3xl md:text-4xl text-center mb-16 text-foreground">
             ¿Por Qué Elegir Una Auditoría SEO Fintech?
           </h2>
 
@@ -421,12 +430,13 @@ const AuditoriaSeoFintech = () => {
             </div>
           </div>
 
-          <div className="text-center">
-            <Button variant="hero" size="lg" asChild>
-              <a href={CALENDAR_URL} target="_blank" rel="noopener noreferrer">
-                Quiero mi Auditoría SEO Fintech
-              </a>
-            </Button>
+            <div className="text-center">
+              <Button variant="hero" size="lg" asChild>
+                <a href={CALENDAR_URL} target="_blank" rel="noopener noreferrer">
+                  Quiero mi Auditoría SEO Fintech
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -434,11 +444,12 @@ const AuditoriaSeoFintech = () => {
       {/* FAQ Section */}
       <section className="py-20 bg-background-secondary">
         <div className="container mx-auto px-6">
-          <h2 className="font-display text-3xl md:text-4xl text-center mb-16 text-foreground">
-            Preguntas Frecuentes
-          </h2>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="font-display text-3xl md:text-4xl text-center mb-16 text-foreground">
+              Preguntas Frecuentes
+            </h2>
 
-          <div className="max-w-3xl mx-auto">
+            <div className="max-w-3xl mx-auto">
             <Accordion type="single" collapsible className="space-y-2">
               <AccordionItem value="item-1" className="bg-secondary rounded-lg border-none">
                 <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
@@ -545,27 +556,30 @@ const AuditoriaSeoFintech = () => {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
+            </div>
           </div>
         </div>
       </section>
 
       {/* CTA Final Section */}
       <section className="py-20 bg-background">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="font-display text-3xl md:text-4xl mb-6 text-primary">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto text-center">
+            <h2 className="font-display text-3xl md:text-4xl mb-6 text-primary">
             Haz Que Tu Fintech Sea La Que Todos Encuentran (Y Eligen).
           </h2>
           <p className="font-body text-foreground-muted mb-8">
             Solicita tu Auditoría SEO Fintech ahora.
           </p>
-          <Button variant="hero" size="xl" asChild>
-            <a href={CALENDAR_URL} target="_blank" rel="noopener noreferrer">
-              Quiero mi Auditoría SEO Fintech
-            </a>
-          </Button>
+            <Button variant="hero" size="xl" asChild>
+              <a href={CALENDAR_URL} target="_blank" rel="noopener noreferrer">
+                Quiero mi Auditoría SEO Fintech
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
-
+      </main>
       <Footer />
     </div>
   );
