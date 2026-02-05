@@ -72,6 +72,19 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
       },
+      fontSize: {
+        xs: ['0.8125rem', { lineHeight: '1.125rem' }],   // 13px (era 12px)
+        sm: ['1rem', { lineHeight: '1.5rem' }],           // 16px (era 14px)
+        base: ['1.125rem', { lineHeight: '1.75rem' }],    // 18px (era 16px)
+        lg: ['1.25rem', { lineHeight: '1.75rem' }],       // 20px (era 18px)
+        xl: ['1.375rem', { lineHeight: '1.875rem' }],     // 22px (era 20px)
+        '2xl': ['1.625rem', { lineHeight: '2rem' }],      // 26px (era 24px)
+        '3xl': ['2rem', { lineHeight: '2.25rem' }],       // 32px (era 30px)
+        '4xl': ['2.375rem', { lineHeight: '2.5rem' }],    // 38px (era 36px)
+        '5xl': ['3.125rem', { lineHeight: '1' }],         // 50px (era 48px)
+        '6xl': ['3.875rem', { lineHeight: '1' }],         // 62px (era 60px)
+        '7xl': ['4.75rem', { lineHeight: '1' }],          // 76px (era 72px)
+      },
       fontFamily: {
         display: ['"Cormorant Garamond"', 'serif'],
         body: ['Inter', 'sans-serif'],
