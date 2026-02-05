@@ -56,7 +56,7 @@ const Footer = () => {
             <h4 className="font-display text-lg mb-4">Conecta</h4>
             <div className="flex gap-3 mb-6">
               <a
-                href="https://linkedin.com/in/pilarbelena"
+                href="https://www.linkedin.com/in/mar%C3%ADa-pilar-bele%C3%B1a-gasent-178b145a/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-primary-foreground/10 hover:bg-primary-foreground/20 flex items-center justify-center transition-colors"
