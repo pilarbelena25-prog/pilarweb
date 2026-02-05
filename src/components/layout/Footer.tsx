@@ -18,10 +18,13 @@ const Footer = () => {
             <p className="text-primary-foreground/60 font-body text-sm mb-4">
                SEO Fintech Lab
             </p>
-            <p className="text-primary-foreground/70 font-body text-sm max-w-md leading-relaxed">
-              Fundadora y Partner Estratégica especializada en el sector Fintech. Ayudo a empresas de 
-              Banca Digital, Pagos, Insurtech y Cripto a dominar los buscadores 
-              con estrategias de SEO, IA y Growth.
+            <p className="text-primary-foreground/70 font-body text-sm max-w-md leading-relaxed [&_strong]:font-normal">
+              Fundadora y Partner Estratégica especializada en el sector{" "}
+              <strong>Fintech</strong>. Ayudo a empresas de{" "}
+              <strong>Banca Digital</strong>, <strong>Pagos</strong>,{" "}
+              <strong>Insurtech</strong> y <strong>Cripto</strong> a dominar los
+              buscadores con estrategias de <strong>SEO</strong>,{" "}
+              <strong>IA</strong> y <strong>Growth</strong>.
             </p>
           </div>
 
