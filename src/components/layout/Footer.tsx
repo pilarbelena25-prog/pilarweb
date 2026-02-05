@@ -16,11 +16,11 @@ const Footer = () => {
           <div className="md:col-span-2">
             <h3 className="font-display text-2xl mb-2">Pilar Beleña</h3>
             <p className="text-primary-foreground/60 font-body text-sm mb-4">
-              Fintech SEO Lab
+               SEO Fintech Lab
             </p>
             <p className="text-primary-foreground/70 font-body text-sm max-w-md leading-relaxed">
               Fundadora y Partner Estratégica especializada en el sector Fintech. Ayudo a empresas de 
-              banca digital, pagos, insurtech y cripto a dominar los buscadores 
+              Banca Digital, Pagos, Insurtech y Cripto a dominar los buscadores 
               con estrategias de SEO, IA y Growth.
             </p>
           </div>
