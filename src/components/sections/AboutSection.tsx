@@ -34,11 +34,11 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image Column */}
           <div className="relative">
-            <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-elegant-lg">
-              <img 
-                src={pilarPhoto} 
-                alt="Pilar Beleña - Founder & Strategic Partner | SEO, AI & Growth" 
-                className="w-full h-full object-cover object-top"
+            <div className="rounded-2xl overflow-hidden shadow-elegant-lg">
+              <img
+                src={pilarPhoto}
+                alt="Pilar Beleña - Founder & Strategic Partner | SEO, AI & Growth"
+                className="w-full h-auto"
               />
             </div>
             
