@@ -6,17 +6,17 @@ const AboutSection = () => {
     {
       icon: TrendingUp,
       title: "+5 años",
-      description: "En SEO y marketing digital",
+      description: "En SEO y Marketing Digital",
     },
     {
       icon: Brain,
-      title: "IA aplicada",
-      description: "Estrategias potenciadas con inteligencia artificial",
+      title: "IA Aplicada",
+      description: "Estrategias potenciadas con Inteligencia Artificial",
     },
     {
       icon: Target,
       title: "100% Fintech",
-      description: "Especialización vertical en el sector financiero",
+      description: "Especialización vertical en el Sector Financiero",
     },
     {
       icon: Users,
