@@ -5,7 +5,7 @@ const AboutSection = () => {
   const highlights = [
     {
       icon: TrendingUp,
-      title: "+10 años",
+      title: "+5 años",
       description: "En SEO y marketing digital",
     },
     {
@@ -20,7 +20,7 @@ const AboutSection = () => {
     },
     {
       icon: Users,
-      title: "+50 proyectos",
+      title: "+5 proyectos",
       description: "Empresas posicionadas con éxito",
     },
   ];
