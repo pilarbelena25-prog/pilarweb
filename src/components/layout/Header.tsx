@@ -57,7 +57,7 @@ const Header = () => {
               </a>
             ))}
             <Button variant="hero" size="sm" asChild>
-              <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0cCX8JU1YZ1H7eBKT199JlRVDK3S4VteS7Wf6ca0ljZ-coZRqYSOqMO6nt9Qb5kDnW6hGK367q" target="_blank" rel="noopener noreferrer">
+              <a href="https://calendly.com/pilarbelena25/30min" target="_blank" rel="noopener noreferrer">
                 Hablemos
               </a>
             </Button>
@@ -88,7 +88,7 @@ const Header = () => {
                 </a>
               ))}
               <Button variant="hero" className="mt-4" asChild>
-                <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0cCX8JU1YZ1H7eBKT199JlRVDK3S4VteS7Wf6ca0ljZ-coZRqYSOqMO6nt9Qb5kDnW6hGK367q" target="_blank" rel="noopener noreferrer">
+                <a href="https://calendly.com/pilarbelena25/30min" target="_blank" rel="noopener noreferrer">
                   Hablemos
                 </a>
               </Button>
