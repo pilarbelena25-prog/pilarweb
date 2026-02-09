@@ -32,7 +32,7 @@ const AboutSection = () => {
       
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Image Column */}
+          {/*  Image Column  */}
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-elegant-lg">
               <img
