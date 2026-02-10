@@ -540,19 +540,6 @@ const AuditoriaSeoFintech = () => {
                   <p className="mb-4">
                     Decidir si deseas implementar internamente las acciones o si prefieres apoyo externo. En ambos casos, se incluyen recomendaciones claras y ordenadas para facilitar la toma de decisiones.
                   </p>
-                  <p className="font-semibold mb-2">Enlaces útiles:</p>
-                  <ul className="space-y-1">
-                    <li>
-                      <a href="/posicionamiento-fintech" className="text-secondary-foreground underline hover:opacity-80">
-                        Qué incluye el posicionamiento de una Fintech como autoridad de marca
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/blog" className="text-secondary-foreground underline hover:opacity-80">
-                        Conoce más sobre cómo destacar en Google con tu Fintech
-                      </a>
-                    </li>
-                  </ul>
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
