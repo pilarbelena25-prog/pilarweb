@@ -6,6 +6,9 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Index from "./pages/Index";
 import AuditoriaSeoFintech from "./pages/AuditoriaSeoFintech";
+import PosicionamientoSeoFintech from "./pages/PosicionamientoSeoFintech";
+import ConsultoriaSeoEstrategica from "./pages/ConsultoriaSeoEstrategica";
+import IntegracionIaSeo from "./pages/IntegracionIaSeo";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -42,6 +45,9 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/auditoria-seo-fintech" element={<AuditoriaSeoFintech />} />
+          <Route path="/posicionamiento-seo-fintech" element={<PosicionamientoSeoFintech />} />
+          <Route path="/consultoria-seo-estrategica-para-fintechs" element={<ConsultoriaSeoEstrategica />} />
+          <Route path="/integracion-ia-seo" element={<IntegracionIaSeo />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
