@@ -37,13 +37,13 @@ const ContactSection = () => {
               </span>
 
               <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6 leading-tight">
-                ¿Listo para dominar <br />
-                <span className="text-gradient-primary">los buscadores?</span>
+                ¿Listo para ganar <br />
+                <span className="text-gradient-primary">visibilidad en Google?</span>
               </h2>
 
               <p className="font-body text-lg text-foreground-muted mb-10 leading-relaxed">
-                Cuéntame sobre tu proyecto Fintech. Analizaré tu situación actual y 
-                te propondré un plan de acción personalizado para mejorar tu visibilidad online.
+                Cuéntame sobre tu proyecto Fintech. Como Consultora SEO especializada en el sector Fintech, 
+                analizaré tu situación actual y te propondré un plan de acción personalizado para atraer clientes cualificados.
               </p>
 
               {/* Contact methods */}
@@ -86,9 +86,9 @@ const ContactSection = () => {
               {/* Quote */}
               <div className="p-6 rounded-xl bg-background-secondary border-l-4 border-primary">
                 <p className="font-display text-lg text-foreground italic mb-2">
-                  "El SEO Fintech no es solo posicionamiento. Es construir confianza digital."
+                  "El SEO Fintech no es solo posicionamiento. Es construir autoridad de marca y confianza."
                 </p>
-                <p className="font-body text-sm text-foreground-muted">— Pilar Beleña</p>
+                <p className="font-body text-sm text-foreground-muted">— Pilar Beleña, SEO Fintech Lab</p>
               </div>
             </div>
 
@@ -141,7 +141,7 @@ const ContactSection = () => {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    placeholder="Nombre de tu empresa o proyecto"
+                    placeholder="Nombre de tu empresa o startup"
                     className="bg-background"
                   />
                 </div>

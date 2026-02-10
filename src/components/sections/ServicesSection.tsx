@@ -8,8 +8,8 @@ const ServicesSection = () => {
       icon: Search,
       title: "Auditoría SEO Fintech",
       description:
-        "Análisis profundo de tu presencia digital. Identifico oportunidades, errores técnicos y gaps de contenido específicos del sector financiero.",
-      features: ["Análisis técnico completo", "Estudio de competencia", "Roadmap de mejora prioritizado"],
+        "Análisis profundo de tu presencia digital en el sector financiero. Identifico oportunidades, errores técnicos y gaps de contenido para que tu Fintech gane visibilidad real en Google.",
+      features: ["Análisis técnico completo", "Estudio de competencia", "Roadmap de mejora priorizado"],
       accent: "primary",
       href: "/auditoria-seo-fintech",
     },
@@ -17,24 +17,24 @@ const ServicesSection = () => {
       icon: TrendingUp,
       title: "Posicionamiento SEO Fintech",
       description:
-        "Estrategia integral para dominar las búsquedas de tu nicho. Desde la arquitectura web hasta el contenido que convierte.",
-      features: ["Keyword research especializado", "Contenido optimizado", "Link building estratégico"],
+        "Estrategia integral de posicionamiento SEO para Startups Fintech. Desde la arquitectura web hasta el contenido que atrae clientes cualificados y construye autoridad de marca.",
+      features: ["Keyword research para SEO Financiero", "Contenido optimizado", "Link building estratégico"],
       accent: "secondary",
     },
     {
       icon: MessageSquare,
-      title: "Consultoría Estratégica SEO",
+      title: "Consultoría Estratégica",
       description:
-        "Acompañamiento personalizado para equipos internos. Te ayudo a tomar las decisiones correctas en cada fase.",
-      features: ["Sesiones 1:1 estratégicas", "Formación de equipos", "Revisión continua de KPIs"],
+        "Acompañamiento personalizado para equipos internos. Te ayudo a tomar las decisiones correctas en cada fase para crecer en visibilidad de forma sostenida.",
+      features: ["Sesiones 1:1 estratégicas", "Formación de equipos en SEO Financiero", "Revisión continua de KPIs"],
       accent: "tertiary",
     },
     {
       icon: Bot,
-      title: "Integración IA + SEO",
+      title: "Estrategia SEO con IA",
       description:
-        "Potencia tu estrategia con inteligencia artificial. Automatiza, escala y optimiza con las herramientas más avanzadas.",
-      features: ["Agentes GPT personalizados", "Automatización de workflows", "Análisis predictivo"],
+        "Potencia tu posicionamiento. Automatiza, escala y optimiza tu presencia en Google y en las nuevas búsquedas generativas.",
+      features: ["Agentes GPT personalizados para Fintechs", "Automatización de workflows", "Análisis predictivo de oportunidades"],
       accent: "accent",
     },
   ];
@@ -85,11 +85,11 @@ const ServicesSection = () => {
             Servicios
           </span>
           <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6">
-            Soluciones <span className="text-gradient-primary">a medida</span> para Fintech
+            Consultoría de SEO Financiero <br /> <span className="text-gradient-primary">a medida</span>
           </h2>
           <p className="font-body text-foreground-muted leading-relaxed">
-            Cada empresa fintech tiene retos únicos. Mis servicios están diseñados para 
-            abordar las necesidades específicas del sector financiero digital.
+            Cada empresa Fintech tiene retos únicos. Los servicios de SEO Fintech Lab están diseñados para 
+            abordar las necesidades específicas del sector financiero digital y ayudarte a atraer clientes cualificados.
           </p>
         </div>
 

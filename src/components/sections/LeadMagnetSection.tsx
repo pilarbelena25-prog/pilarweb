@@ -5,8 +5,8 @@ const LeadMagnetSection = () => {
   const benefits = [
     "Diseña tu agente GPT paso a paso",
     "Prompts optimizados para SEO Fintech",
-    "Plantillas listas para usar",
-    "Casos de uso reales del sector",
+    "Plantillas listas para usar en tu estrategia SEO con IA",
+    "Casos de uso reales del sector Fintech",
     "Bonus: checklist de implementación",
   ];
 
@@ -30,7 +30,7 @@ const LeadMagnetSection = () => {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-tertiary/30 bg-tertiary/10 mb-6">
                 <Sparkles className="w-4 h-4 text-tertiary" />
                 <span className="text-sm font-body text-tertiary font-medium">
-                  Recurso gratuito
+                  Recurso gratuito de SEO Fintech Lab
                 </span>
               </div>
 
@@ -40,8 +40,8 @@ const LeadMagnetSection = () => {
               </h2>
 
               <p className="font-body text-lg text-foreground-muted mb-8 leading-relaxed">
-                Aprende a crear agentes de inteligencia artificial que potencien tu estrategia SEO. 
-                Una guía paso a paso diseñada específicamente para profesionales del sector Fintech.
+                Aprende a crear agentes de inteligencia artificial para potenciar tu estrategia SEO con Inteligencia Artificial. 
+                Una guía paso a paso diseñada específicamente para profesionales del sector financiero.
               </p>
 
               {/* Benefits list */}
@@ -78,7 +78,7 @@ const LeadMagnetSection = () => {
                       <Sparkles className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <p className="font-display text-lg text-foreground">Fintech SEO Lab</p>
+                      <p className="font-display text-lg text-foreground">SEO Fintech Lab</p>
                       <p className="text-xs font-body text-foreground-muted">por Pilar Beleña</p>
                     </div>
                   </div>
