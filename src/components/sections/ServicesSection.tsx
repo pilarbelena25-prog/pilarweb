@@ -29,6 +29,7 @@ const ServicesSection = () => {
         "Acompañamiento personalizado para equipos internos. Te ayudo a tomar las decisiones correctas en cada fase para crecer en visibilidad de forma sostenida.",
       features: ["Sesiones 1:1 estratégicas", "Formación de equipos en SEO Financiero", "Revisión continua de KPIs"],
       accent: "tertiary",
+      href: "/consultoria-seo-estrategica-para-fintechs"
     },
     {
       icon: Bot,
@@ -37,6 +38,7 @@ const ServicesSection = () => {
         "Potencia tu posicionamiento. Automatiza, escala y optimiza tu presencia en Google y en las nuevas búsquedas generativas.",
       features: ["Agentes GPT personalizados para Fintechs", "Automatización de workflows", "Análisis predictivo de oportunidades"],
       accent: "accent",
+      href: "/integracion-ia-seo"
     },
   ];
 
