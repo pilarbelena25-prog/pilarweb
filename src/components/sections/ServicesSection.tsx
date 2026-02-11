@@ -20,6 +20,7 @@ const ServicesSection = () => {
         "Estrategia integral de posicionamiento SEO para Startups Fintech. Desde la arquitectura web hasta el contenido que atrae clientes cualificados y construye autoridad de marca.",
       features: ["Keyword research para SEO Financiero", "Contenido optimizado", "Link building estratégico"],
       accent: "secondary",
+      href: "/posicionamiento-seo-fintech"
     },
     {
       icon: MessageSquare,
