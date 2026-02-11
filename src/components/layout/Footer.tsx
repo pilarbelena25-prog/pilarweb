@@ -33,11 +33,11 @@ const Footer = () => {
             <h4 className="font-display text-lg mb-4">Navegación</h4>
             <ul className="space-y-3">
               {[
-                { href: "#inicio", label: "Home" },
-                { href: "#quien-soy", label: "Equipo" },
-                { href: "#servicios", label: "Servicios" },
-                { href: "#guia-gpt", label: "Guía GPT" },
-                { href: "#contacto", label: "Contacto" },
+                { href: "/#inicio", label: "Home" },
+                { href: "/#quien-soy", label: "Equipo" },
+                { href: "/#servicios", label: "Servicios" },
+                { href: "/#guia-gpt", label: "Guía GPT" },
+                { href: "/#contacto", label: "Contacto" },
               ].map((link) => (
                 <li key={link.href}>
                   <a
