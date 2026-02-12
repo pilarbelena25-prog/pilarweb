@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Download, CheckCircle2, Sparkles } from "lucide-react";
+import { Download, CheckCircle2, BookOpen } from "lucide-react";
 
 const LeadMagnetSection = () => {
   const benefits = [
@@ -28,7 +28,7 @@ const LeadMagnetSection = () => {
             {/* Content */}
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-tertiary/30 bg-tertiary/10 mb-6">
-                <Sparkles className="w-4 h-4 text-tertiary" />
+                {/* <Sparkles className="w-4 h-4 text-tertiary" /> */}
                 <span className="text-sm font-body text-tertiary font-medium">
                   Recurso gratuito de SEO Fintech Lab
                 </span>
@@ -75,7 +75,7 @@ const LeadMagnetSection = () => {
                 <div className="relative z-10">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                      <Sparkles className="w-6 h-6 text-primary" />
+                      <BookOpen className="w-6 h-6 text-primary" />
                     </div>
                     <div>
                       <p className="font-display text-lg text-foreground">SEO Fintech Lab</p>

@@ -19,7 +19,7 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Tagline */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent bg-background/50 backdrop-blur-sm mb-8 animate-fade-up">
-            <Sparkles className="w-4 h-4 text-tertiary" />
+            {/* <Sparkles className="w-4 h-4 text-tertiary" /> */}
             <span className="text-sm font-body text-foreground-muted">
               SEO Fintech potenciado por Inteligencia Artificial
             </span>
