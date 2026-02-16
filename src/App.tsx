@@ -9,6 +9,9 @@ import AuditoriaSeoFintech from "./pages/AuditoriaSeoFintech";
 import PosicionamientoSeoFintech from "./pages/PosicionamientoSeoFintech";
 import ConsultoriaSeoEstrategica from "./pages/ConsultoriaSeoEstrategica";
 import IntegracionIaSeo from "./pages/IntegracionIaSeo";
+import Cookies from "./pages/Cookies";
+import AvisoLegal from "./pages/AvisoLegal";
+import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -48,6 +51,9 @@ const App = () => (
           <Route path="/posicionamiento-seo-fintech" element={<PosicionamientoSeoFintech />} />
           <Route path="/consultoria-seo-estrategica-para-fintechs" element={<ConsultoriaSeoEstrategica />} />
           <Route path="/integracion-ia-seo" element={<IntegracionIaSeo />} />
+          <Route path="/cookies" element={<Cookies />} />
+          <Route path="/politica-privacidad" element={<PoliticaPrivacidad />} />
+          <Route path="/aviso-legal" element={<AvisoLegal />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
