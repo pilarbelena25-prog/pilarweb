@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/accordion";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import pilarBelena from "@/assets/pilar-2.png";
+import pilarBelena from "@/assets/pilar-2.webp";
 
 // SVG Icons as components
 const AnalysisTechIcon = () => (

@@ -1,5 +1,5 @@
 import { TrendingUp, Brain, Target, Users } from "lucide-react";
-import pilarPhoto from "@/assets/pilar-belena.png";
+import pilarPhoto from "@/assets/pilar-belena.webp";
 
 const AboutSection = () => {
   const highlights = [
