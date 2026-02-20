@@ -5,21 +5,20 @@ const HeroSection = () => {
   return (
     <section
       id="inicio"
-      className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden pt-20"
+      className="min-h-screen flex flex-col items-center justify-start lg:justify-center bg-gradient-hero relative overflow-hidden pt-20"
     >
       {/* Decorative elements */}
       <div className="absolute top-1/4 right-10 w-72 h-72 bg-tertiary/10 rounded-full blur-3xl animate-pulse-soft" />
       <div className="absolute bottom-1/4 left-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse-soft" />
-      
+
       {/* Silver accent lines */}
       <div className="absolute top-40 left-0 w-32 h-px bg-gradient-to-r from-transparent via-accent to-transparent" />
       <div className="absolute bottom-40 right-0 w-48 h-px bg-gradient-to-r from-transparent via-accent to-transparent" />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-6 relative z-10 pt-10 lg:pt-0">
         <div className="max-w-4xl mx-auto text-center">
           {/* Tagline */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent bg-background/50 backdrop-blur-sm mb-8 animate-fade-up">
-            {/* <Sparkles className="w-4 h-4 text-tertiary" /> */}
             <span className="text-sm font-body text-foreground-muted">
               SEO Fintech potenciado por Inteligencia Artificial
             </span>
