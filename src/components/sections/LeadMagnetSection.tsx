@@ -4,10 +4,10 @@ import { Download, CheckCircle2, BookOpen } from "lucide-react";
 const LeadMagnetSection = () => {
   const benefits = [
     "Diseña tu agente GPT paso a paso",
-    "Prompts optimizados para SEO Fintech",
-    "Plantillas listas para usar en tu estrategia SEO con IA",
+    "Avisos optimizados para SEO Fintech",
+    "Plantillas listas para usar en tu Estrategia SEO con IA",
     "Casos de uso reales del sector Fintech",
-    "Bonus: checklist de implementación",
+    "Bono: lista de verificación de implementación",
   ];
 
   return (
@@ -36,12 +36,11 @@ const LeadMagnetSection = () => {
 
               <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6 leading-tight">
                 Guía práctica: <br />
-                <span className="text-gradient-primary">Diseña tu Agente GPT</span>
+                <span className="text-gradient-primary">Diseña tu propio Agente GPT para SEO Fintech</span>
               </h2>
 
               <p className="font-body text-lg text-foreground-muted mb-8 leading-relaxed">
-                Aprende a crear agentes de inteligencia artificial para potenciar tu estrategia SEO con Inteligencia Artificial. 
-                Una guía paso a paso diseñada específicamente para profesionales del sector financiero.
+                Aprende a crear Agentes de inteligencia artificial que potencian tu Estrategia SEO con IA . Una Guía paso a paso pensada para profesionales del sector financiero y Fintech que quieren integrar Agentes GPT en su Posicionamiento y Captación Digital.
               </p>
 
               {/* Benefits list */}
@@ -60,7 +59,7 @@ const LeadMagnetSection = () => {
               </Button>
 
               <p className="mt-4 text-sm font-body text-foreground-muted">
-                * Sin spam. Solo contenido de valor para tu estrategia.
+                * Pecado spam. Solo contenido de valor para tu estrategia Fintech.
               </p>
             </div>
 

@@ -6,22 +6,22 @@ const AboutSection = () => {
     {
       icon: TrendingUp,
       title: "+5 años",
-      description: "En SEO y Marketing Digital",
+      description: "En SEO Estratégico y Marketing Digital para Marcas Financieras.",
     },
     {
       icon: Brain,
-      title: "IA Aplicada",
-      description: "Estrategias SEO potenciadas con Inteligencia Artificial",
+      title: "IA Aplicada al SEO",
+      description: "Estrategias SEO Fintech potenciadas con Inteligencia Artificial.",
     },
     {
       icon: Target,
       title: "100% Fintech",
-      description: "Especialización en SEO para el Sector Financiero en España",
+      description: "Especialización en SEO para el Sector Financiero digital en España.",
     },
     {
       icon: Users,
-      title: "+5 proyectos",
-      description: "Startups posicionadas con éxito",
+      title: "+5 Proyectos Fintech",
+      description: "Startups y Marcas Financieras Posicionadas con Éxito.",
     },
   ];
 
@@ -59,19 +59,13 @@ const AboutSection = () => {
             
             <div className="space-y-4 mb-10">
               <p className="font-body text-foreground-muted leading-relaxed">
-                Soy Pilar Beleña, <span className="text-primary font-medium">Fundadora de SEO Fintech Lab y Consultora SEO Fintech</span> especializada 
-                exclusivamente en el sector financiero digital. Mi pasión es entender la complejidad del mundo fintech 
-                y traducirla en estrategias de posicionamiento SEO que generan resultados medibles.
+                Soy Pilar Beleña , <strong className="text-primary font-medium">Fundadora de “SEO Fintech Lab” y Consultora SEO Fintech</strong> Especializada en el Sector Financiero Digital. Transformo la complejidad del mundo Fintech en Estrategias de Posicionamiento SEO con resultados medibles.
               </p>
               <p className="font-body text-foreground-muted leading-relaxed">
-                No soy una experta SEO genérica. Como <span className="text-primary font-medium">Especialista en SEO Fintech y española</span>, conozco las regulaciones, los retos y 
-                las oportunidades específicas de la banca digital, pagos, insurtech y wealthtech. 
-                Eso me permite diseñar estrategias de SEO financiero que no solo posicionan, sino que 
-                <span className="text-primary font-medium"> conectan con tu audiencia ideal</span>.
+                No soy una consultora SEO genérica. Como <strong className="text-primary font-medium">Especialista en SEO Financiero en España</strong>, conozco regulaciones, retos y oportunidades de Banca Digital, Pagos, Insurtech y WealthTech, lo que me permite diseñar SEO Fintech que no solo Posiciona, sino que Conecta con tu Audiencia Ideal.
               </p>
               <p className="font-body text-foreground-muted leading-relaxed">
-                Además, integro herramientas de <span className="text-secondary font-medium">Inteligencia Artificial</span> en 
-                cada estrategia, acelerando resultados y descubriendo oportunidades que otros pasan por alto.
+                Además, integro herramientas de <span className="text-secondary font-medium">Inteligencia Artificial</span> en cada proyecto, acelerando resultados y detectando oportunidades que otros pasan por alto.
               </p>
             </div>
 

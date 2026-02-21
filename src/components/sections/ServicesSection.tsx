@@ -8,8 +8,8 @@ const ServicesSection = () => {
       icon: Search,
       title: "Auditoría SEO Fintech",
       description:
-        "Análisis profundo de tu presencia digital en el sector financiero. Identifico oportunidades, errores técnicos y gaps de contenido para que tu Fintech gane visibilidad real en Google.",
-      features: ["Análisis técnico completo", "Estudio de competencia", "Roadmap de mejora priorizado"],
+        "Análisis profundo de la presencia digital de tu marca financiera. Identifica oportunidades, errores técnicos y lagunas de contenido para que tu Fintech gane visibilidad real en Google y en las búsquedas potenciadas por IA.",
+      features: ["Análisis técnico completo de SEO Financiero", "Estudio de competencia Fintech", "Hoja de ruta de mejora priorizada por impacto"],
       accent: "primary",
       href: "/auditoria-seo-fintech",
     },
@@ -17,17 +17,17 @@ const ServicesSection = () => {
       icon: TrendingUp,
       title: "Posicionamiento SEO Fintech",
       description:
-        "Estrategia integral de posicionamiento SEO para Startups Fintech. Desde la arquitectura web hasta el contenido que atrae clientes cualificados y construye autoridad de marca.",
-      features: ["Keyword research para SEO Financiero", "Contenido optimizado", "Link building estratégico"],
+        "Estrategia integral de SEO Fintech para Startups y Marcas Financieras. Desde la arquitectura web hasta el contenido que atrae clientes cualificados y construye Autoridad de Marca Fintech en Google.",
+      features: ["Investigación de palabras clave especializada en SEO Financiero", "Contenido optimizado para búsquedas Fintech", "Link building estratégico en medios financieros"],
       accent: "secondary",
       href: "/posicionamiento-seo-fintech"
     },
     {
       icon: MessageSquare,
-      title: "Consultoría Estratégica",
+      title: "Consultoría SEO Estratégica para Fintech",
       description:
-        "Acompañamiento personalizado para equipos internos. Te ayudo a tomar las decisiones correctas en cada fase para crecer en visibilidad de forma sostenida.",
-      features: ["Sesiones 1:1 estratégicas", "Formación de equipos en SEO Financiero", "Revisión continua de KPIs"],
+        "Acompañamiento personalizado para CEOs y equipos internos de marcas financieras. Te ayudo a tomar decisiones SEO correctas en cada fase para crecer en visibilidad y autoridad de forma sostenida.",
+      features: ["Sesiones estratégicas 1:1 y con equipo", "Formación en SEO Financiero y visión cross‑channel", "Revisión continua de KPIs y roadmap SEO"],
       accent: "tertiary",
       href: "/consultoria-seo-estrategica-para-fintechs"
     },
@@ -35,8 +35,8 @@ const ServicesSection = () => {
       icon: Bot,
       title: "Estrategia SEO con IA",
       description:
-        "Potencia tu posicionamiento. Automatiza, escala y optimiza tu presencia en Google y en las nuevas búsquedas generativas.",
-      features: ["Agentes GPT personalizados para Fintechs", "Automatización de workflows", "Análisis predictivo de oportunidades"],
+        "Potencia tu SEO Fintech . Automatiza, Escala y Optimiza tu presencia en Google y en las nuevas búsquedas generativas impulsadas por IA",
+      features: ["Agentes GPT personalizados para Fintech", "Automatización de flujos de trabajo SEO y reporting", "Análisis predictivo de oportunidades y palabras clave"],
       accent: "accent",
       href: "/integracion-ia-seo"
     },
@@ -91,8 +91,7 @@ const ServicesSection = () => {
             Consultoría de SEO Financiero <br /> <span className="text-gradient-primary">a medida</span>
           </h2>
           <p className="font-body text-foreground-muted leading-relaxed">
-            Cada empresa Fintech tiene retos únicos. Los servicios de SEO Fintech Lab están diseñados para 
-            abordar las necesidades específicas del sector financiero digital y ayudarte a atraer clientes cualificados.
+            Cada empresa Fintech y cada Marca financiera tiene retos únicos. Los servicios de “SEO Fintech Lab" están diseñados para abordar las necesidades específicas del sector Financiero Digital y ayudar a ganar Visibilidad en Google y atraer Clientes Cualificados.
           </p>
         </div>
 

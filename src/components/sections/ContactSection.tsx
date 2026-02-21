@@ -42,8 +42,7 @@ const ContactSection = () => {
               </h2>
 
               <p className="font-body text-lg text-foreground-muted mb-10 leading-relaxed">
-                Cuéntame sobre tu proyecto Fintech. Como Consultora SEO especializada en el sector Fintech, 
-                analizaré tu situación actual y te propondré un plan de acción personalizado para atraer clientes cualificados.
+                Cuéntame sobre tu Proyecto Fintech. Como Consultora SEO Fintech Especializada en el sector Financiero Digital, analizaré tu situación actual y te propondré un plan de acción personalizado para atraer Clientes Cualificados y construir Autoridad de Marca.
               </p>
 
               {/* Contact methods */}
@@ -86,9 +85,9 @@ const ContactSection = () => {
               {/* Quote */}
               <div className="p-6 rounded-xl bg-background-secondary border-l-4 border-primary">
                 <p className="font-display text-lg text-foreground italic mb-2">
-                  "El SEO Fintech no es solo posicionamiento. Es construir autoridad de marca y confianza."
+                  "El SEO Fintech no es solo Posicionamiento. Es construir Autoridad de Marca y Confianza."
                 </p>
-                <p className="font-body text-sm text-foreground-muted">— Pilar Beleña, SEO Fintech Lab</p>
+                <p className="font-body text-sm text-foreground-muted">— Pilar Beleña, Laboratorio SEO Fintech.</p>
               </div>
             </div>
 
@@ -167,7 +166,7 @@ const ContactSection = () => {
                 </Button>
 
                 <p className="text-xs font-body text-foreground-muted text-center">
-                  Al enviar, aceptas que contacte contigo para responder tu consulta.
+                  Al enviar aceptas que te contacte para responder a tu consulta y tratar tus datos según la <a href="/politica-privacidad" className="text-primary">Política de Privacidad</a>.
                 </p>
               </form>
             </div>

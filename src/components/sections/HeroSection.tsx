@@ -20,7 +20,7 @@ const HeroSection = () => {
           {/* Tagline */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent bg-background/50 backdrop-blur-sm mb-8 animate-fade-up">
             <span className="text-sm font-body text-foreground-muted">
-              SEO Fintech potenciado por Inteligencia Artificial
+              SEO Fintech con IA para Marcas Financieras
             </span>
           </div>
 
@@ -29,16 +29,16 @@ const HeroSection = () => {
             <span className="text-foreground">Posiciona tu </span>
             <span className="text-gradient-primary">Fintech</span>
             <br />
-            <span className="text-foreground">en el lugar que merece</span>
+            <span className="text-foreground">en el lugar que mereces</span>
           </h1>
 
           {/* Subtitle */}
-          <p
+          <h2
             className="font-body text-lg md:text-xl text-foreground-muted max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-up"
             style={{ animationDelay: "0.2s" }}
           >
-            Especialista SEO en el Sector Financiero. Combino <span className="uppercase font-semibold text-foreground">ESTRATEGIA</span>, <span className="uppercase font-semibold text-foreground">DATOS</span> y la potencia de la IA para llevar tu <span className="font-semibold text-foreground">Marca</span> a los primeros resultados de búsqueda.
-          </p>
+            Soy Pilar Beleña , Consultora SEO Fintech. Combino <span className="uppercase font-semibold text-foreground">ESTRATEGIA</span>, <span className="uppercase font-semibold text-foreground">DATOS</span> y la Potencia de la IA para que tu <span className="uppercase font-semibold text-foreground">Marca</span> Financiera gane Visibilidad en Google y se convierta en la Respuesta que citan los buscadores y los LLMs.
+          </h2>
 
           {/* CTAs */}
           <div
@@ -59,25 +59,25 @@ const HeroSection = () => {
             className="mt-16 pt-10 border-t border-border/50 animate-fade-up"
             style={{ animationDelay: "0.4s" }}
           >
-            <p className="text-sm text-foreground-muted mb-6 font-body">
-              Más de 10 años ayudando a empresas Fintech a dominar los buscadores
-            </p>
+            <h3 className="text-sm text-foreground-muted mb-6 font-body">
+              Más de 5 años acompañando a Marcas Financieras y Startups Fintech a ganar Visibilidad y Autoridad en Google.
+            </h3>
             <div className="flex flex-wrap justify-center gap-8 items-center">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-primary" />
-                <span className="text-sm font-body text-foreground">Banca Digital</span>
+                <p className="text-sm font-body text-foreground">Banca Digital</p>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-secondary" />
-                <span className="text-sm font-body text-foreground">Pagos Online</span>
+                <p className="text-sm font-body text-foreground">Pagos Online</p>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-tertiary" />
-                <span className="text-sm font-body text-foreground">Insurtech</span>
+                <p className="text-sm font-body text-foreground">Insurtech</p>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-accent" />
-                <span className="text-sm font-body text-foreground">Criptomonedas</span>
+                <p className="text-sm font-body text-foreground">Cripto y activos digitales</p>
               </div>
             </div>
           </div>
