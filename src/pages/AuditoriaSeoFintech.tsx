@@ -111,37 +111,37 @@ const AuditoriaSeoFintech = () => {
             <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 text-primary">
-                Impulsa Tu Fintech En Google Con Una Auditoría SEO Diseñada Para Liderar Con IA
+                Impulsa tu Fintech en Google con una Auditoría SEO diseñada para liderar con IA
               </h1>
 
               <h2 className="font-display text-xl md:text-2xl text-foreground-muted mb-8">
-                ¿Por Qué Tu Fintech No Está Generando Los Leads Que Merece?
+                ¿Por qué tu Fintech no está generando los leads que mereces?
               </h2>
 
               <ul className="space-y-4 mb-10 font-body">
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
                   <span className="text-foreground">
-                    Inviertes en marketing, pero <strong>no apareces</strong> en los primeros resultados.
+                    Inviertes en marketing, pero no apareces en los primeros resultados de Google.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
                   <span className="text-foreground">
-                    Recibes visitas, pero <strong>pocas</strong> se convierten en clientes reales.
+                    Recibes visitas, pero pocas se convierten en clientes reales.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
                   <span className="text-foreground">
-                    Tus competidores dominan Google mientras <strong>tú luchas</strong> por visibilidad.
+                    Tus competidores dominan Google mientras tu marca Fintech lucha por visibilidad y autoridad.
                   </span>
                 </li>
               </ul>
 
               <Button variant="hero" size="xl" asChild>
                 <a href={CALENDAR_URL} target="_blank" rel="noopener noreferrer">
-                  Solicita tu Auditoría SEO
+                  Solicita tu Auditoría SEO Fintech
                 </a>
               </Button>
             </div>
@@ -163,28 +163,28 @@ const AuditoriaSeoFintech = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="font-display text-3xl md:text-4xl text-center mb-16 text-primary">
-            ¿Qué Incluye La Auditoría SEO Fintech?
-          </h2>
+              ¿Qué incluye la Auditoría SEO Fintech?
+            </h2>
 
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {/* Análisis Técnico */}
             <div className="text-center">
               <AnalysisTechIcon />
               <h3 className="font-display text-xl mb-4 text-primary">
-                Análisis Técnico Para Destacar En Google
+                Análisis Técnico para destacar en Google
               </h3>
               <ul className="text-left space-y-3 font-body text-soft-pink-foreground">
                 <li className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                  <span>Primero, Detectamos los errores que frenan tu visibilidad: velocidad lenta, problemas de indexación o fallos técnicos.</span>
+                  <span>Detectamos los errores que frenan tu Visibilidad: velocidad, indexación, rastreo y otros fallos técnicos.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                  <span>Después, Optimizamos tu web para móviles y mejoramos su estructura para que Google la entienda mejor.</span>
+                  <span>Optimizamos tu web para móviles y mejoramos la arquitectura para que Google entienda mejor tu proyecto Fintech.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                  <span>Por último, Revisamos aspectos clave como HTTPS, rastreo y estabilidad general.</span>
+                  <span>Revisamos HTTPS, estabilidad y salud general del sitio para que tu SEO financiero tenga una base sólida.</span>
                 </li>
               </ul>
             </div>
@@ -193,20 +193,20 @@ const AuditoriaSeoFintech = () => {
             <div className="text-center">
               <CompetitorIcon />
               <h3 className="font-display text-xl mb-4 text-primary">
-                Estudio Estratégico De Tu Competencia
+                Estudio Estratégico de tu competencia Fintech
               </h3>
               <ul className="text-left space-y-3 font-body text-soft-pink-foreground">
                 <li className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                  <span>Comenzamos Analizando a tus competidores Fintech mejor posicionados.</span>
+                  <span>Analizamos a los competidores Fintech mejor posicionados en tu nicho.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                  <span>Luego, Identificamos las brechas de contenido y autoridad que puedes aprovechar para adelantarte.</span>
+                  <span>Identificamos brechas de contenido y de autoridad que podemos aprovechar para adelantar.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                  <span>Finalmente, Comparamos enlaces externos y reputación de dominio para encontrar ventajas ocultas.</span>
+                  <span>Comparamos enlaces externos y reputación de dominio para encontrar ventajas competitivas reales.</span>
                 </li>
               </ul>
             </div>
@@ -215,20 +215,20 @@ const AuditoriaSeoFintech = () => {
             <div className="text-center">
               <LinkBuildingIcon />
               <h3 className="font-display text-xl mb-4 text-primary">
-                Link Building Con Medios Fintech
+                Estrategia de link building con medios Fintech
               </h3>
               <ul className="text-left space-y-3 font-body text-soft-pink-foreground">
                 <li className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                  <span>Primero, Auditamos tus enlaces actuales y eliminamos los que dañan tu posicionamiento.</span>
+                  <span>Auditamos tu perfil de enlaces y detectamos enlaces tóxicos que dañan tu posicionamiento.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                  <span>Después, Diseñamos una estrategia de backlinks con medios Fintech y portales relevantes.</span>
+                  <span>Diseñamos una Estrategia de backlinks con medios Fintech y portales financieros relevantes.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                  <span>Y por último, Reforzamos tu autoridad digital con enlaces de alto valor que multiplican tu visibilidad.</span>
+                  <span>Reforzamos la Autoridad digital de tu marca con enlaces de alto valor que multiplican tu visibilidad.</span>
                 </li>
               </ul>
             </div>
@@ -240,7 +240,7 @@ const AuditoriaSeoFintech = () => {
               </p>
               <Button variant="hero" size="lg" asChild>
                 <a href={CALENDAR_URL} target="_blank" rel="noopener noreferrer">
-                  Solicita tu Diagnóstico
+                  Solicita tu Diagnóstico SEO Fintech
                 </a>
               </Button>
             </div>
@@ -253,64 +253,76 @@ const AuditoriaSeoFintech = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="font-display text-3xl md:text-4xl text-center mb-4 text-primary">
-            Nuestro Método Para Posicionar Tu Fintech Como Autoridad
-          </h2>
+              Nuestro método para posicionar tu Fintech como autoridad
+            </h2>
           <p className="font-body text-center text-foreground-muted mb-16 max-w-3xl mx-auto">
-            Un proceso claro, paso a paso, para Multiplicar tu Visibilidad y atraer Leads Cualificados en buscadores con y sin IA.
+            Proceso paso a paso para multiplicar tu visibilidad Fintech , autoridad de marca y atraer leads cualificados en Google (con y sin IA).
           </p>
 
           <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div className="text-center">
               <span className="font-display text-2xl text-primary">1|</span>
-              <h3 className="font-display text-xl text-secondary mb-2">Diagnóstico SEO</h3>
+              <h3 className="font-display text-xl text-secondary mb-2">Diagnóstico SEO Fintech</h3>
               <p className="font-body text-foreground-muted text-sm">
-                Detectamos los bloqueos invisibles que frenan tu posicionamiento.
+                Detectamos bloqueos técnicos y de contenido que frenan tu posicionamiento.
               </p>
             </div>
             <div className="text-center">
               <span className="font-display text-2xl text-primary">2|</span>
               <h3 className="font-display text-xl text-secondary mb-2">Análisis En Profundidad</h3>
               <p className="font-body text-foreground-muted text-sm">
-                Revisamos tu web, tu sector y tus competidores con mirada Fintech.
+                Auditoría completa de tu web, sector Fintech y competidores mejor posicionados.
               </p>
             </div>
             <div className="text-center">
               <span className="font-display text-2xl text-primary">3|</span>
               <h3 className="font-display text-xl text-secondary mb-2">Informe Accionable</h3>
               <p className="font-body text-foreground-muted text-sm">
-                Recibes un documento visual, claro y priorizado por impacto.
+                Documento visual con prioridades claras por impacto en visibilidad y leads.
               </p>
             </div>
             <div className="text-center">
               <span className="font-display text-2xl text-primary">4|</span>
               <h3 className="font-display text-xl text-secondary mb-2">Estrategia Personalizada</h3>
               <p className="font-body text-foreground-muted text-sm">
-                Trazamos tu hoja de ruta SEO, adaptada a tu modelo de negocio.
+                Hoja de ruta SEO adaptada a tu modelo Fintech y objetivos de crecimiento.
               </p>
             </div>
           </div>
 
           <div className="text-center mb-16">
             <span className="font-display text-2xl text-primary">5|</span>
-            <h3 className="font-display text-xl text-secondary mb-2">Implementación Y Soporte (Opcional)</h3>
+            <h3 className="font-display text-xl text-secondary mb-2">Implementación + Soporte (Opcional)</h3>
             <p className="font-body text-foreground-muted text-sm max-w-lg mx-auto">
-              Te acompañamos si lo necesitas para aplicar cada mejora con foco en resultados.
+              Te acompañamos aplicando mejoras con foco en resultados medibles.
             </p>
           </div>
 
-          <div className="text-center border-t border-border pt-12">
-            <p className="font-body text-foreground-muted mb-4">
-              Un proceso <strong>ESTRATÉGICO</strong>, <strong>PERSONALIZADO</strong> y <strong>DISEÑADO</strong> para convertir tu Fintech en un Referente Digital.
-            </p>
-            <h3 className="font-display text-2xl text-foreground mb-2">
-              ¿Preparado Para Posicionar Tu Fintech Como Una Autoridad Online?
-            </h3>
-            <p className="font-body text-foreground-muted mb-8">
-              Solicita tu Auditoría SEO Personalizada y da el primer paso hacia el Liderazgo Digital.
+          <div className="text-center pb-6">
+            <p className="font-display text-xl mb-6 text-soft-pink-foreground">
+                ¿Listo para convertir tu Fintech en líder del sector?
             </p>
             <Button variant="hero" size="lg" asChild>
               <a href={CALENDAR_URL} target="_blank" rel="noopener noreferrer">
-                Quiero una Auditoría como esta
+                Solicita tu Diagnóstico SEO Fintech
+              </a>
+            </Button>
+          </div>
+
+          <div className="text-center border-t border-border pt-12 mt-6">
+            <h2 className="font-display text-3xl md:text-4xl text-center mb-4 text-primary">Proceso Estratégico para liderar con tu Fintech</h2>
+            <p className="font-body text-foreground-muted mb-4">
+              Un enfoque <strong>ESTRATÉGICO</strong>, <strong>PERSONALIZADO</strong> y <strong>DISEÑADO</strong> para convertir tu Fintech en un Referente Digital con Autoridad de Marca Fintech.
+            </p>
+            <h3 className="font-display text-2xl text-foreground mb-2">
+              ¿Preparado para Posicionar tu Fintech como Autoridad Online?
+            </h3>
+            <p className="font-body text-foreground-muted mb-8">
+              Solicita tu Auditoría SEO Fintech Personalizada y da el primer paso hacia el Liderazgo en Google.
+            </p>
+            <Button variant="hero" size="lg" asChild>
+              <a href={CALENDAR_URL} target="_blank" rel="noopener noreferrer">
+                Quiero una Auditoría SEO Fintech
               </a>
             </Button>
           </div>
@@ -323,35 +335,35 @@ const AuditoriaSeoFintech = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="font-display text-3xl md:text-4xl text-center mb-16 text-primary">
-            Beneficios Clave De Una Auditoría SEO Fintech
-          </h2>
+              Beneficios clave de una Auditoría SEO Fintech
+            </h2>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
               <VisibilityIcon />
               <h3 className="font-display text-xl mb-2 text-primary">
-                Visibilidad Real En Google E IA
+                Visibilidad real en Google e IA
               </h3>
               <p className="font-body text-foreground-muted text-sm">
-                Aparece donde tus clientes te buscan: en los resultados tradicionales y en las nuevas búsquedas generativas.
+                Aparece donde tus clientes buscan: resultados tradicionales y búsquedas generativas con IA.
               </p>
             </div>
             <div className="text-center">
               <UserExperienceIcon />
               <h3 className="font-display text-xl mb-2 text-primary">
-                Mejor Experiencia Para Tus Usuarios
+                Mejor experiencia para tus usuarios
               </h3>
               <p className="font-body text-foreground-muted text-sm">
-                Tu web será más rápida, clara y fácil de navegar, optimizada para captar la atención y guiar a la acción.
+                Web más rápida, clara y navegable, optimizada para captar atención y guiar conversiones.
               </p>
             </div>
             <div className="text-center">
               <AuthorityIcon />
               <h3 className="font-display text-xl mb-2 text-primary">
-                Autoridad Digital Sólida
+                Autoridad digital sólida
               </h3>
               <p className="font-body text-foreground-muted text-sm">
-                Fortalece tu reputación en el sector con contenido relevante y enlaces estratégicos que Google valora.
+                Fortalece tu reputación Fintech con contenido relevante y enlaces que Google valora.
               </p>
             </div>
           </div>
@@ -360,25 +372,25 @@ const AuditoriaSeoFintech = () => {
             <div className="text-center">
               <OpportunityIcon />
               <h3 className="font-display text-xl mb-2 text-primary">
-                Más Oportunidades De Negocio
+                Más oportunidades de negocio
               </h3>
               <p className="font-body text-foreground-muted text-sm">
-                Atrae leads cualificados y mejora tu tasa de conversión desde el primer contacto.
+                Atrae leads cualificados y mejoras en las tasas de conversión desde el primer contacto.
               </p>
             </div>
             <div className="text-center">
               <ROIIcon />
               <h3 className="font-display text-xl mb-2 text-primary">
-                ROI Claro Y Medible
+                ROI claro y medible
               </h3>
               <p className="font-body text-foreground-muted text-sm">
-                Cada acción está pensada para generar impacto: más visibilidad, más autoridad, más clientes.
+                Cada acción genera impacto: más visibilidad, autoridad y clientes reales.
               </p>
             </div>
           </div>
 
             <p className="text-center font-body text-lg text-foreground">
-              Cada <strong>ACCIÓN</strong> está pensada para <strong>GENERAR IMPACTO</strong>: MÁS VISIBILIDAD, MÁS AUTORIDAD, MÁS CLIENTES.
+              Cada <strong>ACCIÓN</strong> genera <strong>IMPACTO REAL</strong>: Más Visibilidad, Más autoridad, más Clientes Fintech.
             </p>
           </div>
         </div>
@@ -389,7 +401,7 @@ const AuditoriaSeoFintech = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="font-display text-3xl md:text-4xl text-center mb-16 text-foreground">
-            ¿Por Qué Elegir Una Auditoría SEO Fintech?
+            ¿Por qué elegir una Auditoría SEO Fintech?
           </h2>
 
           <div className="max-w-3xl mx-auto space-y-8 mb-12">
@@ -400,7 +412,7 @@ const AuditoriaSeoFintech = () => {
                   Porque tu sector no es como los demás.
                 </h3>
                 <p className="font-body text-foreground-muted">
-                  Trabajamos con Fintechs y entendemos sus retos: <strong>ALTA COMPETENCIA</strong>, <strong>LENGUAJE TÉCNICO</strong> y <strong>NORMATIVAS</strong> que cambian constantemente.
+                  Trabajamos exclusivamente con Fintechs y entendemos sus retos únicos: alta competencia , lenguaje técnico complejo y normativas que cambian constantemente.
                 </p>
               </div>
             </div>
@@ -409,10 +421,10 @@ const AuditoriaSeoFintech = () => {
               <CheckIcon />
               <div>
                 <h3 className="font-body font-semibold text-foreground mb-2">
-                  Porque no usamos plantillas.
+                  Porque no usamos plantillas genéricas.
                 </h3>
                 <p className="font-body text-foreground-muted">
-                  Diseñamos <strong>ESTRATEGIAS</strong> a medida, con Keywords Específicas, Análisis Real del mercado y Foco en Resultados Tangibles.
+                  Diseñamos estrategias personalizadas con palabras clave específicas Fintech , análisis real del mercado y foco en resultados tangibles desde el primer mes.
                 </p>
               </div>
             </div>
@@ -421,10 +433,10 @@ const AuditoriaSeoFintech = () => {
               <CheckIcon />
               <div>
                 <h3 className="font-body font-semibold text-foreground mb-2">
-                  Porque buscas resultados, no informes vacíos.
+                  Porque buscas resultados, no hay informes vacíos.
                 </h3>
                 <p className="font-body text-foreground-muted">
-                  Te entregamos <strong>ACCIONES CLARAS</strong> para mejorar tu Visibilidad, Autoridad y Captación de Leads Cualificados desde el primer mes.
+                  Te entregamos acciones claras y priorizadas para mejorar visibilidad Fintech , autoridad de marca y captación de leads cualificados.
                 </p>
               </div>
             </div>
@@ -446,26 +458,26 @@ const AuditoriaSeoFintech = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="font-display text-3xl md:text-4xl text-center mb-16 text-foreground">
-              Preguntas Frecuentes
+              Preguntas frecuentes optimizadas para tu Auditoría SEO Fintech
             </h2>
 
             <div className="max-w-3xl mx-auto">
             <Accordion type="single" collapsible className="space-y-2">
               <AccordionItem value="item-1" className="bg-secondary rounded-lg border-none">
                 <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                  ¿Qué diferencia a esta Auditoría SEO Fintech de otras auditorías genéricas?
+                  ¿Qué diferencia esta Auditoría SEO Fintech de las genéricas?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                  Esta auditoría está 100% enfocada en Fintechs: contempla regulaciones específicas, términos técnicos del sector y el entorno competitivo digital. No se aplican plantillas, sino estrategias personalizadas para destacar en Google y en las búsquedas potenciadas por IA.
+                  Está diseñada exclusivamente para Fintechs : alta competencia, lenguaje técnico y normativas específicas. Sin plantillas, sino estrategias con tus palabras clave Fintech reales.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-2" className="bg-secondary rounded-lg border-none">
                 <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                  ¿Qué beneficios obtendré al mejorar la Visibilidad de mi Fintech en Google?
+                  ¿Qué beneficios obtengo al mejorar la visibilidad de mi Fintech en Google?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                  Con mayor visibilidad, tu Fintech atraerá tráfico más cualificado, mejorará su autoridad de marca y multiplicará las oportunidades de captación de leads. Es el primer paso para posicionarte como referente digital.
+                  Visibilidad real , autoridad de marca y leads cualificados que convierten. Apareces donde tus clientes buscan: Google tradicional e IA generativa.
                 </AccordionContent>
               </AccordionItem>
 
@@ -474,76 +486,45 @@ const AuditoriaSeoFintech = () => {
                   ¿Cómo se aprovechan las búsquedas con IA en esta Auditoría?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                  Analizamos cómo impactan las nuevas búsquedas generativas (como SGE o chatbots con IA) y adaptamos tu contenido y estructura para que tu Fintech sea relevante en este nuevo contexto.
+                  Optimizamos para respuestas directas que Google IA prioriza: estructura contenido, preguntas long-tail y autoridad temática Fintech.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-4" className="bg-secondary rounded-lg border-none">
                 <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                  ¿Qué tipo de Leads puedo esperar tras la Auditoría?
+                  ¿Qué incluye exactamente la Auditoría SEO para Fintechs?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                  Leads más cualificados: decisores con intención real de compra o colaboración, que encuentran tu Fintech por autoridad temática y confianza generada en los resultados de búsqueda.
+                  Análisis técnico, estudio de competencia Fintech, estrategia link building con medios financieros y hoja de ruta accionable priorizada por impacto.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-5" className="bg-secondary rounded-lg border-none">
                 <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                  ¿Qué incluye exactamente la Auditoría SEO para Fintechs?
+                  ¿Cuánto tarda y cómo se entrega el informe?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                  Incluye un diagnóstico técnico, análisis de competencia, evaluación de autoridad, estrategia de link building y recomendaciones personalizadas para potenciar tu presencia online.
+                  Entrega en 7 días con documento visual: diagnóstico, prioridades claras y acciones paso a paso para resultados desde el mes 1.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-6" className="bg-secondary rounded-lg border-none">
                 <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                  ¿Cuánto tarda en entregarse y cómo se presenta?
+                  ¿Cuál es el siguiente paso tras la Auditoría?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                  El plazo medio es de entre 10 y 15 días hábiles. Se entrega en un informe visual y técnico con acciones claras, priorizadas por impacto y facilidad de implementación.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-7" className="bg-secondary rounded-lg border-none">
-                <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                  ¿Necesito dar acceso a herramientas como Search Console o Analytics?
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                  Sí, para un análisis profundo es necesario el acceso a Search Console y Google Analytics. También pueden usarse herramientas adicionales según el Stack SEO actual de tu Fintech.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-8" className="bg-secondary rounded-lg border-none">
-                <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                  ¿Qué pasa si no tengo Equipo Técnico para implementar los cambios?
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                  Puedes contratar un Soporte Adicional de implementación y seguimiento para aplicar las mejoras.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-9" className="bg-secondary rounded-lg border-none">
-                <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                  ¿Está adaptada esta Auditoría para SEO Local o Internacional?
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                  Sí, adaptamos el enfoque según el mercado objetivo de la Fintech, ya sea local (España) o Internacional; considerando idioma, competencia y perfil del usuario.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-10" className="bg-secondary rounded-lg border-none">
-                <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                  ¿Cuál es el siguiente paso tras recibir la Auditoría?
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                  <p className="mb-4">
-                    Decidir si deseas implementar internamente las acciones o si prefieres apoyo externo. En ambos casos, se incluyen recomendaciones claras y ordenadas para facilitar la toma de decisiones.
-                  </p>
+                  Implementamos juntos (opcional) o te guía en cada acción. Primer foco: visibilidad rápida y autoridad medible.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
             </div>
+              <div className="text-center mt-8">
+                <Button variant="hero" size="xl" asChild>
+                  <a href={CALENDAR_URL} target="_blank" rel="noopener noreferrer">
+                    Quiero mi Auditoría SEO Fintech
+                  </a>
+                </Button>
+              </div>
           </div>
         </div>
       </section>
@@ -553,8 +534,11 @@ const AuditoriaSeoFintech = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="font-display text-3xl md:text-4xl mb-6 text-primary">
-            Haz Que Tu Fintech Sea La Que Todos Encuentran (Y Eligen).
+            Haz que tu Fintech sea la que todos encuentran (y eligen).
           </h2>
+          <p className="font-body text-foreground-muted mb-8">
+            Convierte tu Visibilidad Fintech en Autoridad de Marca y atrae Leads Cualificados que convierten.
+          </p>
           <p className="font-body text-foreground-muted mb-8">
             Solicita tu Auditoría SEO Fintech ahora.
           </p>
