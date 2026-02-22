@@ -1,8 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Linkedin, ArrowUpRight } from "lucide-react";
+import { Mail, Linkedin, ArrowUpRight, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
+
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+type FormStatus = "idle" | "loading" | "success" | "error";
+
+interface FormErrors {
+  name?: string;
+  email?: string;
+  message?: string;
+}
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -11,15 +24,63 @@ const ContactSection = () => {
     company: "",
     message: "",
   });
+  const [errors, setErrors] = useState<FormErrors>({});
+  const [status, setStatus] = useState<FormStatus>("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const validate = (): boolean => {
+    const newErrors: FormErrors = {};
+
+    if (!formData.name.trim() || formData.name.trim().length < 2) {
+      newErrors.name = "El nombre debe tener al menos 2 caracteres.";
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!formData.email.trim() || !emailRegex.test(formData.email)) {
+      newErrors.email = "Introduce un email válido.";
+    }
+
+    if (!formData.message.trim() || formData.message.trim().length < 10) {
+      newErrors.message = "El mensaje debe tener al menos 10 caracteres.";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
+
+    if (!validate()) return;
+
+    setStatus("loading");
+
+    try {
+      await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        {
+          name: formData.name,
+          email: formData.email,
+          company: formData.company || "No especificada",
+          message: formData.message,
+        },
+        PUBLIC_KEY
+      );
+
+      setStatus("success");
+      setFormData({ name: "", email: "", company: "", message: "" });
+      setErrors({});
+    } catch {
+      setStatus("error");
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+    if (errors[name as keyof FormErrors]) {
+      setErrors((prev) => ({ ...prev, [name]: undefined }));
+    }
   };
 
   return (
@@ -56,9 +117,6 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-body text-sm text-foreground-muted">Email</p>
-                    {/* <p className="font-body text-foreground group-hover:text-primary transition-colors">
-                      pilarbelena25@gmail.com
-                    </p> */}
                   </div>
                   <ArrowUpRight className="w-5 h-5 text-foreground-muted ml-auto group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
                 </a>
@@ -74,9 +132,6 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-body text-sm text-foreground-muted">LinkedIn</p>
-                    {/* <p className="font-body text-foreground group-hover:text-secondary transition-colors">
-                      https://www.linkedin.com/in/maría-pilar-beleña-gasent-178b145a/
-                    </p> */}
                   </div>
                   <ArrowUpRight className="w-5 h-5 text-foreground-muted ml-auto group-hover:text-secondary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
                 </a>
@@ -98,77 +153,122 @@ const ContactSection = () => {
                 Respondo en menos de 24 horas laborables
               </p>
 
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid sm:grid-cols-2 gap-4">
+              {status === "success" ? (
+                <div className="flex flex-col items-center justify-center gap-4 py-12 text-center">
+                  <CheckCircle className="w-14 h-14 text-primary" />
+                  <h4 className="font-display text-xl text-foreground">¡Mensaje enviado!</h4>
+                  <p className="font-body text-foreground-muted">
+                    Gracias por escribirme. Te responderé en menos de 24 horas laborables.
+                  </p>
+                  <Button variant="outline" onClick={() => setStatus("idle")} className="mt-4">
+                    Enviar otro mensaje
+                  </Button>
+                </div>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-6" noValidate>
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    <div>
+                      <label htmlFor="name" className="block font-body text-sm text-foreground mb-2">
+                        Nombre *
+                      </label>
+                      <Input
+                        id="name"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        placeholder="Tu nombre"
+                        className={`bg-background ${errors.name ? "border-red-500 focus-visible:ring-red-500" : ""}`}
+                      />
+                      {errors.name && (
+                        <p className="mt-1 text-xs text-red-500 font-body">{errors.name}</p>
+                      )}
+                    </div>
+                    <div>
+                      <label htmlFor="email" className="block font-body text-sm text-foreground mb-2">
+                        Email *
+                      </label>
+                      <Input
+                        id="email"
+                        name="email"
+                        type="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        placeholder="tu@email.com"
+                        className={`bg-background ${errors.email ? "border-red-500 focus-visible:ring-red-500" : ""}`}
+                      />
+                      {errors.email && (
+                        <p className="mt-1 text-xs text-red-500 font-body">{errors.email}</p>
+                      )}
+                    </div>
+                  </div>
+
                   <div>
-                    <label htmlFor="name" className="block font-body text-sm text-foreground mb-2">
-                      Nombre *
+                    <label htmlFor="company" className="block font-body text-sm text-foreground mb-2">
+                      Empresa / Proyecto
                     </label>
                     <Input
-                      id="name"
-                      name="name"
-                      value={formData.name}
+                      id="company"
+                      name="company"
+                      value={formData.company}
                       onChange={handleChange}
-                      placeholder="Tu nombre"
-                      required
+                      placeholder="Nombre de tu empresa o startup"
                       className="bg-background"
                     />
                   </div>
+
                   <div>
-                    <label htmlFor="email" className="block font-body text-sm text-foreground mb-2">
-                      Email *
+                    <label htmlFor="message" className="block font-body text-sm text-foreground mb-2">
+                      ¿En qué puedo ayudarte? *
                     </label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
+                    <Textarea
+                      id="message"
+                      name="message"
+                      value={formData.message}
                       onChange={handleChange}
-                      placeholder="tu@email.com"
-                      required
-                      className="bg-background"
+                      placeholder="Cuéntame brevemente tu situación actual y qué objetivos tienes..."
+                      rows={5}
+                      className={`bg-background resize-none ${errors.message ? "border-red-500 focus-visible:ring-red-500" : ""}`}
                     />
+                    {errors.message && (
+                      <p className="mt-1 text-xs text-red-500 font-body">{errors.message}</p>
+                    )}
                   </div>
-                </div>
 
-                <div>
-                  <label htmlFor="company" className="block font-body text-sm text-foreground mb-2">
-                    Empresa / Proyecto
-                  </label>
-                  <Input
-                    id="company"
-                    name="company"
-                    value={formData.company}
-                    onChange={handleChange}
-                    placeholder="Nombre de tu empresa o startup"
-                    className="bg-background"
-                  />
-                </div>
+                  {status === "error" && (
+                    <div className="flex items-center gap-2 p-3 rounded-lg bg-red-500/10 border border-red-500/30">
+                      <AlertCircle className="w-4 h-4 text-red-500 shrink-0" />
+                      <p className="text-sm font-body text-red-500">
+                        Hubo un error al enviar el mensaje. Inténtalo de nuevo o escríbeme directamente a pilarbelena25@gmail.com.
+                      </p>
+                    </div>
+                  )}
 
-                <div>
-                  <label htmlFor="message" className="block font-body text-sm text-foreground mb-2">
-                    ¿En qué puedo ayudarte? *
-                  </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder="Cuéntame brevemente tu situación actual y qué objetivos tienes..."
-                    rows={5}
-                    required
-                    className="bg-background resize-none"
-                  />
-                </div>
+                  <Button
+                    type="submit"
+                    variant="hero"
+                    size="lg"
+                    className="w-full"
+                    disabled={status === "loading"}
+                  >
+                    {status === "loading" ? (
+                      <>
+                        <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                        Enviando...
+                      </>
+                    ) : (
+                      "Enviar mensaje"
+                    )}
+                  </Button>
 
-                <Button variant="hero" size="lg" className="w-full">
-                  Enviar mensaje
-                </Button>
-
-                <p className="text-xs font-body text-foreground-muted text-center">
-                  Al enviar aceptas que te contacte para responder a tu consulta y tratar tus datos según la <a href="/politica-privacidad" className="text-primary">Política de Privacidad</a>.
-                </p>
-              </form>
+                  <p className="text-xs font-body text-foreground-muted text-center">
+                    Al enviar aceptas que te contacte para responder a tu consulta y tratar tus datos según la{" "}
+                    <a href="/politica-privacidad" className="text-primary">
+                      Política de Privacidad
+                    </a>
+                    .
+                  </p>
+                </form>
+              )}
             </div>
           </div>
         </div>
