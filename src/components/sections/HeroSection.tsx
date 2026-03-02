@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -49,8 +50,8 @@ const HeroSection = () => {
               Descubrir mi enfoque
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button variant="heroOutline" size="xl">
-              Descargar guía IA gratuita
+            <Button variant="heroOutline" size="xl" asChild>
+              <Link to="/guia-gpt">Descargar guía IA gratuita</Link>
             </Button>
           </div>
 

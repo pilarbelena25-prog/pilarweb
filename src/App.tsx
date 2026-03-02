@@ -12,6 +12,7 @@ import IntegracionIaSeo from "./pages/IntegracionIaSeo";
 import Cookies from "./pages/Cookies";
 import AvisoLegal from "./pages/AvisoLegal";
 import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
+import GuiaGpt from "./pages/GuiaGpt";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -54,6 +55,7 @@ const App = () => (
           <Route path="/cookies" element={<Cookies />} />
           <Route path="/politica-privacidad" element={<PoliticaPrivacidad />} />
           <Route path="/aviso-legal" element={<AvisoLegal />} />
+          <Route path="/guia-gpt" element={<GuiaGpt />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
