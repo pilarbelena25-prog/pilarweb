@@ -30,16 +30,16 @@ const ConsultoriaSeoEstrategica = () => {
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
                   <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 text-primary">
-                    Transforma Tu Visión En Un Liderazgo Digital Real
+                    Transforma tu visión en liderazgo digital real para empresas Fintech listas para dominar su mercado.
                   </h1>
 
                   <h2 className="font-display text-xl md:text-2xl text-foreground-muted mb-8">
-                    Consultoría SEO Estratégica Para Empresas Fintech Que Ya Entienden El Poder Del Posicionamiento... Y Están Listas Para Dominar Su Mercado.
+                    Para quién: Startups y Scale-ups Fintech que necesitan Estrategia Global (no sólo ejecución)
                   </h2>
 
                   <Button variant="hero" size="xl" asChild>
                     <a href={CALENDAR_URL} target="_blank" rel="noopener noreferrer">
-                      Agenda tu Sesión Estratégica Gratuita
+                      Agenda tu Estrategia SEO Fintech
                     </a>
                   </Button>
                 </div>
@@ -61,79 +61,134 @@ const ConsultoriaSeoEstrategica = () => {
           <div className="container mx-auto px-6">
             <div className="max-w-3xl mx-auto text-center space-y-6">
               <p className="font-body text-lg text-soft-pink-foreground">
-                Si estás aquí, ya sabes que el SEO importa... pero también sabes que no es suficiente.
+                Si tienes tráfico pero no negocio real...
               </p>
               <p className="font-body text-lg text-soft-pink-foreground">
-                ¿Tienes tráfico, pero no se traduce en negocio real?
+                ¿Aplicas tácticas sueltas sin estrategia clara?
               </p>
               <p className="font-body text-lg text-soft-pink-foreground">
-                ¿Estás aplicando tácticas sueltas sin una estrategia clara?
+                ¿El mercado Fintech es cada vez más competitivo?
               </p>
               <p className="font-body text-lg text-soft-pink-foreground">
-                ¿El mercado Fintech se vuelve más competitivo cada mes?
-              </p>
-              <p className="font-body text-lg text-soft-pink-foreground">
-                ¿No sabes si tus esfuerzos actuales están generando ROI?
+                ¿No sabes si tus esfuerzos generan ROI?
               </p>
               <p className="font-body text-lg text-soft-pink-foreground font-bold mt-8">
-                Lo que necesitas es una visión estratégica, integral y accionable.
+                Esta Consultoría es para ti.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Consultoría Estratégica SEO Section */}
+        {/* Qué incluye Section */}
         <section className="py-20 bg-background">
           <div className="container mx-auto px-6">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="font-display text-3xl md:text-4xl text-center mb-4 text-primary">
-                Consultoría Estratégica SEO Para Fintechs
+            <div className="max-w-4xl mx-auto">
+              <h2 className="font-display text-3xl md:text-4xl text-center mb-16 text-primary">
+                Qué incluye
               </h2>
-              <p className="font-body text-center text-foreground-muted mb-16">
-                Una Estrategia Pensada Para Líderes Que Buscan Resultados, No Solo Rankings.
-              </p>
 
-              <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
-                <div>
-                  <h3 className="font-display text-2xl text-primary mb-8">
-                    ¿Qué Obtienes?
-                  </h3>
+              <div className="space-y-8 mb-16">
+                <div className="flex items-start gap-4">
+                  <span className="font-display text-2xl text-primary flex-shrink-0 w-8">1</span>
+                  <div>
+                    <h3 className="font-display text-xl text-primary mb-2">
+                      Keyword research profunda + análisis semántico Fintech
+                    </h3>
+                    <p className="font-body text-foreground-muted">
+                      Investigación avanzada: "consultora SEO Fintech España", "visibilidad Fintech", "autoridad marca Fintech" + keywords emergentes IA
+                    </p>
+                    <p className="font-body text-foreground-muted">
+                      Clústeres semánticos + oportunidades ocultas del sector
+                    </p>
+                  </div>
                 </div>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <CheckIcon />
-                    <p className="font-body text-foreground">
-                      <strong>Roadmap SEO personalizado</strong> con visión a largo plazo
+
+                <div className="flex items-start gap-4">
+                  <span className="font-display text-2xl text-primary flex-shrink-0 w-8">2</span>
+                  <div>
+                    <h3 className="font-display text-xl text-primary mb-2">
+                      Auditoría completa (técnica + contenido + competencia)
+                    </h3>
+                    <p className="font-body text-foreground-muted">
+                      Diagnóstico 360° de tu embudo digital (atraer, nutrir, convertir)
+                    </p>
+                    <p className="font-body text-foreground-muted">
+                      Análisis predictivo IA de brechas competitivas
                     </p>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <CheckIcon />
-                    <p className="font-body text-foreground">
-                      <strong>Integración de IA</strong> para análisis predictivo y personalización
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <span className="font-display text-2xl text-primary flex-shrink-0 w-8">3</span>
+                  <div>
+                    <h3 className="font-display text-xl text-primary mb-2">
+                      Hoja de ruta SEO 6-12 meses con prioridades y KPIs
+                    </h3>
+                    <p className="font-body text-foreground-muted">
+                      Roadmap estratégico personalizado con visión a largo plazo
+                    </p>
+                    <p className="font-body text-foreground-muted">
+                      Priorización por impacto ROI + medición transparente
                     </p>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <CheckIcon />
-                    <p className="font-body text-foreground">
-                      <strong>Optimización de todo tu embudo digital</strong> (atraer, nutrir, convertir)
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <span className="font-display text-2xl text-primary flex-shrink-0 w-8">4</span>
+                  <div>
+                    <h3 className="font-display text-xl text-primary mb-2">
+                      Planes de contenido optimizado (blog, landing pages)
+                    </h3>
+                    <p className="font-body text-foreground-muted">
+                      Contenido de autoridad para posicionarte como referente sectorial
+                    </p>
+                    <p className="font-body text-foreground-muted">
+                      Estructura pillar-cluster optimizada para SGE e IA generativa
                     </p>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <CheckIcon />
-                    <p className="font-body text-foreground">
-                      <strong>Contenido de autoridad</strong> para posicionarte como referente
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <span className="font-display text-2xl text-primary flex-shrink-0 w-8">5</span>
+                  <div>
+                    <h3 className="font-display text-xl text-primary mb-2">
+                      Estrategia link building institucional (medios + partners)
+                    </h3>
+                    <p className="font-body text-foreground-muted">
+                      Colaboraciones estratégicas ecosistema Fintech
+                    </p>
+                    <p className="font-body text-foreground-muted">
+                      Menciones de marca + backlinks DA 50+ desde medios financieros
                     </p>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <CheckIcon />
-                    <p className="font-body text-foreground">
-                      <strong>Identificación de oportunidades ocultas</strong> y palabras clave emergentes
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <span className="font-display text-2xl text-primary flex-shrink-0 w-8">6</span>
+                  <div>
+                    <h3 className="font-display text-xl text-primary mb-2">
+                      Reporting mensual + ajustes según algoritmo/Google IA
+                    </h3>
+                    <p className="font-body text-foreground-muted">
+                      Dashboard ejecutivo con métricas accionables
+                    </p>
+                    <p className="font-body text-foreground-muted">
+                      Alertas proactivas algoritmo + optimización continua
                     </p>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <CheckIcon />
-                    <p className="font-body text-foreground">
-                      <strong>Medición transparente de cada acción</strong> SEO (ROI real, no suposiciones)
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <span className="font-display text-2xl text-primary flex-shrink-0 w-8">7</span>
+                  <div>
+                    <h3 className="font-display text-xl text-primary mb-2">
+                      Soporte estratégico directo (llamadas, Slack)
+                    </h3>
+                    <p className="font-body text-foreground-muted">
+                      Acceso directo a Pilar para CEOs y equipos directivos
+                    </p>
+                    <p className="font-body text-foreground-muted">
+                      Sesiones estratégicas personalizadas + acompañamiento experto
                     </p>
                   </div>
                 </div>
@@ -142,7 +197,7 @@ const ConsultoriaSeoEstrategica = () => {
               <div className="text-center">
                 <Button variant="hero" size="lg" asChild>
                   <a href={CALENDAR_URL} target="_blank" rel="noopener noreferrer">
-                    Solicita tu Diagnóstico Estratégico
+                    Agenda tu Estrategia SEO Fintech
                   </a>
                 </Button>
               </div>
@@ -150,108 +205,108 @@ const ConsultoriaSeoEstrategica = () => {
           </div>
         </section>
 
-        {/* ¿Cómo Trabajamos Paso A Paso? Section */}
+        {/* Modalidades Section */}
         <section className="py-20 bg-soft-pink text-soft-pink-foreground">
           <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
-              <h2 className="font-display text-3xl md:text-4xl text-center mb-16 text-foreground italic">
-                ¿Cómo Trabajamos Paso A Paso?
+              <h2 className="font-display text-3xl md:text-4xl text-center mb-16 text-foreground">
+                Modalidades
               </h2>
 
-              <div className="grid md:grid-cols-4 gap-8 mb-16">
-                <div className="text-center">
-                  <span className="font-display text-2xl text-primary">1|</span>
-                  <h3 className="font-display text-xl text-primary mb-2">Diagnóstico Profundo + Sesiones Estratégicas Personalizadas</h3>
+              <div className="grid md:grid-cols-3 gap-8 mb-16">
+                <div className="bg-secondary rounded-lg p-6 space-y-3">
+                  <h3 className="font-display text-xl text-secondary-foreground text-center mb-4">
+                    PLAN STARTUP
+                    <span className="block font-body text-sm font-normal mt-1 text-secondary-foreground/70">Mensual</span>
+                  </h3>
+                  <div className="space-y-2 font-body text-secondary-foreground/90 text-sm">
+                    <p><strong>Ideal para:</strong> primeras validaciones + crecimiento inicial</p>
+                    <p>12h/mes estrategia + soporte</p>
+                    <p>Roadmap 6 meses + 2 contenidos/mes</p>
+                    <p>2 informes trimestrales</p>
+                  </div>
                 </div>
-                <div className="text-center">
-                  <span className="font-display text-2xl text-primary">2|</span>
-                  <h3 className="font-display text-xl text-primary mb-2">Planificación Del Roadmap Con Foco En Impacto Y Prioridad</h3>
+
+                <div className="bg-secondary rounded-lg p-6 space-y-3">
+                  <h3 className="font-display text-xl text-secondary-foreground text-center mb-4">
+                    PLAN SCALE-UP
+                    <span className="block font-body text-sm font-normal mt-1 text-secondary-foreground/70">Anticipación 6 meses</span>
+                  </h3>
+                  <div className="space-y-2 font-body text-secondary-foreground/90 text-sm">
+                    <p><strong>Ideal para:</strong> expansión agresiva + liderazgo sectorial</p>
+                    <p>20h/mes + equipo dedicado</p>
+                    <p>Roadmap 12 meses + 5 contenidos/mes</p>
+                    <p>Link building institucional + CRO</p>
+                    <p>Report mensual ejecutivo</p>
+                  </div>
                 </div>
-                <div className="text-center">
-                  <span className="font-display text-2xl text-primary">3|</span>
-                  <h3 className="font-display text-xl text-primary mb-2">Implementación Con Acompañamiento Experto</h3>
-                </div>
-                <div className="text-center">
-                  <span className="font-display text-2xl text-primary">4|</span>
-                  <h3 className="font-display text-xl text-primary mb-2">Análisis De Datos, Ajustes Proactivos Y Crecimiento Sostenido</h3>
+
+                <div className="bg-secondary rounded-lg p-6 space-y-3">
+                  <h3 className="font-display text-xl text-secondary-foreground text-center mb-4">
+                    PLAN ENTERPRISE
+                    <span className="block font-body text-sm font-normal mt-1 text-secondary-foreground/70">Personalizado</span>
+                  </h3>
+                  <div className="space-y-2 font-body text-secondary-foreground/90 text-sm">
+                    <p><strong>Ideal para:</strong> Multinacionales Fintech + IPO</p>
+                    <p>Soporte ejecutivo 1:1 ilimitado</p>
+                    <p>IA predictiva completa + partnerships globales</p>
+                    <p>KPIs personalizados + board reporting</p>
+                  </div>
                 </div>
               </div>
 
               <div className="text-center">
-                <p className="font-body text-soft-pink-foreground text-lg italic">
-                  Cada fase está pensada para CEOs y equipos que quieren claridad y resultados reales.
-                </p>
+                <Button variant="hero" size="lg" asChild>
+                  <a href={CALENDAR_URL} target="_blank" rel="noopener noreferrer">
+                    Agenda tu Estrategia SEO Fintech
+                  </a>
+                </Button>
               </div>
             </div>
           </div>
         </section>
 
-        {/* ¿Por Qué Tú, Pilar? Section */}
+        {/* Beneficios Section */}
         <section className="py-20 bg-background">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl mx-auto">
-              <h2 className="font-display text-3xl md:text-4xl text-center mb-12 text-primary italic">
-                ¿Por Qué Tú, Pilar?
+              <h2 className="font-display text-3xl md:text-4xl text-center mb-4 text-primary">
+                Beneficios
               </h2>
-
-              <div className="space-y-4 mb-12">
-                <div className="flex items-center justify-center gap-3">
-                  <CheckIcon />
-                  <p className="font-body text-foreground">Solo para Fintechs: 100% enfoque sectorial</p>
-                </div>
-                <div className="flex items-center justify-center gap-3">
-                  <CheckIcon />
-                  <p className="font-body text-foreground">Capacidad de traducir complejidad técnica en acción estratégica</p>
-                </div>
-                <div className="flex items-center justify-center gap-3">
-                  <CheckIcon />
-                  <p className="font-body text-foreground">Foco en rentabilidad, no solo en tráfico</p>
-                </div>
-                <div className="flex items-center justify-center gap-3">
-                  <CheckIcon />
-                  <p className="font-body text-foreground">Experiencia + IA = ventaja competitiva</p>
-                </div>
-                <div className="flex items-center justify-center gap-3">
-                  <CheckIcon />
-                  <p className="font-body text-foreground">Acceso directo, trato personalizado, soporte continuo</p>
-                </div>
-              </div>
-
-              <p className="font-body text-foreground text-lg text-center">
-                Esto <strong>no es una agencia más</strong> ni una consultoría superficial. Es una alianza estratégica para liderar.
+              <p className="font-body text-center text-foreground-muted mb-12">
+                Posición de Liderazgo Sectorial, +200% Visibilidad Orgánica y Autoridad Medible
               </p>
-            </div>
-          </div>
-        </section>
-
-        {/* ¿Para Quién Es Esta Consultoría? Section */}
-        <section className="py-20 bg-soft-pink text-soft-pink-foreground">
-          <div className="container mx-auto px-6">
-            <div className="max-w-3xl mx-auto">
-              <h2 className="font-display text-3xl md:text-4xl text-center mb-12 text-primary italic">
-                ¿Para Quién Es Esta Consultoría?
-              </h2>
 
               <div className="space-y-4">
-                <div className="flex items-center justify-center gap-3">
+                <div className="flex items-start gap-3">
                   <CheckIcon />
-                  <p className="font-body text-soft-pink-foreground">Solo para Fintechs: 100% enfoque sectorial</p>
+                  <p className="font-body text-foreground">
+                    <strong>Liderazgo indiscutible:</strong> tu Fintech como referencia en "consultora SEO Fintech"
+                  </p>
                 </div>
-                <div className="flex items-center justify-center gap-3">
+                <div className="flex items-start gap-3">
                   <CheckIcon />
-                  <p className="font-body text-soft-pink-foreground">Capacidad de traducir complejidad técnica en acción estratégica</p>
+                  <p className="font-body text-foreground">
+                    <strong>Rentabilidad real:</strong> foco en ROI, no solo tráfico
+                  </p>
                 </div>
-                <div className="flex items-center justify-center gap-3">
+                <div className="flex items-start gap-3">
                   <CheckIcon />
-                  <p className="font-body text-soft-pink-foreground">Foco en rentabilidad, no solo en tráfico</p>
+                  <p className="font-body text-foreground">
+                    <strong>Ventaja competitiva:</strong> experiencia Fintech + IA = diferenciación inmediata
+                  </p>
                 </div>
-                <div className="flex items-center justify-center gap-3">
+                <div className="flex items-start gap-3">
                   <CheckIcon />
-                  <p className="font-body text-soft-pink-foreground">Experiencia + IA = ventaja competitiva</p>
+                  <p className="font-body text-foreground">
+                    <strong>Escalabilidad:</strong> embudo digital optimizado para crecimiento exponencial
+                  </p>
                 </div>
-                <div className="flex items-center justify-center gap-3">
+                <div className="flex items-start gap-3">
                   <CheckIcon />
-                  <p className="font-body text-soft-pink-foreground">Acceso directo, trato personalizado, soporte continuo</p>
+                  <p className="font-body text-foreground">
+                    <strong>Confianza:</strong> acceso directo + resultados medibles mes a mes
+                  </p>
                 </div>
               </div>
             </div>
@@ -259,15 +314,18 @@ const ConsultoriaSeoEstrategica = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-background">
+        <section className="py-20 bg-soft-pink text-soft-pink-foreground">
           <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto text-center">
-              <p className="font-body text-foreground text-lg italic mb-8">
-                ¿Listo para llevar tu estrategia SEO al siguiente nivel?
+              <h2 className="font-display text-3xl md:text-4xl mb-6 text-foreground">
+                Agenda tu Estrategia SEO Fintech
+              </h2>
+              <p className="font-body text-soft-pink-foreground text-lg mb-8">
+                ¿Listo para llevar tu Estrategia SEO al siguiente nivel? Reserva tu sesión estratégica gratuita.
               </p>
               <Button variant="hero" size="xl" asChild>
                 <a href={CALENDAR_URL} target="_blank" rel="noopener noreferrer">
-                  Agenda tu Sesión Estratégica Gratuita
+                  Agenda tu Estrategia SEO Fintech
                 </a>
               </Button>
             </div>
@@ -275,10 +333,10 @@ const ConsultoriaSeoEstrategica = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-20 bg-soft-pink text-soft-pink-foreground">
+        <section className="py-20 bg-background">
           <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
-              <h2 className="font-display text-3xl md:text-4xl text-center mb-16 text-foreground">
+              <h2 className="font-display text-3xl md:text-4xl text-center mb-16 text-primary">
                 Preguntas Frecuentes
               </h2>
 
@@ -286,91 +344,73 @@ const ConsultoriaSeoEstrategica = () => {
                 <Accordion type="single" collapsible className="space-y-2">
                   <AccordionItem value="item-1" className="bg-secondary rounded-lg border-none">
                     <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                      ¿En qué se diferencia esta consultoría SEO de una auditoría o servicio tradicional?
+                      ¿En qué se diferencia esta Consultoría de una Auditoría o Posicionamiento?
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                      Esta consultoría es una alianza estratégica. No solo analizo tu web, sino que <strong>defino contigo una estrategia global de posicionamiento</strong>, incluyendo embudos, contenido, IA y ROI real.
+                      Auditoría = Diagnóstico puntual | Posicionamiento = Ejecución táctica | <strong>Consultoría = Estrategia global 6-12 meses + visión CEO</strong>.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-2" className="bg-secondary rounded-lg border-none">
                     <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                      ¿Qué tipo de empresas pueden acceder a este servicio?
+                      ¿Qué tipo de Fintechs son ideales para este servicio?
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                      Startups y empresas Fintech en fase de crecimiento o expansión que quieren consolidarse como referentes en su nicho y escalar resultados de forma sostenible.
+                      Startups B2B SaaS, Neobanks en crecimiento, Plataformas pagos Scale-up, Fintechs preparándose para rondas de inversión, etc.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-3" className="bg-secondary rounded-lg border-none">
                     <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                      ¿Necesito tener conocimientos avanzados de SEO o IA para aprovechar esta consultoría?
+                      ¿Necesito conocimientos técnicos de SEO/IA para aprovecharla?
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                      No. Mi objetivo es <strong>hacer lo complejo sencillo y accionable</strong>. Te guiaré paso a paso y hablaremos en lenguaje de negocio, no solo técnico.
+                      No. Traduzco complejidad técnica en <strong>acciones estratégicas claras</strong> para CEOs y Equipos de marketing/Directivos.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-4" className="bg-secondary rounded-lg border-none">
                     <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                      ¿La consultoría incluye implementación o solo estrategia?
+                      ¿Incluye Implementación o solo Estrategia?
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                      Incluye <strong>asesoría constante</strong>, sesiones estratégicas y acompañamiento para implementación. Si necesitas, podemos coordinar también la ejecución completa.
+                      <strong>Estrategia ejecutable 100% + Acompañamiento en implementación crítica.</strong> Tú decides la profundidad de ejecución.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-5" className="bg-secondary rounded-lg border-none">
                     <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                      ¿Cuánto dura el proceso y cómo se estructura?
+                      ¿Cuánto dura el Proceso y cómo se estructura?
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                      Dependiendo de tu objetivo, puede ser un proceso de 3 a 6 meses. Comenzamos con diagnóstico, luego roadmap, implementación y seguimiento continuo con ajustes proactivos.
+                      6-12 meses según plan. Fases: <strong>Diagnóstico → Roadmap → Implementación → Optimización continua</strong> + reporte mensual.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-6" className="bg-secondary rounded-lg border-none">
                     <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                      ¿Trabajas con mi equipo de marketing o solo conmigo?
+                      ¿Trabajas con tu Equipo Completo o solo contigo (CEO)?
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                      Ambos. Puedo trabajar directamente contigo como CEO/CMO y también con tu equipo interno para alinearlos y maximizar la ejecución.
+                      Ambos. Sesiones ejecutivas 1:1 + workshops equipo + canal Slack directo para dudas operativas.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-7" className="bg-secondary rounded-lg border-none">
                     <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                      ¿Cómo integramos la Inteligencia Artificial en mi estrategia SEO?
+                      ¿Cómo integramos IA en la Estrategia SEO Fintech?
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                      Te asesoro en el uso de herramientas como <strong>ChatGPT y Gemini Advanced</strong> para automatización, análisis predictivo, generación de contenido y optimización personalizada.
+                      Análisis predictivo keywords, optimización SGE, prompts contenido autoridad, alertas algoritmo proactivas.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-8" className="bg-secondary rounded-lg border-none">
                     <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                      ¿Qué tipo de resultados puedo esperar?
+                      ¿Qué resultados puedo esperar en los primeros 90 días?
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                      Mejora de visibilidad, incremento de leads cualificados, mayor autoridad digital y un plan claro para escalar tu SEO con medición de resultados y ROI real.
-                    </AccordionContent>
-                  </AccordionItem>
-
-                  <AccordionItem value="item-9" className="bg-secondary rounded-lg border-none">
-                    <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                      ¿Puedo ver ejemplos de otras Fintechs con las que hayas trabajado?
-                    </AccordionTrigger>
-                    <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                      Sí, tengo casos documentados de Fintechs que han crecido significativamente tras aplicar estrategias como las que te propongo. Te los comparto en nuestra sesión inicial.
-                    </AccordionContent>
-                  </AccordionItem>
-
-                  <AccordionItem value="item-10" className="bg-secondary rounded-lg border-none">
-                    <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                      ¿Cuál es el primer paso para comenzar?
-                    </AccordionTrigger>
-                    <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                      Agenda tu sesión estratégica gratuita. Analizaremos tu situación actual, tus objetivos y si esta consultoría es adecuada para ti. Sin compromiso.
+                      Roadmap completo, <strong>+30% visibilidad orgánica inicial</strong>, 3-5 keywords Top 20, dashboard ejecutivo funcionando.
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>
