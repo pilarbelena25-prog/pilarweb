@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Linkedin, ArrowUpRight, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
+import { Mail, Linkedin, ArrowUpRight, ArrowRight, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -19,6 +19,13 @@ interface FormErrors {
   urgency?: string;
   budget?: string;
 }
+
+const CheckIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-green-600 flex-shrink-0">
+    <rect x="2" y="2" width="20" height="20" rx="4" fill="currentColor" fillOpacity="0.1" stroke="currentColor" strokeWidth="2"/>
+    <path d="M7 12l3 3 7-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -160,20 +167,58 @@ const ContactSection = () => {
                 </a>
               </div>
 
+              {/* Microcopy + flecha hacia el formulario */}
+              <div className="flex items-center gap-3 mb-6">
+                <p className="font-body text-sm text-foreground-muted">
+                  ¿Presupuesto aproximado para SEO este año? Ayuda a preparar estrategia a tu medida
+                </p>
+                <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 rotate-90 lg:rotate-0" />
+              </div>
+
               {/* Quote */}
-              <div className="p-6 rounded-xl bg-background-secondary border-l-4 border-primary">
+              <div className="p-6 rounded-xl bg-background-secondary border-l-4 border-primary mb-8">
                 <p className="font-display text-lg text-foreground italic mb-2">
                   "El SEO Fintech no es solo Posicionamiento. Es construir Autoridad de Marca y Confianza."
                 </p>
                 <p className="font-body text-sm text-foreground-muted">— Pilar Beleña, Laboratorio SEO Fintech.</p>
+              </div>
+
+              {/* Checklist de beneficios */}
+              <div className="space-y-4 mb-6">
+                {[
+                  "Diagnóstico inicial GRATIS en 15min",
+                  "Roadmap ejecutable primera semana",
+                  "Resultados medibles mes 1",
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-3">
+                    <CheckIcon />
+                    <p className="font-body text-foreground">{item}</p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Microcopy de confianza */}
+              <div className="space-y-1">
+                <p className="font-body text-sm text-foreground-muted">
+                  Tu información está 100% protegida
+                </p>
+                <p className="font-body text-sm text-foreground-muted">
+                  No spam. Solo estrategia real.
+                </p>
               </div>
             </div>
 
             {/* Right Column - Form */}
             <div className="bg-card rounded-2xl p-8 shadow-elegant border border-border">
               <h3 className="font-display text-2xl text-foreground mb-2">Escríbeme</h3>
+              <p className="font-body text-foreground-muted mb-2">
+                Respondo en máximo 4h laborables
+              </p>
+              <p className="font-body text-foreground-muted mb-2">
+                95% de Fintechs agendan tras primera llamada
+              </p>
               <p className="font-body text-foreground-muted mb-8">
-                Respondo en menos de 24 horas laborables
+                Solo trabajo con Fintechs (no disperso foco)
               </p>
 
               {status === "success" ? (
