@@ -14,7 +14,10 @@ type FormStatus = "idle" | "loading" | "success" | "error";
 interface FormErrors {
   name?: string;
   email?: string;
-  message?: string;
+  company?: string;
+  service?: string;
+  urgency?: string;
+  budget?: string;
 }
 
 const ContactSection = () => {
@@ -22,6 +25,10 @@ const ContactSection = () => {
     name: "",
     email: "",
     company: "",
+    service: "",
+    urgency: "",
+    budget: "",
+    phone: "",
     message: "",
   });
   const [errors, setErrors] = useState<FormErrors>({});
@@ -39,8 +46,20 @@ const ContactSection = () => {
       newErrors.email = "Introduce un email válido.";
     }
 
-    if (!formData.message.trim() || formData.message.trim().length < 10) {
-      newErrors.message = "El mensaje debe tener al menos 10 caracteres.";
+    if (!formData.company.trim()) {
+      newErrors.company = "Este campo es obligatorio.";
+    }
+
+    if (!formData.service) {
+      newErrors.service = "Selecciona un servicio.";
+    }
+
+    if (!formData.urgency) {
+      newErrors.urgency = "Selecciona el nivel de urgencia.";
+    }
+
+    if (!formData.budget) {
+      newErrors.budget = "Selecciona un rango de presupuesto.";
     }
 
     setErrors(newErrors);
@@ -62,20 +81,24 @@ const ContactSection = () => {
           name: formData.name,
           email: formData.email,
           company: formData.company || "No especificada",
+          service: formData.service || "No especificado",
+          urgency: formData.urgency || "No especificada",
+          budget: formData.budget || "No especificado",
+          phone: formData.phone || "No proporcionado",
           message: formData.message,
         },
         PUBLIC_KEY
       );
 
       setStatus("success");
-      setFormData({ name: "", email: "", company: "", message: "" });
+      setFormData({ name: "", email: "", company: "", service: "", urgency: "", budget: "", phone: "", message: "" });
       setErrors({});
     } catch {
       setStatus("error");
     }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
     if (errors[name as keyof FormErrors]) {
@@ -204,7 +227,7 @@ const ContactSection = () => {
 
                   <div>
                     <label htmlFor="company" className="block font-body text-sm text-foreground mb-2">
-                      Empresa / Proyecto
+                      Empresa / Proyecto *
                     </label>
                     <Input
                       id="company"
@@ -212,13 +235,97 @@ const ContactSection = () => {
                       value={formData.company}
                       onChange={handleChange}
                       placeholder="Nombre de tu empresa o startup"
+                      className={`bg-background ${errors.company ? "border-red-500 focus-visible:ring-red-500" : ""}`}
+                    />
+                    {errors.company && (
+                      <p className="mt-1 text-xs text-red-500 font-body">{errors.company}</p>
+                    )}
+                  </div>
+
+                  <div>
+                    <label htmlFor="service" className="block font-body text-sm text-foreground mb-2">
+                      ¿Qué servicio te interesa? *
+                    </label>
+                    <select
+                      id="service"
+                      name="service"
+                      value={formData.service}
+                      onChange={handleChange}
+                      className={`flex h-10 w-full rounded-md border bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 font-body text-foreground ${errors.service ? "border-red-500 focus-visible:ring-red-500" : "border-input focus-visible:ring-ring"}`}
+                    >
+                      <option value="">Selecciona un servicio</option>
+                      <option value="Auditoría SEO Fintech">Auditoría SEO Fintech</option>
+                      <option value="Posicionamiento SEO Fintech">Posicionamiento SEO Fintech</option>
+                      <option value="Consultoría SEO Estratégica">Consultoría SEO Estratégica</option>
+                      <option value="Guía GPT Gratis">Guía GPT Gratis</option>
+                    </select>
+                    {errors.service && (
+                      <p className="mt-1 text-xs text-red-500 font-body">{errors.service}</p>
+                    )}
+                  </div>
+
+                  <div>
+                    <label htmlFor="urgency" className="block font-body text-sm text-foreground mb-2">
+                      Nivel de urgencia *
+                    </label>
+                    <select
+                      id="urgency"
+                      name="urgency"
+                      value={formData.urgency}
+                      onChange={handleChange}
+                      className={`flex h-10 w-full rounded-md border bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 font-body text-foreground ${errors.urgency ? "border-red-500 focus-visible:ring-red-500" : "border-input focus-visible:ring-ring"}`}
+                    >
+                      <option value="">Selecciona una opción</option>
+                      <option value="Inmediata (Esta semana)">Inmediata (Esta semana)</option>
+                      <option value="15 días">15 días</option>
+                      <option value="30 días">30 días</option>
+                      <option value="Explorando opciones">Explorando opciones</option>
+                    </select>
+                    {errors.urgency && (
+                      <p className="mt-1 text-xs text-red-500 font-body">{errors.urgency}</p>
+                    )}
+                  </div>
+
+                  <div>
+                    <label htmlFor="budget" className="block font-body text-sm text-foreground mb-2">
+                      Presupuesto aproximado *
+                    </label>
+                    <select
+                      id="budget"
+                      name="budget"
+                      value={formData.budget}
+                      onChange={handleChange}
+                      className={`flex h-10 w-full rounded-md border bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 font-body text-foreground ${errors.budget ? "border-red-500 focus-visible:ring-red-500" : "border-input focus-visible:ring-ring"}`}
+                    >
+                      <option value="">Selecciona un rango</option>
+                      <option value="0-5k € (startup validation)">0-5k € (startup validation)</option>
+                      <option value="5-20k € (scale-up growth)">5-20k € (scale-up growth)</option>
+                      <option value="20k+ € (enterprise)">20k+ € (enterprise)</option>
+                      <option value="A definir">A definir</option>
+                    </select>
+                    {errors.budget && (
+                      <p className="mt-1 text-xs text-red-500 font-body">{errors.budget}</p>
+                    )}
+                  </div>
+
+                  <div>
+                    <label htmlFor="phone" className="block font-body text-sm text-foreground mb-2">
+                      Teléfono (opcional)
+                    </label>
+                    <Input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      placeholder="+34 600 000 000"
                       className="bg-background"
                     />
                   </div>
 
                   <div>
                     <label htmlFor="message" className="block font-body text-sm text-foreground mb-2">
-                      ¿En qué puedo ayudarte? *
+                      ¿En qué puedo ayudarte? (opcional)
                     </label>
                     <Textarea
                       id="message"
@@ -227,11 +334,8 @@ const ContactSection = () => {
                       onChange={handleChange}
                       placeholder="Cuéntame brevemente tu situación actual y qué objetivos tienes..."
                       rows={5}
-                      className={`bg-background resize-none ${errors.message ? "border-red-500 focus-visible:ring-red-500" : ""}`}
+                      className="bg-background resize-none"
                     />
-                    {errors.message && (
-                      <p className="mt-1 text-xs text-red-500 font-body">{errors.message}</p>
-                    )}
                   </div>
 
                   {status === "error" && (
