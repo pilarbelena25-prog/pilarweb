@@ -10,8 +10,14 @@ import Footer from "@/components/layout/Footer";
 import pilarBelena from "@/assets/pilar-4.webp";
 
 // SVG Icons as components
-const StrategyIcon = () => (
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-16 h-16 mx-auto mb-4">
+const CheckIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-green-600 flex-shrink-0">
+    <rect x="2" y="2" width="20" height="20" rx="4" fill="currentColor" fillOpacity="0.1" stroke="currentColor" strokeWidth="2"/>
+    <path d="M7 12l3 3 7-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
+const KeywordIcon = () => (
+  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-16 h-16 mx-auto mb-4" aria-hidden="true">
     <rect x="8" y="8" width="28" height="36" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
     <path d="M14 16h16M14 24h16M14 32h10" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
     <path d="M44 12v40" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
@@ -20,8 +26,8 @@ const StrategyIcon = () => (
   </svg>
 );
 
-const ContentIcon = () => (
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-16 h-16 mx-auto mb-4">
+const OnPageIcon = () => (
+  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-16 h-16 mx-auto mb-4" aria-hidden="true">
     <rect x="12" y="8" width="28" height="40" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
     <path d="M18 16h16M18 24h16M18 32h10M18 40h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
     <circle cx="48" cy="20" r="8" stroke="currentColor" strokeWidth="2" fill="none"/>
@@ -30,8 +36,8 @@ const ContentIcon = () => (
   </svg>
 );
 
-const AuthorityBuildIcon = () => (
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-16 h-16 mx-auto mb-4">
+const LinkBuildingIcon = () => (
+  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-16 h-16 mx-auto mb-4" aria-hidden="true">
     <path d="M24 28l-4 4a8 8 0 000 11.3l0 0a8 8 0 0011.3 0l4-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
     <path d="M40 36l4-4a8 8 0 000-11.3l0 0a8 8 0 00-11.3 0l-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
     <path d="M28 36l8-8" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
@@ -39,46 +45,12 @@ const AuthorityBuildIcon = () => (
   </svg>
 );
 
-const TrafficIcon = () => (
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-16 h-16 mx-auto mb-4">
+const MonitoringIcon = () => (
+  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-16 h-16 mx-auto mb-4" aria-hidden="true">
     <rect x="12" y="20" width="40" height="32" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
     <path d="M20 44V36M28 44V32M36 44V28M44 44V24" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
     <circle cx="32" cy="12" r="4" stroke="currentColor" strokeWidth="2" fill="none"/>
     <path d="M28 12h-8M36 12h8" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-  </svg>
-);
-
-const DiamondIcon = () => (
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-16 h-16 mx-auto mb-4">
-    <circle cx="32" cy="32" r="20" stroke="currentColor" strokeWidth="2" fill="none"/>
-    <circle cx="32" cy="32" r="8" stroke="currentColor" strokeWidth="2" fill="none"/>
-    <circle cx="32" cy="32" r="3" fill="currentColor"/>
-    <path d="M32 12v8M32 44v8M12 32h8M44 32h8" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-  </svg>
-);
-
-const ShieldIcon = () => (
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-16 h-16 mx-auto mb-4">
-    <path d="M32 8L12 18v16c0 12 8 20 20 24 12-4 20-12 20-24V18L32 8z" stroke="currentColor" strokeWidth="2" fill="none"/>
-    <path d="M24 32l5 5 11-11" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-  </svg>
-);
-
-const GearPersonIcon = () => (
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-16 h-16 mx-auto mb-4">
-    <circle cx="28" cy="20" r="8" stroke="currentColor" strokeWidth="2" fill="none"/>
-    <path d="M12 48c0-8 7-14 16-14s16 6 16 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-    <circle cx="48" cy="36" r="8" stroke="currentColor" strokeWidth="2" fill="none"/>
-    <path d="M48 32v8M44 36h8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-  </svg>
-);
-
-const ChartIcon = () => (
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-16 h-16 mx-auto mb-4">
-    <rect x="8" y="12" width="32" height="24" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
-    <path d="M14 28l6-6 6 4 8-10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-    <rect x="28" y="32" width="28" height="20" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
-    <path d="M34 40h8M34 46h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
   </svg>
 );
 
@@ -96,12 +68,12 @@ const PosicionamientoSeoFintech = () => {
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
                   <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 text-primary">
-                    Haz Que Tu Fintech Domine Su Sector Y Se Convierta En La Autoridad Nº1 Del Mercado
+                    Haz que tu Fintech domine su sector y se convierta en la Autoridad #1 del mercado.
                   </h1>
 
-                  <h2 className="font-display text-xl md:text-2xl text-foreground-muted mb-8">
-                    Posicionamiento SEO Fintech con Estrategias Avanzadas para destacar en tu nicho, atraer clientes ideales y convertirlos en clientes reales.
-                  </h2>
+                  <p className="font-display text-xl md:text-2xl text-foreground-muted mb-8">
+                    Posicionamiento SEO Fintech con Estrategias Avanzadas para Destacar en tu nicho, Atraer clientes ideales y Convertirlos en clientes reales.
+                  </p>
 
                   <Button variant="hero" size="xl" asChild>
                     <a href={CALENDAR_URL} target="_blank" rel="noopener noreferrer">
@@ -122,23 +94,19 @@ const PosicionamientoSeoFintech = () => {
           </div>
         </section>
 
-        {/* Posicionamiento SEO Fintech Clave Section */}
+        {/* Problem Section */}
         <section className="py-20 bg-soft-pink text-soft-pink-foreground">
           <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
-              <h2 className="font-display text-3xl md:text-4xl text-center mb-6 text-primary">
-                Posicionamiento Seo Fintech Clave
+              <h2 className="font-display text-3xl md:text-4xl text-center mb-16 text-primary">
+                Problema: "Ya tienes tráfico, pero no los Leads Fintech que convierten"
               </h2>
-
-              <p className="font-body text-center text-soft-pink-foreground mb-16 max-w-3xl mx-auto">
-                Introduce la importancia de adaptar el SEO a las particularidades del sector financiero: entornos regulados, alta competencia, seguridad y confianza.
-              </p>
 
               <div className="grid md:grid-cols-4 gap-8 mb-16">
                 <div className="text-center">
                   <span className="font-display text-2xl text-primary">1|</span>
                   <p className="font-body text-soft-pink-foreground mt-2">
-                    Tu competencia te supera con contenido mediocre, pero optimizado. Y eso basta para que estén captando a los clientes que deberían ser tuyos.
+                    Tu competencia te supera con contenido mediocre, pero optimizado. Y eso basta para que estén captando los clientes que deberían ser tuyos.
                   </p>
                 </div>
                 <div className="text-center">
@@ -150,13 +118,13 @@ const PosicionamientoSeoFintech = () => {
                 <div className="text-center">
                   <span className="font-display text-2xl text-primary">3|</span>
                   <p className="font-body text-soft-pink-foreground mt-2">
-                    Estás invirtiendo en marketing, pero sin posicionamiento, tu tráfico no convierte. Todo esfuerzo sin autoridad es como llenar un balde con agujeros.
+                    Estás invirtiendo en marketing, pero Sin Posicionamiento SEO Fintech, tu tráfico no convierte. Todo esfuerzo sin autoridad de marca Fintech es como llenar un balde con agujeros.
                   </p>
                 </div>
                 <div className="text-center">
                   <span className="font-display text-2xl text-primary">4|</span>
                   <p className="font-body text-soft-pink-foreground mt-2">
-                    Cada mes sin estrategia SEO, es dinero perdido. Porque mientras tú dudas, otros están capturando ese mercado.
+                    Cada mes Sin Estrategia SEO es dinero perdido. Mientras tú dudas, otros capturan ese mercado.
                   </p>
                 </div>
               </div>
@@ -166,171 +134,177 @@ const PosicionamientoSeoFintech = () => {
                   SIN POSICIONAMIENTO, NO HAY CRECIMIENTO.
                 </p>
                 <p className="font-body text-lg text-soft-pink-foreground max-w-3xl mx-auto">
-                  Y sin Autoridad digital, tu Fintech seguirá siendo una opción más... cuando podría ser <em>la referencia del sector</em>.
+                  Y sin Autoridad digital, tu Fintech seguirá siendo una opción más... cuando podría ser <strong>LA REFERENCIA del sector</strong>.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Posicionamiento Como Autoridad Section */}
+        {/* Qué incluye Section */}
         <section className="py-20 bg-background">
           <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
-              <h2 className="font-display text-3xl md:text-4xl text-center mb-4 text-primary">
-                Posicionamiento Como Autoridad
+              <h2 className="font-display text-3xl md:text-4xl text-center mb-16 text-primary">
+                Qué incluye tu Posicionamiento SEO Fintech:
               </h2>
-              <p className="font-body text-center text-foreground-muted mb-16">
-                Posicionamiento SEO Fintech: Credibilidad, Reputación Y Resultados Reales.
-              </p>
 
               <div className="grid md:grid-cols-4 gap-8 mb-16">
                 <div className="text-center">
-                  <StrategyIcon />
+                  <KeywordIcon />
                   <h3 className="font-display text-xl mb-4 text-primary">
-                    Estrategia 100% Adaptada Al Sector Fintech
+                    Keyword Research Fintech Específico (long-tail + alta intención)
                   </h3>
-                  <p className="font-body text-foreground-muted text-sm">
-                    Nada de recetas genéricas. Analizo tu mercado, tus competidores y tu posicionamiento actual para diseñar una hoja de ruta SEO que se alinee con tus objetivos comerciales.
-                  </p>
+                  <ul className="font-body text-foreground-muted text-sm text-left space-y-2 list-disc list-inside">
+                    <li>Investigación profunda: "Auditoría SEO Fintech", "Posicionamiento SEO Fintech", "Consultora SEO Fintech España", "Consultora de marketing Fintech", "Asesora de marketing Fintech"</li>
+                    <li>Análisis semántico + clústeres de contenido</li>
+                    <li>Keywords transaccionales y de alta conversión para tu nicho específico</li>
+                  </ul>
                 </div>
 
                 <div className="text-center">
-                  <ContentIcon />
+                  <OnPageIcon />
                   <h3 className="font-display text-xl mb-4 text-primary">
-                    Contenido Optimizado Y Pensado Para Atraer Clientes Reales
+                    Optimización On-Page Continua (contenidos, arquitectura, velocidad)
                   </h3>
-                  <p className="font-body text-foreground-muted text-sm">
-                    Creamos y optimizamos contenido con intención estratégica: artículos, guías, casos de uso y recursos que no solo posicionan... sino que construyen autoridad y confianza en tu marca.
-                  </p>
+                  <ul className="font-body text-foreground-muted text-sm text-left space-y-2 list-disc list-inside">
+                    <li>Auditoría técnica completa + Core Web Vitals</li>
+                    <li>Estructura semántica optimizada para visibilidad Fintech</li>
+                    <li>Schema markup específico Fintech (servicios financieros, local, FAQ)</li>
+                    <li>Contenidos pilares + clústeres que posicionan y convierten</li>
+                  </ul>
                 </div>
 
                 <div className="text-center">
-                  <AuthorityBuildIcon />
+                  <LinkBuildingIcon />
                   <h3 className="font-display text-xl mb-4 text-primary">
-                    Autoridad Digital Con Link Building Inteligente
+                    Link Building Estratégico (medios financieros + portales relevantes)
                   </h3>
-                  <p className="font-body text-foreground-muted text-sm">
-                    Trabajamos tu reputación digital con enlaces desde medios relevantes, menciones estratégicas y colaboraciones en el ecosistema Fintech. Esto no solo mejora tu SEO, sino tu imagen global.
-                  </p>
+                  <ul className="font-body text-foreground-muted text-sm text-left space-y-2 list-disc list-inside">
+                    <li>Backlinks de medios financieros, portales sectoriales y guest posts</li>
+                    <li>Colaboraciones estratégicas en el ecosistema Fintech</li>
+                    <li>Limpieza de enlaces tóxicos + recuperación de autoridad perdida</li>
+                    <li>Menciones de marca en sitios DA 50+</li>
+                  </ul>
                 </div>
 
                 <div className="text-center">
-                  <TrafficIcon />
+                  <MonitoringIcon />
                   <h3 className="font-display text-xl mb-4 text-primary">
-                    Tráfico Cualificado Que Convierte
+                    Monitoreo Mensual + Ajustes IA (SGE, búsquedas generativas)
                   </h3>
-                  <p className="font-body text-foreground-muted text-sm">
-                    No buscamos visitas vacías. Aplicamos técnicas de SEO avanzado, optimización para voz, búsquedas transaccionales y embudos orientados a conversión para atraer usuarios con alta intención de acción.
-                  </p>
+                  <ul className="font-body text-foreground-muted text-sm text-left space-y-2 list-disc list-inside">
+                    <li>Alertas algoritmo en tiempo real</li>
+                    <li>Optimización para Google SGE y búsquedas con IA</li>
+                    <li>Análisis de competencia continua</li>
+                    <li>Dashboard personalizado con métricas accionables</li>
+                  </ul>
                 </div>
-              </div>
-
-              <div className="text-center border-t border-border pt-12">
-                <p className="font-display text-xl text-primary mb-4">
-                  EL RESULTADO
-                </p>
-                <p className="font-body text-foreground text-lg mb-8 max-w-3xl mx-auto">
-                  Un Posicionamiento SEO Fintech sólido que transforma tu Startup en un <strong>IMÁN DE CLIENTES, INVERSORES y ALIADOS.</strong>
-                </p>
-                <Button variant="hero" size="lg" asChild>
-                  <a href={CALENDAR_URL} target="_blank" rel="noopener noreferrer">
-                    Quiero Convertirme en Referente
-                  </a>
-                </Button>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Mi Proceso SEO Section */}
+        {/* Roadmap Section */}
         <section className="py-20 bg-soft-pink text-soft-pink-foreground">
           <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
               <h2 className="font-display text-3xl md:text-4xl text-center mb-16 text-primary italic">
-                Mi Proceso SEO Para Fintechs Que Lideran
+                Roadmap 90 días: fases, KPIs y entregables
               </h2>
 
-              <div className="grid md:grid-cols-4 gap-8 mb-12">
-                <div className="text-center">
-                  <span className="font-display text-2xl text-primary">1|</span>
-                  <h3 className="font-display text-xl text-primary mb-2">Auditoría Inicial Profunda</h3>
+              <div className="grid md:grid-cols-3 gap-8 mb-12">
+                <div>
+                  <h3 className="font-display text-xl text-primary mb-4">
+                    <span className="font-display text-2xl">1|</span> Fase 1 (Días 1-30): FUNDACIÓN
+                  </h3>
+                  <ul className="font-body text-soft-pink-foreground space-y-2">
+                    <li>Keyword research completa + gap analysis</li>
+                    <li>Auditoría técnica prioritaria (20+ optimizaciones)</li>
+                    <li>3 contenidos pilares optimizados</li>
+                    <li><strong>KPI: +25% CTR orgánico, Indexación 100%</strong></li>
+                  </ul>
                 </div>
-                <div className="text-center">
-                  <span className="font-display text-2xl text-primary">2|</span>
-                  <h3 className="font-display text-xl text-primary mb-2">Diseño Estratégico Personalizado</h3>
-                </div>
-                <div className="text-center">
-                  <span className="font-display text-2xl text-primary">3|</span>
-                  <h3 className="font-display text-xl text-primary mb-2">Aplicación De IA Y Ajustes Continuos</h3>
-                </div>
-                <div className="text-center">
-                  <span className="font-display text-2xl text-primary">4|</span>
-                  <h3 className="font-display text-xl text-primary mb-2">Generación De Contenido + Link Building</h3>
-                </div>
-              </div>
 
-              <div className="text-center mb-16">
-                <span className="font-display text-2xl text-primary">5|</span>
-                <h3 className="font-display text-xl text-primary mb-2">Optimización Para Conversión Real</h3>
-              </div>
+                <div>
+                  <h3 className="font-display text-xl text-primary mb-4">
+                    <span className="font-display text-2xl">2|</span> Fase 2 (Días 31-60): ACELERACIÓN
+                  </h3>
+                  <ul className="font-body text-soft-pink-foreground space-y-2">
+                    <li>12-15 backlinks DA 40+ (medios financieros)</li>
+                    <li>Optimización conversión (CRO + CTAs)</li>
+                    <li>5 artículos clúster + schema markup</li>
+                    <li><strong>KPI: +60% tráfico cualificado, Top 20 keywords</strong></li>
+                  </ul>
+                </div>
 
-              <div className="text-center">
-                <p className="font-body text-soft-pink-foreground text-lg italic">
-                  Todo diseñado para que Google te AME y tu cliente CONFÍE.
-                </p>
+                <div>
+                  <h3 className="font-display text-xl text-primary mb-4">
+                    <span className="font-display text-2xl">3|</span> Fase 3 (Días 61-90): DOMINIO
+                  </h3>
+                  <ul className="font-body text-soft-pink-foreground space-y-2">
+                    <li>Optimización IA/SGE + voz/transaccional</li>
+                    <li>Dashboard + reporting mensual personalizado</li>
+                    <li>Ajustes según algoritmo + nueva competencia</li>
+                    <li><strong>KPI: Top 10 (3-5 keywords), +150% leads orgánicos</strong></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* ¿Por Qué Pilar Beleña? Section */}
+        {/* Benefits Section */}
         <section className="py-20 bg-background">
           <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
               <h2 className="font-display text-3xl md:text-4xl text-center mb-16 text-foreground">
-                ¿Por Qué Pilar Beleña?
+                Beneficios: +300% Tráfico Cualificado, Top 10 Palabras Clave Estratégicas
               </h2>
 
-              <div className="grid md:grid-cols-4 gap-8 mb-12">
-                <div className="text-center">
-                  <DiamondIcon />
-                  <h3 className="font-display text-xl mb-2 text-primary">
-                    Enfoque Exclusivo En Fintech
-                  </h3>
+              <div className="max-w-3xl mx-auto space-y-4 mb-16">
+                <div className="flex items-start gap-3">
+                  <CheckIcon />
+                  <p className="font-body text-foreground"><strong>Posicionamiento sostenido:</strong> deja de depender de ads costosos</p>
                 </div>
-                <div className="text-center">
-                  <ShieldIcon />
-                  <h3 className="font-display text-xl mb-2 text-primary">
-                    SEO Basado En Autoridad, No En Palabras Vacías
-                  </h3>
+                <div className="flex items-start gap-3">
+                  <CheckIcon />
+                  <p className="font-body text-foreground"><strong>Autoridad sectorial:</strong> tu Fintech aparece como referente en "consultora SEO Fintech" y "consultora de marketing Fintech"</p>
                 </div>
-                <div className="text-center">
-                  <GearPersonIcon />
-                  <h3 className="font-display text-xl mb-2 text-primary">
-                    Estrategias Personalizadas (Nada Genérico)
-                  </h3>
+                <div className="flex items-start gap-3">
+                  <CheckIcon />
+                  <p className="font-body text-foreground"><strong>Leads de alta intención:</strong> usuarios listos para contratar servicios profesionales</p>
                 </div>
-                <div className="text-center">
-                  <ChartIcon />
-                  <h3 className="font-display text-xl mb-2 text-primary">
-                    Resultados Medibles Con Datos Concretos
-                  </h3>
+                <div className="flex items-start gap-3">
+                  <CheckIcon />
+                  <p className="font-body text-foreground"><strong>ROI medible:</strong> cada euro genera 5-10€ en valor LTV</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckIcon />
+                  <p className="font-body text-foreground"><strong>Ventaja competitiva:</strong> mientras otros gastan en ads, tú generas clientes orgánicos perpetuos</p>
                 </div>
               </div>
 
-              <div className="text-center space-y-6">
-                <p className="font-body text-foreground-muted text-lg italic">
-                  No hago <strong>SEO</strong> por hacer. Hago <strong>SEO</strong> que vende.
-                </p>
-                <p className="font-body text-foreground text-lg">
-                  ¿Listo para dejar de ser invisible y liderar tu mercado Fintech?
-                </p>
-                <Button variant="hero" size="lg" asChild>
-                  <a href={CALENDAR_URL} target="_blank" rel="noopener noreferrer">
-                    Reserva una Consultoría Gratuita
-                  </a>
-                </Button>
+              {/* Casos reales */}
+              <div className="bg-soft-pink rounded-lg p-8 mb-12 max-w-3xl mx-auto">
+                <h3 className="font-display text-2xl text-primary text-center mb-6">
+                  Casos reales + Métricas
+                </h3>
+                {/* <p className="font-body text-soft-pink-foreground text-center mb-4 italic">[Espacio testimonios]</p> */}
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <CheckIcon />
+                    <p className="font-body text-soft-pink-foreground"><strong>Fintech B2B SaaS:</strong> +287% tráfico orgánico, 23 leads/mes, ROI 8x</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckIcon />
+                    <p className="font-body text-soft-pink-foreground"><strong>Neobank España:</strong> Top 3 "asesora marketing Fintech", +142% conversiones</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckIcon />
+                    <p className="font-body text-soft-pink-foreground"><strong>Plataforma pagos:</strong> +19 posiciones promedio, autoridad DA +12 pts</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -348,91 +322,73 @@ const PosicionamientoSeoFintech = () => {
                 <Accordion type="single" collapsible className="space-y-2">
                   <AccordionItem value="item-1" className="bg-secondary rounded-lg border-none">
                     <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                      ¿En qué se diferencia este servicio de un SEO tradicional?
+                      ¿En qué se diferencia del SEO tradicional?
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                      El SEO tradicional se enfoca en posicionarte. El SEO Fintech basado en autoridad no solo te posiciona, sino que <strong>construye credibilidad, confianza y reputación</strong> en un sector altamente competitivo y regulado.
+                      Estrategias 100% Fintech: alta competencia, normativas, confianza sectorial, keywords específicas como <strong>"Consultora marketing Fintech"</strong>.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-2" className="bg-secondary rounded-lg border-none">
                     <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                      ¿Qué tipo de Fintechs pueden beneficiarse de este servicio?
+                      ¿Qué Fintech se beneficia más?
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                      Startups financieras, plataformas de pagos, Insurtechs, neobancos, criptonegocios, y cualquier empresa tecnológica del sector financiero que quiera <strong>escalar su visibilidad y convertirse en referente</strong>.
+                      Startups B2B, neobanks, plataformas pagos, SaaS financiero que necesitan <strong>liderazgo orgánico</strong>.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-3" className="bg-secondary rounded-lg border-none">
                     <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                      ¿Cuánto tiempo tarda en verse el impacto del posicionamiento?
+                      ¿Cuánto tarda en ver impacto?
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                      Dependiendo del estado actual de tu web y la competencia, los primeros resultados comienzan a verse en <em>3 a 6 meses</em>. Pero el verdadero poder está en el crecimiento sostenido a largo plazo.
+                      <em>Semana 4:</em> +CTR/+indexación | <em>Mes 2:</em> tráfico cualificado | <em>Mes 3:</em> Top 10 keywords estratégicas.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-4" className="bg-secondary rounded-lg border-none">
                     <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                      ¿Puedo hacer este posicionamiento sin haber hecho antes una auditoría SEO?
+                      ¿Necesito auditoría previa?
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                      No lo recomiendo. La <strong>auditoría es el punto de partida esencial</strong>. Nos permite detectar bloqueos, errores críticos y definir una estrategia sólida desde la base.
+                      No obligatorio, pero recomendado. <strong>Incluimos mini-auditoría inicial</strong> para detectar bloqueos críticos.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-5" className="bg-secondary rounded-lg border-none">
                     <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                      ¿Este servicio incluye creación de contenido?
+                      ¿Incluye creación de contenido?
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                      Sí. Incluye la <strong>creación y optimización de contenido especializado</strong>: artículos, guías, blogposts, recursos educativos y más, enfocados en captar tráfico cualificado y fortalecer tu autoridad.
+                      Sí: <strong>3 pilares + 5-8 clústeres/mes</strong> optimizados para conversión + autoridad.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-6" className="bg-secondary rounded-lg border-none">
                     <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                      ¿También se trabaja el SEO off-page y backlinks?
+                      ¿Trabajáis SEO Off-Page y Backlinks?
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                      Absolutamente. Diseñamos una estrategia de <strong>link building ético y eficaz</strong>, consiguiendo menciones y enlaces de alto valor en medios relevantes del ecosistema Fintech.
+                      Sí: <strong>12-15 backlinks/mes DA 40+</strong> de medios financieros + limpieza perfil enlaces.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-7" className="bg-secondary rounded-lg border-none">
                     <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                      ¿El servicio está adaptado para SEO internacional?
+                      ¿Está adaptado para Internacional?
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                      Sí. Trabajo tanto con empresas que quieren posicionarse en España como en mercados hispanohablantes e internacionales. <strong>Adaptamos idioma, intención y enfoque según el público objetivo</strong>.
+                      Sí: <strong>hreflang, keywords multilingüe, portales globales</strong> según tu mercado objetivo.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="item-8" className="bg-secondary rounded-lg border-none">
                     <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                      ¿Usas herramientas avanzadas e IA en el proceso?
+                      ¿Usáis IA/Tools Avanzados?
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                      Sí. Utilizo herramientas como SEMrush, Ahrefs, Screaming Frog y tecnologías como <strong>ChatGPT y Gemini Advanced</strong> para análisis predictivo, generación de contenido y optimización dinámica.
-                    </AccordionContent>
-                  </AccordionItem>
-
-                  <AccordionItem value="item-9" className="bg-secondary rounded-lg border-none">
-                    <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                      ¿Qué pasa si no tengo equipo técnico para implementar los cambios?
-                    </AccordionTrigger>
-                    <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                      ¡Sin problema! También ofrezco un servicio de <strong>implementación y acompañamiento</strong>, donde puedo coordinar con tu equipo o ejecutarlo directamente contigo.
-                    </AccordionContent>
-                  </AccordionItem>
-
-                  <AccordionItem value="item-10" className="bg-secondary rounded-lg border-none">
-                    <AccordionTrigger className="px-6 py-4 text-left font-body text-secondary-foreground hover:no-underline">
-                      ¿Cómo empiezo el proceso?
-                    </AccordionTrigger>
-                    <AccordionContent className="px-6 pb-4 font-body text-secondary-foreground/90">
-                      Fácil. Solo tienes que <strong>reservar tu consultoría gratuita</strong> y te guiaré paso a paso. Tendrás una propuesta clara, personalizada y orientada a resultados.
+                      Sí: <strong>SGE monitoring, alertas algoritmo, prompts optimización, dashboards predictivos</strong>.
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>
@@ -446,10 +402,10 @@ const PosicionamientoSeoFintech = () => {
           <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto text-center">
               <h2 className="font-display text-3xl md:text-4xl mb-6 text-primary">
-                Haz Que Tu Fintech Sea La Que Todos Encuentran (Y Eligen).
+                Empieza tu Posicionamiento SEO Fintech ahora
               </h2>
               <p className="font-body text-foreground-muted mb-8">
-                Solicita tu Estrategia de Posicionamiento SEO Fintech ahora.
+                ¿Preparado para dominar tu nicho Fintech y convertirte en la autoridad indiscutible? Reserva tu estrategia personalizada.
               </p>
               <Button variant="hero" size="xl" asChild>
                 <a href={CALENDAR_URL} target="_blank" rel="noopener noreferrer">
