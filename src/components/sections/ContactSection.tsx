@@ -100,7 +100,8 @@ const ContactSection = () => {
       setStatus("success");
       setFormData({ name: "", email: "", company: "", service: "", urgency: "", budget: "", phone: "", message: "" });
       setErrors({});
-    } catch {
+    } catch (error){
+      console.log("EmailJS error: ", error);
       setStatus("error");
     }
   };
