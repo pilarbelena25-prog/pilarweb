@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Download, CheckCircle2, BookOpen } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const LeadMagnetSection = () => {
   const benefits = [
@@ -53,9 +54,11 @@ const LeadMagnetSection = () => {
                 ))}
               </ul>
 
-              <Button variant="hero" size="xl" className="group">
-                <Download className="w-5 h-5" />
-                Descargar guía gratis
+              <Button variant="hero" size="xl" className="group" asChild>
+                <Link to="/guia-gpt">
+                  <Download className="w-5 h-5" />
+                  Descargar guía gratis
+                </Link>
               </Button>
 
               <p className="mt-4 text-sm font-body text-foreground-muted">
