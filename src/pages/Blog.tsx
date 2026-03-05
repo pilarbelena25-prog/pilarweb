@@ -1,4 +1,5 @@
 import imgSeoEIa from "@/assets/blog/articulo-1/1A.webp";
+import imgHojaDeRuta from "@/assets/blog/articulo-2/2.webp";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -23,6 +24,16 @@ const posts: BlogPost[] = [
     readTime: "5 min de lectura",
     image: imgSeoEIa,
     imageAlt: "SEO e IA - Estrategia SEO Fintech 2026",
+  },
+  {
+    slug: "hoja-de-ruta-seo-fintech-lab",
+    title: "De 'Encontrable' a IRREMPLAZABLE en FINTECH: Hoja de ruta desde el SEO Fintech Lab",
+    excerpt: "Estar en Google ya no es suficiente. En 2026, el verdadero reto del SEO Fintech es volverse irremplazable: que tu marca sea la referencia que los algoritmos eligen citar.",
+    date: "30 dic 2025",
+    category: "Autoridad de Marca",
+    readTime: "4 min de lectura",
+    image: imgHojaDeRuta,
+    imageAlt: "De Encontrable a Irremplazable en Fintech - SEO Fintech Lab",
   },
 ];
 
