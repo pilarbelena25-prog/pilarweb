@@ -13,6 +13,8 @@ import Cookies from "./pages/Cookies";
 import AvisoLegal from "./pages/AvisoLegal";
 import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
 import GuiaGpt from "./pages/GuiaGpt";
+import Blog from "./pages/Blog";
+import SeoEIa from "./pages/blog/SeoEIa";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -56,6 +58,8 @@ const App = () => (
           <Route path="/politica-privacidad" element={<PoliticaPrivacidad />} />
           <Route path="/aviso-legal" element={<AvisoLegal />} />
           <Route path="/guia-gpt" element={<GuiaGpt />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/seo-e-ia" element={<SeoEIa />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

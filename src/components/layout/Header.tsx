@@ -12,6 +12,7 @@ const Header = () => {
     { href: "/#servicios", label: "Servicios" },
     { href: "/#guia-gpt", label: "Guía GPT" },
     { href: "/#contacto", label: "Contacto" },
+    { href: "/blog", label: "Blog" },
   ];
 
   return (
