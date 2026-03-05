@@ -101,7 +101,7 @@ const ContactSection = () => {
       setFormData({ name: "", email: "", company: "", service: "", urgency: "", budget: "", phone: "", message: "" });
       setErrors({});
     } catch (error){
-      console.log("EmailJS error: ", error);
+      // console.log("EmailJS error: ", error);
       setStatus("error");
     }
   };
