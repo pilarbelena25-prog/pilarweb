@@ -10,9 +10,9 @@ const Header = () => {
     { href: "/#inicio", label: "Home" },
     { href: "/#quien-soy", label: "Equipo" },
     { href: "/#servicios", label: "Servicios" },
-    { href: "/#guia-gpt", label: "Guía GPT" },
-    { href: "/#contacto", label: "Contacto" },
+    // { href: "/#guia-gpt", label: "Guía GPT" },
     { href: "/blog", label: "Blog" },
+    { href: "/#contacto", label: "Contacto" },
   ];
 
   return (
