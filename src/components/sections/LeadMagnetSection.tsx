@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Download, CheckCircle2, BookOpen } from "lucide-react";
-import { Link } from "react-router-dom";
+import GuiaGptModal from "@/components/sections/GuiaGptModal";
 
 const LeadMagnetSection = () => {
   const benefits = [
@@ -54,12 +54,12 @@ const LeadMagnetSection = () => {
                 ))}
               </ul>
 
-              <Button variant="hero" size="xl" className="group" asChild>
-                <Link to="/guia-gpt">
+              <GuiaGptModal>
+                <Button variant="hero" size="xl" className="group">
                   <Download className="w-5 h-5" />
                   Descargar guía gratis
-                </Link>
-              </Button>
+                </Button>
+              </GuiaGptModal>
 
               <p className="mt-4 text-sm font-body text-foreground-muted">
                 * Pecado spam. Solo contenido de valor para tu estrategia Fintech.

@@ -12,3 +12,4 @@ Allow: /
 
 User-agent: *
 Allow: /
+Disallow: /guia-agente-gpt-seo-fintech-9x4k2.pdf
