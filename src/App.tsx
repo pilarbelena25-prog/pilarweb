@@ -12,7 +12,6 @@ import IntegracionIaSeo from "./pages/IntegracionIaSeo";
 import Cookies from "./pages/Cookies";
 import AvisoLegal from "./pages/AvisoLegal";
 import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
-import GuiaGpt from "./pages/GuiaGpt";
 import Blog from "./pages/Blog";
 import SeoEIa from "./pages/blog/SeoEIa";
 import HojaDeRutaSeoFintechLab from "./pages/blog/HojaDeRutaSeoFintechLab";
@@ -58,7 +57,6 @@ const App = () => (
           <Route path="/cookies" element={<Cookies />} />
           <Route path="/politica-privacidad" element={<PoliticaPrivacidad />} />
           <Route path="/aviso-legal" element={<AvisoLegal />} />
-          <Route path="/guia-gpt" element={<GuiaGpt />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/seo-e-ia" element={<SeoEIa />} />
           <Route path="/blog/hoja-de-ruta-seo-fintech-lab" element={<HojaDeRutaSeoFintechLab />} />
