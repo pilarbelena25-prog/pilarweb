@@ -4,6 +4,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, Linkedin, ArrowUpRight, ArrowRight, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import GuiaGptModal from "@/components/sections/GuiaGptModal";
 
 const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
@@ -197,6 +198,13 @@ const ContactSection = () => {
                   </div>
                 ))}
               </div>
+
+              {/* CTA descarga guía */}
+              <GuiaGptModal>
+                <Button variant="heroOutline" size="lg" className="w-full mb-6">
+                  Descarga guía IA gratuita
+                </Button>
+              </GuiaGptModal>
 
               {/* Microcopy de confianza */}
               <div className="space-y-1">
