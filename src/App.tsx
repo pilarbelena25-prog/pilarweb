@@ -16,6 +16,7 @@ import Blog from "./pages/Blog";
 import SeoEIa from "./pages/blog/SeoEIa";
 import HojaDeRutaSeoFintechLab from "./pages/blog/HojaDeRutaSeoFintechLab";
 import SgeYElNuevoOrdenDeBusqueda from "./pages/blog/SgeYElNuevoOrdenDeBusqueda";
+import MuertePalabraClaveTransaccionalFintech from "./pages/blog/MuertePalabraClaveTransaccionalFintech";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -62,6 +63,7 @@ const App = () => (
           <Route path="/blog/seo-e-ia" element={<SeoEIa />} />
           <Route path="/blog/hoja-de-ruta-seo-fintech-lab" element={<HojaDeRutaSeoFintechLab />} />
           <Route path="/blog/sge-y-el-nuevo-orden-de-busqueda" element={<SgeYElNuevoOrdenDeBusqueda />} />
+          <Route path="/blog/muerte-palabra-clave-transaccional-fintech" element={<MuertePalabraClaveTransaccionalFintech />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

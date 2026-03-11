@@ -1,6 +1,7 @@
 import imgSeoEIa from "@/assets/blog/articulo-1/1A.webp";
 import imgHojaDeRuta from "@/assets/blog/articulo-2/2.webp";
 import imgSgeNuevoOrden from "@/assets/blog/articulo-3/3A.webp";
+import imgMuertePalabraClave from "@/assets/blog/articulo-4/4A.webp";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -45,6 +46,16 @@ const posts: BlogPost[] = [
     readTime: "6 min de lectura",
     image: imgSgeNuevoOrden,
     imageAlt: "SGE y el nuevo orden de búsqueda Fintech - SEO Fintech Lab",
+  },
+  {
+    slug: "muerte-palabra-clave-transaccional-fintech",
+    title: "La muerte de la palabra clave transaccional FINTECH: SEO de intención en la era de los LLM",
+    excerpt: "Las palabras clave transaccionales mueren con LLM y SGE. Aprende SEO de intención para Fintech: protege conversiones ante la nueva búsqueda IA.",
+    date: "27 ene 2026",
+    category: "LLM & SEO de Intención",
+    readTime: "7 min de lectura",
+    image: imgMuertePalabraClave,
+    imageAlt: "La muerte de la palabra clave transaccional Fintech - SEO de intención LLM 2026",
   },
 ];
 
