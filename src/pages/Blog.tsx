@@ -2,6 +2,7 @@ import imgSeoEIa from "@/assets/blog/articulo-1/1A.webp";
 import imgHojaDeRuta from "@/assets/blog/articulo-2/2.webp";
 import imgSgeNuevoOrden from "@/assets/blog/articulo-3/3A.webp";
 import imgMuertePalabraClave from "@/assets/blog/articulo-4/4A.webp";
+import imgAuditoriasIa from "@/assets/blog/articulo-5/5A.webp";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -56,6 +57,16 @@ const posts: BlogPost[] = [
     readTime: "7 min de lectura",
     image: imgMuertePalabraClave,
     imageAlt: "La muerte de la palabra clave transaccional Fintech - SEO de intención LLM 2026",
+  },
+  {
+    slug: "auditorias-ia-fintech-eficiencia-embudo",
+    title: "Auditorías de IA FINTECH: Cómo detectar qué partes de tu embudo financiero están perdiendo eficiencia",
+    excerpt: "Tu embudo financiero pierde entre un 20-40% de eficiencia por problemas invisibles que la IA detecta al instante. Auditorías inteligentes para encontrar dónde se escapa tu conversión orgánica sin violar el cumplimiento.",
+    date: "8 feb 2026",
+    category: "Auditoría IA & Embudo Fintech",
+    readTime: "6 min de lectura",
+    image: imgAuditoriasIa,
+    imageAlt: "Auditorías IA Fintech 2026: detecta ineficiencias en tu embudo financiero",
   },
 ];
 
