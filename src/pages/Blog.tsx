@@ -1,5 +1,6 @@
 import imgSeoEIa from "@/assets/blog/articulo-1/1A.webp";
 import imgHojaDeRuta from "@/assets/blog/articulo-2/2.webp";
+import imgSgeNuevoOrden from "@/assets/blog/articulo-3/3A.webp";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -34,6 +35,16 @@ const posts: BlogPost[] = [
     readTime: "4 min de lectura",
     image: imgHojaDeRuta,
     imageAlt: "De Encontrable a Irremplazable en Fintech - SEO Fintech Lab",
+  },
+  {
+    slug: "sge-y-el-nuevo-orden-de-busqueda",
+    title: "SGE y el nuevo orden de búsqueda FINTECH: Cómo proteger el tráfico de tu marca financiera este año",
+    excerpt: "La SGE convierte la página de resultados en un panel de respuestas. Para las marcas financieras, el riesgo no es solo perder posiciones: es que la IA se quede con la visibilidad que antes era tuya.",
+    date: "19 ene 2026",
+    category: "SGE & Visibilidad Fintech",
+    readTime: "6 min de lectura",
+    image: imgSgeNuevoOrden,
+    imageAlt: "SGE y el nuevo orden de búsqueda Fintech - SEO Fintech Lab",
   },
 ];
 
