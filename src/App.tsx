@@ -18,6 +18,7 @@ import HojaDeRutaSeoFintechLab from "./pages/blog/HojaDeRutaSeoFintechLab";
 import SgeYElNuevoOrdenDeBusqueda from "./pages/blog/SgeYElNuevoOrdenDeBusqueda";
 import MuertePalabraClaveTransaccionalFintech from "./pages/blog/MuertePalabraClaveTransaccionalFintech";
 import AuditoriasIaFintechEficienciaEmbudo from "./pages/blog/AuditoriasIaFintechEficienciaEmbudo";
+import SeoEntornosReguladosFintech from "./pages/blog/SeoEntornosReguladosFintech";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -66,6 +67,7 @@ const App = () => (
           <Route path="/blog/sge-y-el-nuevo-orden-de-busqueda" element={<SgeYElNuevoOrdenDeBusqueda />} />
           <Route path="/blog/muerte-palabra-clave-transaccional-fintech" element={<MuertePalabraClaveTransaccionalFintech />} />
           <Route path="/blog/auditorias-ia-fintech-eficiencia-embudo" element={<AuditoriasIaFintechEficienciaEmbudo />} />
+          <Route path="/blog/seo-entornos-regulados-fintech" element={<SeoEntornosReguladosFintech />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

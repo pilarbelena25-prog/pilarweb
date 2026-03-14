@@ -3,6 +3,7 @@ import imgHojaDeRuta from "@/assets/blog/articulo-2/2.webp";
 import imgSgeNuevoOrden from "@/assets/blog/articulo-3/3A.webp";
 import imgMuertePalabraClave from "@/assets/blog/articulo-4/4A.webp";
 import imgAuditoriasIa from "@/assets/blog/articulo-5/5A.webp";
+import imgSeoEntornosRegulados from "@/assets/blog/articulo-6/6A.webp";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -67,6 +68,16 @@ const posts: BlogPost[] = [
     readTime: "6 min de lectura",
     image: imgAuditoriasIa,
     imageAlt: "Auditorías IA Fintech 2026: detecta ineficiencias en tu embudo financiero",
+  },
+  {
+    slug: "seo-entornos-regulados-fintech",
+    title: "SEO FINTECH en Entornos Regulados: Cómo innovar sin romper el 'compliance' desde el Lab",
+    excerpt: "Aprende cómo las Fintech pueden innovar en SEO sin incumplir la regulación. Estrategias prácticas, ejemplos y herramientas para crecer de forma segura.",
+    date: "26 feb 2026",
+    category: "SEO & Compliance Fintech",
+    readTime: "6 min de lectura",
+    image: imgSeoEntornosRegulados,
+    imageAlt: "SEO Fintech en Entornos Regulados: innovar sin romper el compliance - SEO Fintech Lab",
   },
 ];
 
