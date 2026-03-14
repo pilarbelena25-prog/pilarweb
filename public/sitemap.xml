@@ -38,7 +38,7 @@
   <!-- Blog -->
   <url>
     <loc>https://pilar-belena-seo-fintech-lab.netlify.app/blog</loc>
-    <lastmod>2026-03-09</lastmod>
+    <lastmod>2026-03-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -51,6 +51,30 @@
   <url>
     <loc>https://pilar-belena-seo-fintech-lab.netlify.app/blog/hoja-de-ruta-seo-fintech-lab</loc>
     <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pilar-belena-seo-fintech-lab.netlify.app/blog/sge-y-el-nuevo-orden-de-busqueda</loc>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pilar-belena-seo-fintech-lab.netlify.app/blog/muerte-palabra-clave-transaccional-fintech</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pilar-belena-seo-fintech-lab.netlify.app/blog/auditorias-ia-fintech-eficiencia-embudo</loc>
+    <lastmod>2026-02-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pilar-belena-seo-fintech-lab.netlify.app/blog/seo-entornos-regulados-fintech</loc>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
