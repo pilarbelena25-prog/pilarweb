@@ -4,6 +4,7 @@ import imgSgeNuevoOrden from "@/assets/blog/articulo-3/3A.webp";
 import imgMuertePalabraClave from "@/assets/blog/articulo-4/4A.webp";
 import imgAuditoriasIa from "@/assets/blog/articulo-5/5A.webp";
 import imgSeoEntornosRegulados from "@/assets/blog/articulo-6/6A.webp";
+import imgContenidoMasivo from "@/assets/blog/articulo-7/7A.webp";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -78,6 +79,16 @@ const posts: BlogPost[] = [
     readTime: "6 min de lectura",
     image: imgSeoEntornosRegulados,
     imageAlt: "SEO Fintech en Entornos Regulados: innovar sin romper el compliance - SEO Fintech Lab",
+  },
+  {
+    slug: "contenido-masivo-fintech-mito",
+    title: "El Mito del Contenido Masivo FINTECH: Por qué 10 Artículos Estratégicos baten a 100 generados por bots",
+    excerpt: "Saturar tu blog Fintech con posts generados por IA no genera autoridad: genera rebote. Descubre por qué 10 artículos estratégicos con datos B2B reales superan en leads a 100 artículos de bots.",
+    date: "17 mar 2026",
+    category: "Contenido Estratégico & SEO Fintech",
+    readTime: "7 min de lectura",
+    image: imgContenidoMasivo,
+    imageAlt: "El Mito del Contenido Masivo Fintech: 10 artículos estratégicos vs 100 bots - SEO Fintech Lab",
   },
 ];
 

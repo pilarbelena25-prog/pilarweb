@@ -38,7 +38,7 @@
   <!-- Blog -->
   <url>
     <loc>https://pilar-belena-seo-fintech-lab.netlify.app/blog</loc>
-    <lastmod>2026-03-14</lastmod>
+    <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -75,6 +75,12 @@
   <url>
     <loc>https://pilar-belena-seo-fintech-lab.netlify.app/blog/seo-entornos-regulados-fintech</loc>
     <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pilar-belena-seo-fintech-lab.netlify.app/blog/contenido-masivo-fintech-mito</loc>
+    <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
