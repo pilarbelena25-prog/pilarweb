@@ -172,7 +172,8 @@ const AuditoriasIaFintechEficienciaEmbudo = () => {
                   Tabla: Ineficiencias por etapa del embudo
                 </h2>
 
-                <div className="divide-y divide-border border border-border rounded-lg overflow-hidden">
+                <div className="overflow-x-auto pb-2 [&::-webkit-scrollbar]:h-3 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-secondary/70">
+                <div className="divide-y divide-border border border-border rounded-lg overflow-hidden min-w-[560px]">
                   <div className="grid grid-cols-4 bg-secondary px-4 py-3">
                     <span className="font-body text-xs font-semibold text-white uppercase tracking-wider">Etapa</span>
                     <span className="font-body text-xs font-semibold text-white uppercase tracking-wider">Problema IA</span>
@@ -204,6 +205,8 @@ const AuditoriasIaFintechEficienciaEmbudo = () => {
                     <span className="font-body text-sm text-foreground-muted">SEO post-venta</span>
                   </div>
                 </div>
+                </div>
+                <p className="font-body text-xs text-foreground-muted text-center mt-1 sm:hidden">← Desliza para ver más →</p>
               </div>
 
               {/* Sección 4: Checklist */}

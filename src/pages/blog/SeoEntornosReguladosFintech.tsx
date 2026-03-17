@@ -101,7 +101,8 @@ const SeoEntornosReguladosFintech = () => {
                 </p>
 
                 {/* Tabla 1 */}
-                <div className="divide-y divide-border border border-border rounded-lg overflow-hidden">
+                <div className="overflow-x-auto pb-2 [&::-webkit-scrollbar]:h-3 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-secondary/70">
+                <div className="divide-y divide-border border border-border rounded-lg overflow-hidden min-w-[480px]">
                   <div className="grid grid-cols-3 bg-secondary px-4 py-3">
                     <span className="font-body text-xs font-semibold text-white uppercase tracking-wider">Elemento</span>
                     <span className="font-body text-xs font-semibold text-white uppercase tracking-wider">Impacto en SEO</span>
@@ -123,6 +124,8 @@ const SeoEntornosReguladosFintech = () => {
                     <span className="font-body text-sm text-foreground-muted">Percepción de baja confiabilidad</span>
                   </div>
                 </div>
+                </div>
+                <p className="font-body text-xs text-foreground-muted text-center mt-1 sm:hidden">← Desliza para ver más →</p>
 
                 <div className="bg-soft-pink rounded-lg p-5">
                   <p className="font-body text-foreground leading-relaxed">
@@ -197,7 +200,8 @@ const SeoEntornosReguladosFintech = () => {
                 </h2>
 
                 {/* Tabla 2 */}
-                <div className="divide-y divide-border border border-border rounded-lg overflow-hidden">
+                <div className="overflow-x-auto pb-2 [&::-webkit-scrollbar]:h-3 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-secondary/70">
+                <div className="divide-y divide-border border border-border rounded-lg overflow-hidden min-w-[480px]">
                   <div className="grid grid-cols-3 bg-secondary px-4 py-3">
                     <span className="font-body text-xs font-semibold text-white uppercase tracking-wider">Tipo de contenido</span>
                     <span className="font-body text-xs font-semibold text-white uppercase tracking-wider">Ejemplo de Fintech</span>
@@ -219,6 +223,8 @@ const SeoEntornosReguladosFintech = () => {
                     <span className="font-body text-sm text-foreground-muted">Refuerza certificaciones y cumplimiento PCI-DSS</span>
                   </div>
                 </div>
+                </div>
+                <p className="font-body text-xs text-foreground-muted text-center mt-1 sm:hidden">← Desliza para ver más →</p>
 
                 <div className="bg-soft-pink rounded-lg p-5">
                   <p className="font-body text-foreground leading-relaxed">
@@ -245,7 +251,8 @@ const SeoEntornosReguladosFintech = () => {
                 </h2>
 
                 {/* Tabla 3 */}
-                <div className="divide-y divide-border border border-border rounded-lg overflow-hidden">
+                <div className="overflow-x-auto pb-2 [&::-webkit-scrollbar]:h-3 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-secondary/70">
+                <div className="divide-y divide-border border border-border rounded-lg overflow-hidden min-w-[480px]">
                   <div className="grid grid-cols-3 bg-secondary px-4 py-3">
                     <span className="font-body text-xs font-semibold text-white uppercase tracking-wider">Acción</span>
                     <span className="font-body text-xs font-semibold text-white uppercase tracking-wider">Objetivo</span>
@@ -267,6 +274,8 @@ const SeoEntornosReguladosFintech = () => {
                     <span className="font-body text-sm text-foreground-muted">Semestral</span>
                   </div>
                 </div>
+                </div>
+                <p className="font-body text-xs text-foreground-muted text-center mt-1 sm:hidden">← Desliza para ver más →</p>
               </div>
 
               {/* Conclusión */}
