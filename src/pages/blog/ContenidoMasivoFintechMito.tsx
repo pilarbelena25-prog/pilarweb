@@ -285,7 +285,7 @@ const ContenidoMasivoFintechMito = () => {
 
                   <div className="space-y-3">
                     <h3 className="font-display text-xl text-foreground">
-                      3. Mínimo 2.500 palabras por post
+                      3. Mínimo 2.500 caracteres por post
                     </h3>
                     <p className="font-body text-foreground leading-relaxed">
                       Datos propios, casos reales, objeciones legales respondidas. Sin relleno genérico.
@@ -319,7 +319,7 @@ const ContenidoMasivoFintechMito = () => {
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckIcon />
-                    <p className="font-body text-foreground">Cada post &gt;2.500 palabras + datos propios</p>
+                    <p className="font-body text-foreground">Cada post &gt;2.500 caracteres + datos propios</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckIcon />
