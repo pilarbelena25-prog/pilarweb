@@ -16,7 +16,7 @@ const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const LEAD_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_LEAD_TEMPLATE_ID;
 const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-const PDF_PATH = "/GUIA_IA_GRATUITA.pdf";
+const PDF_PATH = "/guia-fintech.pdf";
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
