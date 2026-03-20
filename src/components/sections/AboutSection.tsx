@@ -74,11 +74,11 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="quien-soy" className="py-24 bg-background-secondary relative">
+    <section id="quien-soy" className="py-16 bg-background-secondary relative">
       {/* Decorative accent */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-px bg-gradient-to-r from-transparent via-accent to-transparent" />
 
-      <div className="container mx-auto px-6 space-y-28">
+      <div className="container mx-auto px-6 space-y-16">
 
         {/* ── Pilar ── image left · content right */}
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -126,7 +126,7 @@ const AboutSection = () => {
                   className="p-4 rounded-xl bg-background border border-border hover:border-primary/50 transition-all duration-300 group"
                 >
                   <item.icon className="w-6 h-6 text-primary mb-3 group-hover:scale-110 transition-transform" />
-                  <h4 className="font-display text-xl text-foreground mb-1">{item.title}</h4>
+                  <h4 className="font-display text-sm md:text-xl text-foreground mb-1 leading-snug">{item.title}</h4>
                   <p className="font-body text-xs text-foreground-muted">{item.description}</p>
                 </div>
               ))}
@@ -141,7 +141,7 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
           {/* Content Column (left) */}
-          <div>
+          <div className="order-2 lg:order-1">
             <span className="inline-block font-body text-sm text-secondary uppercase tracking-widest mb-4">
               El equipo técnico
             </span>
@@ -179,7 +179,7 @@ const AboutSection = () => {
                   className="p-4 rounded-xl bg-background border border-border hover:border-primary/50 transition-all duration-300 group"
                 >
                   <item.icon className="w-6 h-6 text-primary mb-3 group-hover:scale-110 transition-transform" />
-                  <h4 className="font-display text-xl text-foreground mb-1">{item.title}</h4>
+                  <h4 className="font-display text-sm md:text-xl text-foreground mb-1 leading-snug">{item.title}</h4>
                   <p className="font-body text-xs text-foreground-muted">{item.description}</p>
                 </div>
               ))}
@@ -187,7 +187,7 @@ const AboutSection = () => {
           </div>
 
           {/* Image Column (right) */}
-          <div className="relative">
+          <div className="relative order-1 lg:order-2">
             <div className="rounded-2xl overflow-hidden shadow-elegant-lg">
               <img
                 src={grilloPhoto}
@@ -254,7 +254,7 @@ const AboutSection = () => {
                   className="p-4 rounded-xl bg-background border border-border hover:border-primary/50 transition-all duration-300 group"
                 >
                   <item.icon className="w-6 h-6 text-primary mb-3 group-hover:scale-110 transition-transform" />
-                  <h4 className="font-display text-xl text-foreground mb-1">{item.title}</h4>
+                  <h4 className="font-display text-sm md:text-xl text-foreground mb-1 leading-snug">{item.title}</h4>
                   <p className="font-body text-xs text-foreground-muted">{item.description}</p>
                 </div>
               ))}
