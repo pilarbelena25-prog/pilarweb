@@ -74,11 +74,15 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="quien-soy" className="py-16 bg-background-secondary relative">
+    <section id="equipo" className="py-16 bg-background-secondary relative">
       {/* Decorative accent */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-px bg-gradient-to-r from-transparent via-accent to-transparent" />
 
       <div className="container mx-auto px-6 space-y-16">
+
+        <h3 className="font-display text-3xl md:text-4xl text-foreground text-center">
+          Nuestro Equipo
+        </h3>
 
         {/* ── Pilar ── image left · content right */}
         <div className="grid lg:grid-cols-2 gap-16 items-center">
