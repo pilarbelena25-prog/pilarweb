@@ -5,6 +5,7 @@ import imgMuertePalabraClave from "@/assets/blog/articulo-4/4A.webp";
 import imgAuditoriasIa from "@/assets/blog/articulo-5/5A.webp";
 import imgSeoEntornosRegulados from "@/assets/blog/articulo-6/6A.webp";
 import imgContenidoMasivo from "@/assets/blog/articulo-7/7A.webp";
+import imgDatosEstructurados from "@/assets/blog/articulo-8/8A.webp";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -89,6 +90,16 @@ const posts: BlogPost[] = [
     readTime: "7 min de lectura",
     image: imgContenidoMasivo,
     imageAlt: "El Mito del Contenido Masivo Fintech: 10 artículos estratégicos vs 100 bots - SEO Fintech Lab",
+  },
+  {
+    slug: "datos-estructurados-entidades-fintech",
+    title: "Datos Estructurados y Entidades Fintech: La verdadera forma en que la IA entiende tu Marca Financiera",
+    excerpt: "Cuando la IA no tiene claro quién es tu Fintech, mezcla tu marca con otras similares. Los datos estructurados y entidades son la solución para que Google y los LLM te identifiquen correctamente.",
+    date: "27 mar 2026",
+    category: "Datos Estructurados & SEO Fintech",
+    readTime: "7 min de lectura",
+    image: imgDatosEstructurados,
+    imageAlt: "Datos Estructurados y Entidades Fintech: cómo la IA entiende tu marca financiera - SEO Fintech Lab",
   },
 ];
 

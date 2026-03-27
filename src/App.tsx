@@ -20,6 +20,7 @@ import MuertePalabraClaveTransaccionalFintech from "./pages/blog/MuertePalabraCl
 import AuditoriasIaFintechEficienciaEmbudo from "./pages/blog/AuditoriasIaFintechEficienciaEmbudo";
 import SeoEntornosReguladosFintech from "./pages/blog/SeoEntornosReguladosFintech";
 import ContenidoMasivoFintechMito from "./pages/blog/ContenidoMasivoFintechMito";
+import DatosEstructuradosEntidadesFintech from "./pages/blog/DatosEstructuradosEntidadesFintech";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -70,6 +71,7 @@ const App = () => (
           <Route path="/blog/auditorias-ia-fintech-eficiencia-embudo" element={<AuditoriasIaFintechEficienciaEmbudo />} />
           <Route path="/blog/seo-entornos-regulados-fintech" element={<SeoEntornosReguladosFintech />} />
           <Route path="/blog/contenido-masivo-fintech-mito" element={<ContenidoMasivoFintechMito />} />
+          <Route path="/blog/datos-estructurados-entidades-fintech" element={<DatosEstructuradosEntidadesFintech />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
