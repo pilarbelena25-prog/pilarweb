@@ -1,7 +1,6 @@
-import { TrendingUp, Brain, Target, Users, Music, Code2, Globe, Wrench, GraduationCap, Database, Share2, Settings2 } from "lucide-react";
+import { TrendingUp, Brain, Target, Users, Music, Code2, Globe, Wrench } from "lucide-react";
 import pilarPhoto from "@/assets/pilar-belena.webp";
 import grilloPhoto from "@/assets/img-grillo.webp";
-import noemiPhoto from "@/assets/Noemi.webp";
 
 const AboutSection = () => {
   const pilarHighlights = [
@@ -24,29 +23,6 @@ const AboutSection = () => {
       icon: Users,
       title: "+5 Proyectos Fintech",
       description: "Startups y Marcas Financieras Posicionadas con Éxito.",
-    },
-  ];
-
-  const noemiHighlights = [
-    {
-      icon: GraduationCap,
-      title: "Ciencias Empresariales",
-      description: "Formada en Administración de Empresas con rigor financiero y sensibilidad creativa.",
-    },
-    {
-      icon: Database,
-      title: "CRM & Prospección",
-      description: "Gestión del CRM de prospección para optimizar el pipeline comercial de la agencia.",
-    },
-    {
-      icon: Share2,
-      title: "Contenido para RRSS",
-      description: "Creación de contenido para redes sociales orientado a fintech en España.",
-    },
-    {
-      icon: Settings2,
-      title: "Optimización Operativa",
-      description: "Especializada en organización interna y optimización de procesos para negocios digitales.",
     },
   ];
 
@@ -205,67 +181,6 @@ const AboutSection = () => {
 
         </div>
 
-        {/* Separator */}
-        <div className="w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-
-        {/* ── Noemí ── image left · content right */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-
-          {/* Image Column (left) */}
-          <div className="relative">
-            <div className="rounded-2xl overflow-hidden shadow-elegant-lg">
-              <img
-                src={noemiPhoto}
-                alt="Noemí Grandío - Asistente Virtual Estratégica SEO Fintech Lab"
-                className="w-full h-auto"
-              />
-            </div>
-            {/* Decorative border */}
-            <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-primary/30 rounded-2xl -z-10" />
-          </div>
-
-          {/* Content Column (right) */}
-          <div>
-            <span className="inline-block font-body text-sm text-secondary uppercase tracking-widest mb-4">
-              El equipo operativo
-            </span>
-
-            <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6 leading-tight">
-              Organización &{" "}
-              <span className="text-gradient-primary">Eficiencia para Fintech</span>
-            </h2>
-
-            <div className="space-y-4 mb-10">
-              <p className="font-body text-foreground-muted leading-relaxed">
-                <a
-                  href="https://www.linkedin.com/in/noemirodriguezgrandio/"
-                  className="text-primary font-medium hover:underline underline-offset-4"
-                ><strong>Noemí Rodríguez Grandío</strong></a> es Asistente Virtual Estratégica Especializada en organización operativa y optimización de procesos para negocios digitales.
-              </p>
-              <p className="font-body text-foreground-muted leading-relaxed">
-                Formada en <strong className="text-primary font-medium">Ciencias Empresariales y Administración de Empresas</strong>, con experiencia en administración, backoffice y diseño, aporta rigor financiero y sensibilidad creativa al equipo de SEO Fintech Lab.
-              </p>
-              <p className="font-body text-foreground-muted leading-relaxed">
-                En la agencia gestiona el <strong className="text-primary font-medium">CRM de prospección</strong> y crea contenido para redes sociales, impulsando eficiencia interna y comunicación efectiva para fintech en España.
-              </p>
-            </div>
-
-            {/* Highlights Grid */}
-            <div className="grid grid-cols-2 gap-4">
-              {noemiHighlights.map((item, index) => (
-                <div
-                  key={index}
-                  className="p-4 rounded-xl bg-background border border-border hover:border-primary/50 transition-all duration-300 group"
-                >
-                  <item.icon className="w-6 h-6 text-primary mb-3 group-hover:scale-110 transition-transform" />
-                  <h4 className="font-display text-sm md:text-xl text-foreground mb-1 leading-snug">{item.title}</h4>
-                  <p className="font-body text-xs text-foreground-muted">{item.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-        </div>
       </div>
     </section>
   );
