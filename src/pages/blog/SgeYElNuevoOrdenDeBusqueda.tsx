@@ -1,5 +1,6 @@
 import imgDestacada from "@/assets/blog/articulo-3/3A.webp";
 import imgContenido from "@/assets/blog/articulo-3/3B.webp";
+import ArticleSeoHead from "@/components/ArticleSeoHead";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -16,6 +17,14 @@ const CheckIcon = () => (
 const SgeYElNuevoOrdenDeBusqueda = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ArticleSeoHead
+        title="SGE y el nuevo orden de búsqueda FINTECH: Cómo proteger el tráfico de tu marca financiera este año"
+        description="La SGE convierte la página de resultados en un panel de respuestas. Para las marcas financieras, el riesgo no es solo perder posiciones: es que la IA se quede con la visibilidad que antes era tuya."
+        slug="sge-y-el-nuevo-orden-de-busqueda"
+        image={imgDestacada}
+        datePublished="2026-01-19"
+        category="SEO para Empresas Financieras"
+      />
       <Header />
       <main>
         {/* Featured image */}

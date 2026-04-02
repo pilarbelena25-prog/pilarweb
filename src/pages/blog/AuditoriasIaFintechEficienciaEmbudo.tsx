@@ -1,5 +1,6 @@
 import imgDestacada from "@/assets/blog/articulo-5/5A.webp";
 import imgContenido from "@/assets/blog/articulo-5/5B.webp";
+import ArticleSeoHead from "@/components/ArticleSeoHead";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -17,6 +18,14 @@ const CheckIcon = () => (
 const AuditoriasIaFintechEficienciaEmbudo = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ArticleSeoHead
+        title="Auditorías de IA FINTECH: Cómo detectar qué partes de tu embudo financiero están perdiendo eficiencia"
+        description="Tu embudo financiero pierde entre un 20-40% de eficiencia por problemas invisibles que la IA detecta al instante. Auditorías inteligentes para encontrar dónde se escapa tu conversión orgánica sin violar el cumplimiento."
+        slug="auditorias-ia-fintech-eficiencia-embudo"
+        image={imgDestacada}
+        datePublished="2026-02-08"
+        category="SEO para Startups Fintech"
+      />
       <Header />
       <main>
         {/* Featured image */}

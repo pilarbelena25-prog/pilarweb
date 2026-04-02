@@ -1,5 +1,6 @@
 import imgDestacada from "@/assets/blog/articulo-8/8A.webp";
 import imgContenido from "@/assets/blog/articulo-8/8B.webp";
+import ArticleSeoHead from "@/components/ArticleSeoHead";
 import { Button } from "@/components/ui/button";
 import GuiaGptModal from "@/components/sections/GuiaGptModal";
 import Header from "@/components/layout/Header";
@@ -18,6 +19,14 @@ const CheckIcon = () => (
 const DatosEstructuradosEntidadesFintech = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ArticleSeoHead
+        title="Datos Estructurados y Entidades Fintech: La verdadera forma en que la IA entiende tu Marca Financiera"
+        description="Cuando la IA no tiene claro quién es tu Fintech, mezcla tu marca con otras similares. Los datos estructurados y entidades son la solución para que Google y los LLM te identifiquen correctamente."
+        slug="datos-estructurados-entidades-fintech"
+        image={imgDestacada}
+        datePublished="2026-03-27"
+        category="SEO para Empresas Financieras"
+      />
       <Header />
       <main>
         {/* Featured image */}

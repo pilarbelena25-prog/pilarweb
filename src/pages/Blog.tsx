@@ -1,4 +1,5 @@
 import { useSearchParams } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import imgSeoEIa from "@/assets/blog/articulo-1/1A.webp";
 import imgHojaDeRuta from "@/assets/blog/articulo-2/2.webp";
 import imgSgeNuevoOrden from "@/assets/blog/articulo-3/3A.webp";
@@ -137,6 +138,16 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Blog SEO Fintech | Pilar Beleña SEO Fintech Lab</title>
+        <meta name="description" content="Estrategias SEO, marketing Fintech e inteligencia artificial aplicada al posicionamiento digital. Artículos para Consultores, Startups y Empresas Financieras." />
+        <link rel="canonical" href="https://pilar-belena-seo-fintech-lab.netlify.app/blog" />
+        <meta property="og:title" content="Blog SEO Fintech | Pilar Beleña SEO Fintech Lab" />
+        <meta property="og:description" content="Estrategias SEO, marketing Fintech e inteligencia artificial aplicada al posicionamiento digital." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://pilar-belena-seo-fintech-lab.netlify.app/blog" />
+        <meta property="og:site_name" content="Pilar Beleña - SEO Fintech Lab" />
+      </Helmet>
       <Header />
       <main>
         {/* Hero */}

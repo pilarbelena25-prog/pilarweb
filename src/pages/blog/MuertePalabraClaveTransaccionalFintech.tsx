@@ -1,5 +1,6 @@
 import imgDestacada from "@/assets/blog/articulo-4/4A.webp";
 import imgContenido from "@/assets/blog/articulo-4/4b.webp";
+import ArticleSeoHead from "@/components/ArticleSeoHead";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -17,6 +18,14 @@ const CheckIcon = () => (
 const MuertePalabraClaveTransaccionalFintech = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ArticleSeoHead
+        title="La muerte de la palabra clave transaccional FINTECH: SEO de intención en la era de los LLM"
+        description="Las palabras clave transaccionales mueren con LLM y SGE. Aprende SEO de intención para Fintech: protege conversiones ante la nueva búsqueda IA."
+        slug="muerte-palabra-clave-transaccional-fintech"
+        image={imgDestacada}
+        datePublished="2026-01-27"
+        category="Consultor SEO Fintech"
+      />
       <Header />
       <main>
         {/* Featured image */}

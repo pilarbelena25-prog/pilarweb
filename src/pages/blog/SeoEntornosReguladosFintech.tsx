@@ -1,5 +1,6 @@
 import imgDestacada from "@/assets/blog/articulo-6/6A.webp";
 import imgContenido from "@/assets/blog/articulo-6/6B.webp";
+import ArticleSeoHead from "@/components/ArticleSeoHead";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -17,6 +18,14 @@ const CheckIcon = () => (
 const SeoEntornosReguladosFintech = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ArticleSeoHead
+        title="SEO FINTECH en Entornos Regulados: Cómo innovar sin romper el 'compliance' desde el Lab"
+        description="Aprende cómo las Fintech pueden innovar en SEO sin incumplir la regulación. Estrategias prácticas, ejemplos y herramientas para crecer de forma segura."
+        slug="seo-entornos-regulados-fintech"
+        image={imgDestacada}
+        datePublished="2026-02-26"
+        category="SEO para Empresas Financieras"
+      />
       <Header />
       <main>
         {/* Featured image */}

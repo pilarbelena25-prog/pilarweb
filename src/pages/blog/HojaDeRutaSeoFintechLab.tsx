@@ -1,10 +1,19 @@
 import imgDestacada from "@/assets/blog/articulo-2/2.webp";
+import ArticleSeoHead from "@/components/ArticleSeoHead";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 const HojaDeRutaSeoFintechLab = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ArticleSeoHead
+        title="De 'Encontrable' a IRREMPLAZABLE en FINTECH: Hoja de ruta desde el SEO Fintech Lab"
+        description="Estar en Google ya no es suficiente. En 2026, el verdadero reto del SEO Fintech es volverse irremplazable: que tu marca sea la referencia que los algoritmos eligen citar."
+        slug="hoja-de-ruta-seo-fintech-lab"
+        image={imgDestacada}
+        datePublished="2025-12-30"
+        category="Consultor SEO Fintech"
+      />
       <Header />
       <main>
         {/* Featured image */}

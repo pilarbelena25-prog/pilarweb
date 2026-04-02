@@ -1,4 +1,5 @@
 import imgDestacada from "@/assets/blog/articulo-1/1A.webp";
+import ArticleSeoHead from "@/components/ArticleSeoHead";
 import imgContenido from "@/assets/blog/articulo-1/1B.webp";
 import { Button } from "@/components/ui/button";
 import {
@@ -29,6 +30,14 @@ const XIcon = () => (
 const SeoEIa = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ArticleSeoHead
+        title="SEO e IA: Por qué la Estrategia importa más que el volumen en SEO Fintech 2026"
+        description="Con la IA Generativa, cualquier Fintech puede publicar miles de artículos diarios. Pero el volumen masivo no es ventaja competitiva: es un riesgo directo para tu autoridad de marca."
+        slug="seo-e-ia"
+        image={imgDestacada}
+        datePublished="2025-12-28"
+        category="Consultor SEO Fintech"
+      />
       <Header />
       <main>
         {/* Featured image */}
