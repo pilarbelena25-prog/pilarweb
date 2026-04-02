@@ -178,7 +178,7 @@ const Blog = () => {
                       : "border-border text-foreground-muted hover:border-primary hover:text-primary"
                   }`}
                 >
-                  Todas
+                  Todos
                 </button>
                 {FAMILIES.map((f) => (
                   <button
