@@ -2,4 +2,4 @@ import { ViteReactSSG } from "vite-react-ssg/single-page";
 import App from "./App.tsx";
 import "./index.css";
 
-export const createApp = ViteReactSSG(<App />);
+export const createRoot = ViteReactSSG(<App />);
