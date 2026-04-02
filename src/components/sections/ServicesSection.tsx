@@ -1,80 +1,38 @@
 import { Button } from "@/components/ui/button";
-import { Search, TrendingUp, MessageSquare, Bot, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
+const CheckMark = () => (
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 flex-shrink-0 text-primary">
+    <rect x="2" y="2" width="20" height="20" rx="4" fill="currentColor" fillOpacity="0.12" stroke="currentColor" strokeWidth="1.5"/>
+    <path d="M7 12l3 3 7-7" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
+
+const includes = [
+  {
+    title: "Revisión de la web",
+    description: "Estructura, títulos, arquitectura, enlazado interno, claridad de propuesta y llamadas a la acción.",
+  },
+  {
+    title: "SEO técnico esencial",
+    description: "Indexación, rastreo, velocidad, errores visibles y señales on-page críticas.",
+  },
+  {
+    title: "Enfoque comercial",
+    description: "Si la web explica bien qué haces, si la propuesta es clara y si el mensaje conecta con un líder Fintech real.",
+  },
+  {
+    title: "Informe priorizado",
+    description: "Problemas críticos, victorias rápidas, acciones en orden y siguiente paso recomendado.",
+  },
+  {
+    title: "Entrega en 24–48 h",
+    description: "En PDF o vídeo breve, con lenguaje claro y sin tecnicismos innecesarios.",
+  },
+];
+
 const ServicesSection = () => {
-  const services = [
-    {
-      icon: Search,
-      title: "Auditoría SEO Fintech",
-      description:
-        "Análisis profundo de la presencia digital de tu marca financiera. Identifica oportunidades, errores técnicos y lagunas de contenido para que tu Fintech gane visibilidad real en Google y en las búsquedas potenciadas por IA.",
-      features: ["Análisis técnico completo de SEO Financiero", "Estudio de competencia Fintech", "Hoja de ruta de mejora priorizada por impacto"],
-      accent: "primary",
-      href: "/auditoria-seo-fintech",
-    },
-    {
-      icon: TrendingUp,
-      title: "Posicionamiento SEO Fintech",
-      description:
-        "Estrategia integral de SEO Fintech para Startups y Marcas Financieras. Desde la arquitectura web hasta el contenido que atrae clientes cualificados y construye Autoridad de Marca Fintech en Google.",
-      features: ["Investigación de palabras clave especializada en SEO Financiero", "Contenido optimizado para búsquedas Fintech", "Link building estratégico en medios financieros"],
-      accent: "secondary",
-      href: "/posicionamiento-seo-fintech"
-    },
-    {
-      icon: MessageSquare,
-      title: "Consultoría SEO Estratégica para Fintech",
-      description:
-        "Acompañamiento personalizado para CEOs y equipos internos de marcas financieras. Te ayudo a tomar decisiones SEO correctas en cada fase para crecer en visibilidad y autoridad de forma sostenida.",
-      features: ["Sesiones estratégicas 1:1 y con equipo", "Formación en SEO Financiero y visión cross‑channel", "Revisión continua de KPIs y roadmap SEO"],
-      accent: "tertiary",
-      href: "/consultoria-seo-estrategica-para-fintechs"
-    },
-    {
-      icon: Bot,
-      title: "Estrategia SEO con IA",
-      description:
-        "Potencia tu SEO Fintech . Automatiza, Escala y Optimiza tu presencia en Google y en las nuevas búsquedas generativas impulsadas por IA",
-      features: ["Agentes GPT personalizados para Fintech", "Automatización de flujos de trabajo SEO y reporting", "Análisis predictivo de oportunidades y palabras clave"],
-      accent: "accent",
-      href: "/integracion-ia-seo"
-    },
-  ];
-
-  const getAccentClasses = (accent: string) => {
-    switch (accent) {
-      case "primary":
-        return {
-          iconBg: "bg-primary/10",
-          iconText: "text-primary",
-          hoverBorder: "hover:border-primary/50",
-          dot: "bg-primary",
-        };
-      case "secondary":
-        return {
-          iconBg: "bg-secondary/10",
-          iconText: "text-secondary",
-          hoverBorder: "hover:border-secondary/50",
-          dot: "bg-secondary",
-        };
-      case "tertiary":
-        return {
-          iconBg: "bg-tertiary/10",
-          iconText: "text-tertiary",
-          hoverBorder: "hover:border-tertiary/50",
-          dot: "bg-tertiary",
-        };
-      default:
-        return {
-          iconBg: "bg-accent/20",
-          iconText: "text-accent",
-          hoverBorder: "hover:border-accent",
-          dot: "bg-accent",
-        };
-    }
-  };
-
   return (
     <section id="servicios" className="py-24 bg-background relative overflow-hidden">
       {/* Decorative elements */}
@@ -85,67 +43,79 @@ const ServicesSection = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block font-body text-sm text-secondary uppercase tracking-widest mb-4">
-            Servicios
+            Servicio
           </span>
           <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6">
-            Consultoría de SEO Financiero <br /> <span className="text-gradient-primary">a medida</span>
+            Un diagnóstico que te dice <br /> <span className="text-gradient-primary">exactamente qué corregir</span>
           </h2>
           <p className="font-body text-foreground-muted leading-relaxed">
-            Cada empresa Fintech y cada Marca financiera tiene retos únicos. Los servicios de “SEO Fintech Lab" están diseñados para abordar las necesidades específicas del sector Financiero Digital y ayudar a ganar Visibilidad en Google y atraer Clientes Cualificados.
+            Sin planes largos ni propuestas confusas. Solo claridad sobre qué está frenando tu Fintech y qué debes priorizar primero.
           </p>
         </div>
 
-        {/* Services Grid */}
-        <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
-          {services.map((service, index) => {
-            const colors = getAccentClasses(service.accent);
-            return (
-              <div
-                key={index}
-                className={`group p-8 rounded-2xl bg-card border border-border ${colors.hoverBorder} transition-all duration-500 hover:shadow-elegant-lg hover:-translate-y-1`}
-              >
-                {/* Icon */}
-                <div
-                  className={`w-14 h-14 rounded-xl ${colors.iconBg} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
-                >
-                  <service.icon className={`w-7 h-7 ${colors.iconText}`} />
-                </div>
+        {/* Single Service — Two Column Layout */}
+        <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
 
-                {/* Content */}
-                <h3 className="font-display text-2xl text-foreground mb-3 group-hover:text-primary transition-colors">
-                  {service.title}
-                </h3>
-                <p className="font-body text-foreground-muted mb-6 leading-relaxed">
-                  {service.description}
-                </p>
+          {/* Left: Content */}
+          <div>
+            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary font-body text-sm px-4 py-1.5 rounded-full mb-6">
+              Auditoría Express SEO Fintech
+            </div>
 
-                {/* Features */}
-                <ul className="space-y-2 mb-6">
-                  {service.features.map((feature, i) => (
-                    <li key={i} className="flex items-center gap-3 text-sm font-body text-foreground-muted">
-                      <span className={`w-1.5 h-1.5 rounded-full ${colors.dot}`} />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
+            <p className="font-body text-foreground-muted leading-relaxed mb-8">
+              Un diagnóstico rápido, técnico y accionable para detectar en poco tiempo qué está frenando la visibilidad de tu Fintech y qué hay que corregir primero para empezar a generar resultados.
+            </p>
 
-                {/* CTA */}
-                {service.href ? (
-                  <Button variant="elegant" className="group/btn" asChild>
-                    <Link to={service.href}>
-                      Saber más
-                      <ArrowUpRight className="w-4 h-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
-                    </Link>
-                  </Button>
-                ) : (
-                  <Button variant="elegant" className="group/btn">
-                    Saber más
-                    <ArrowUpRight className="w-4 h-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
-                  </Button>
-                )}
-              </div>
-            );
-          })}
+            {/* Pain points */}
+            <ul className="space-y-4 mb-8">
+              {[
+                "Tu web no posiciona aunque has invertido en contenido o SEO.",
+                "Recibes tráfico pero sin leads, sin llamadas, sin señales claras.",
+                "No sabes si el problema es técnico, de estructura o de enfoque.",
+              ].map((pain, i) => (
+                <li key={i} className="flex items-start gap-3 font-body text-foreground-muted">
+                  <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                  {pain}
+                </li>
+              ))}
+            </ul>
+
+            {/* Price badge */}
+            <div className="flex items-center gap-4 mb-8">
+              <span className="font-display text-4xl text-primary">290 €</span>
+              <span className="font-body text-sm text-foreground-muted">Precio único · Sin sorpresas</span>
+            </div>
+
+            <Button variant="hero" size="lg" className="group" asChild>
+              <Link to="/auditoria-express-seo-fintech">
+                Solicitar auditoría
+                <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              </Link>
+            </Button>
+          </div>
+
+          {/* Right: Includes card */}
+          <div className="relative">
+            {/* Floating badge */}
+            <div className="absolute -top-4 -right-4 z-10 bg-primary text-primary-foreground font-body text-xs font-medium px-4 py-2 rounded-full shadow-elegant">
+              Entrega 24–48 h
+            </div>
+
+            <div className="bg-card border border-border rounded-2xl p-8 shadow-elegant-lg">
+              <h3 className="font-display text-xl text-primary mb-6">Qué incluye</h3>
+              <ul className="space-y-5">
+                {includes.map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <CheckMark />
+                    <div>
+                      <p className="font-body font-semibold text-foreground text-sm">{item.title}</p>
+                      <p className="font-body text-foreground-muted text-sm leading-relaxed">{item.description}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
