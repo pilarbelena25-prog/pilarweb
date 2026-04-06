@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import GuiaGptModal from "@/components/sections/GuiaGptModal";
+import homeAuditoria from "@/assets/Home_Auditoría Express Lab.webp";
 
 const HeroSection = () => {
   return (
@@ -38,7 +39,7 @@ const HeroSection = () => {
             className="font-body text-lg md:text-xl text-foreground-muted max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-up"
             style={{ animationDelay: "0.2s" }}
           >
-            Soy Pilar Beleña , Consultora SEO Fintech. Combino <span className="uppercase font-semibold text-foreground">ESTRATEGIA</span>, <span className="uppercase font-semibold text-foreground">DATOS</span> y la Potencia de la IA para que tu <span className="uppercase font-semibold text-foreground">Marca</span> Financiera gane Visibilidad en Google y se convierta en la Respuesta que citan los buscadores y los LLMs.
+            Fundadora SEO Fintech Lab | Auditoría SEO Express que convierte Webs Fintech Estancadas en 10-15 Leads/Mes Orgánicos | Sin depender de Portales ni ADS.
           </h2>
 
           {/* CTAs */}
@@ -55,6 +56,18 @@ const HeroSection = () => {
                 Descargar guía IA gratuita
               </Button>
             </GuiaGptModal>
+          </div>
+
+          {/* Cover image */}
+          <div
+            className="mt-12 animate-fade-up"
+            style={{ animationDelay: "0.35s" }}
+          >
+            <img
+              src={homeAuditoria}
+              alt="Auditoría SEO Express para Webs Fintech"
+              className="w-full max-w-3xl mx-auto rounded-2xl shadow-2xl"
+            />
           </div>
 
           {/* Trust indicators */}

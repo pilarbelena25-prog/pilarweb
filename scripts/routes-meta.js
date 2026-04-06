@@ -5,7 +5,7 @@ export const routesMeta = [
     route: '/',
     title: 'Pilar Beleña - SEO Fintech Lab | Estrategia SEO para Fintech',
     description:
-      'Fundadora y Partner Estratégica Especializada en SEO, IA y Growth Strategy para marcas Fintech y Digital Brands. Ayudo a empresas de Banca Digital, Pagos, Insurtech y Cripto a ganar Visibilidad y Autoridad en buscadores, convirtiéndose en la respuesta que Google y los LLMs citan.',
+      'Fundadora SEO Fintech Lab | Auditoría SEO Express que convierte Webs Fintech Estancadas en 10-15 Leads/Mes Orgánicos | Sin depender de Portales ni ADS.',
     canonical: `${BASE_URL}/`,
     ogType: 'website',
     jsonLd: {
@@ -28,7 +28,7 @@ export const routesMeta = [
         'Inteligencia Artificial aplicada al SEO',
       ],
       description:
-        'Fundadora y Partner Estratégica Especializada en SEO, IA y Growth Strategy para marcas Fintech y Digital Brands. Ayudo a empresas de Banca Digital, Pagos, Insurtech y Cripto a ganar Visibilidad y Autoridad en buscadores, convirtiéndose en la respuesta que Google y los LLMs citan.',
+        'Fundadora SEO Fintech Lab | Auditoría SEO Express que convierte Webs Fintech Estancadas en 10-15 Leads/Mes Orgánicos | Sin depender de Portales ni ADS.',
     },
   },
   {
