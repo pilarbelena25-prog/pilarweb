@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import heroImage from "@/assets/Auditoria Express SEO Fintech Lab.webp";
 
 const CALENDLY_URL = "https://calendly.com/pilarbelena25/30min";
 
@@ -181,6 +182,14 @@ const AuditoriaExpressSeoFintech = () => {
                   Solicitar mi Auditoría Express
                 </a>
               </Button>
+
+              <div className="mt-12">
+                <img
+                  src={heroImage}
+                  alt="Auditoría Express SEO Fintech - Diagnóstico rápido para tu Fintech"
+                  className="w-full max-w-3xl mx-auto rounded-2xl shadow-2xl"
+                />
+              </div>
             </div>
           </div>
         </section>
