@@ -8,6 +8,7 @@ import imgAuditoriasIa from "@/assets/blog/articulo-5/5A.webp";
 import imgSeoEntornosRegulados from "@/assets/blog/articulo-6/6A.webp";
 import imgContenidoMasivo from "@/assets/blog/articulo-7/7A.webp";
 import imgDatosEstructurados from "@/assets/blog/articulo-8/8A.webp";
+import imgEscalarSinPerder from "@/assets/blog/articulo-9/9A.webp";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -53,6 +54,17 @@ const posts: BlogPost[] = [
     imageAlt: "De Encontrable a Irremplazable en Fintech - SEO Fintech Lab",
   },
   {
+    slug: "sge-y-el-nuevo-orden-de-busqueda",
+    title: "SGE y el nuevo orden de búsqueda FINTECH: Cómo proteger el tráfico de tu marca financiera este año",
+    excerpt: "La SGE convierte la página de resultados en un panel de respuestas. Para las marcas financieras, el riesgo no es solo perder posiciones: es que la IA se quede con la visibilidad que antes era tuya.",
+    date: "19 ene 2026",
+    category: "SEO para Empresas Financieras",
+    family: "seo-empresas-financieras",
+    readTime: "6 min de lectura",
+    image: imgSgeNuevoOrden,
+    imageAlt: "SGE y el nuevo orden de búsqueda Fintech - SEO Fintech Lab",
+  },
+  {
     slug: "muerte-palabra-clave-transaccional-fintech",
     title: "La muerte de la palabra clave transaccional FINTECH: SEO de intención en la era de los LLM",
     excerpt: "Las palabras clave transaccionales mueren con LLM y SGE. Aprende SEO de intención para Fintech: protege conversiones ante la nueva búsqueda IA.",
@@ -62,17 +74,6 @@ const posts: BlogPost[] = [
     readTime: "7 min de lectura",
     image: imgMuertePalabraClave,
     imageAlt: "La muerte de la palabra clave transaccional Fintech - SEO de intención LLM 2026",
-  },
-  {
-    slug: "contenido-masivo-fintech-mito",
-    title: "El Mito del Contenido Masivo FINTECH: Por qué 10 Artículos Estratégicos baten a 100 generados por bots",
-    excerpt: "Saturar tu blog Fintech con posts generados por IA no genera autoridad: genera rebote. Descubre por qué 10 artículos estratégicos con datos B2B reales superan en leads a 100 artículos de bots.",
-    date: "17 mar 2026",
-    category: "Consultor SEO Fintech",
-    family: "consultor-seo-fintech",
-    readTime: "7 min de lectura",
-    image: imgContenidoMasivo,
-    imageAlt: "El Mito del Contenido Masivo Fintech: 10 artículos estratégicos vs 100 bots - SEO Fintech Lab",
   },
   {
     slug: "auditorias-ia-fintech-eficiencia-embudo",
@@ -97,6 +98,17 @@ const posts: BlogPost[] = [
     imageAlt: "SEO Fintech en Entornos Regulados: innovar sin romper el compliance - SEO Fintech Lab",
   },
   {
+    slug: "contenido-masivo-fintech-mito",
+    title: "El Mito del Contenido Masivo FINTECH: Por qué 10 Artículos Estratégicos baten a 100 generados por bots",
+    excerpt: "Saturar tu blog Fintech con posts generados por IA no genera autoridad: genera rebote. Descubre por qué 10 artículos estratégicos con datos B2B reales superan en leads a 100 artículos de bots.",
+    date: "17 mar 2026",
+    category: "Consultor SEO Fintech",
+    family: "consultor-seo-fintech",
+    readTime: "7 min de lectura",
+    image: imgContenidoMasivo,
+    imageAlt: "El Mito del Contenido Masivo Fintech: 10 artículos estratégicos vs 100 bots - SEO Fintech Lab",
+  },
+  {
     slug: "datos-estructurados-entidades-fintech",
     title: "Datos Estructurados y Entidades Fintech: La verdadera forma en que la IA entiende tu Marca Financiera",
     excerpt: "Cuando la IA no tiene claro quién es tu Fintech, mezcla tu marca con otras similares. Los datos estructurados y entidades son la solución para que Google y los LLM te identifiquen correctamente.",
@@ -108,15 +120,15 @@ const posts: BlogPost[] = [
     imageAlt: "Datos Estructurados y Entidades Fintech: cómo la IA entiende tu marca financiera - SEO Fintech Lab",
   },
   {
-    slug: "sge-y-el-nuevo-orden-de-busqueda",
-    title: "SGE y el nuevo orden de búsqueda FINTECH: Cómo proteger el tráfico de tu marca financiera este año",
-    excerpt: "La SGE convierte la página de resultados en un panel de respuestas. Para las marcas financieras, el riesgo no es solo perder posiciones: es que la IA se quede con la visibilidad que antes era tuya.",
-    date: "19 ene 2026",
-    category: "SEO para Empresas Financieras",
-    family: "seo-empresas-financieras",
-    readTime: "6 min de lectura",
-    image: imgSgeNuevoOrden,
-    imageAlt: "SGE y el nuevo orden de búsqueda Fintech - SEO Fintech Lab",
+    slug: "escalar-sin-perder-el-alma-fintech",
+    title: "Escalar sin perder el alma FINTECH: Cómo entrenar a tu IA con el tono de voz de tu Empresa Financiera",
+    excerpt: "El 78% de Startups Fintech pierde conversión por sonar 'Genérico-IA'. Aprende la metodología del Lab para entrenar tu IA con tu voz financiera: datos reales, compliance integrado y autoridad sectorial.",
+    date: "6 abr 2026",
+    category: "SEO para Startups Fintech",
+    family: "seo-startups-fintech",
+    readTime: "8 min de lectura",
+    image: imgEscalarSinPerder,
+    imageAlt: "Escalar sin perder el alma Fintech: entrenar IA con tono de voz financiero - SEO Fintech Lab",
   },
 ];
 
