@@ -135,4 +135,53 @@ export const routesMeta = [
     datePublished: '2026-03-27',
     category: 'SEO para Empresas Financieras',
   },
+  {
+    route: '/blog/escalar-sin-perder-el-alma-fintech',
+    title:
+      'Escalar sin perder el alma FINTECH: Cómo entrenar a tu IA con el tono de voz de tu Empresa Financiera | Pilar Beleña SEO Fintech Lab',
+    description:
+      "El 78% de las Startups Fintech pierde conversión por sonar 'Genérico-IA'. Aprende la metodología del Lab para entrenar tu IA con tu tono financiero real: datos, compliance y autoridad sectorial.",
+    canonical: `${BASE_URL}/blog/escalar-sin-perder-el-alma-fintech`,
+    ogType: 'article',
+    imageSource: 'src/assets/blog/articulo-9/9A.webp',
+    datePublished: '2026-04-06',
+    category: 'SEO para Startups Fintech',
+  },
+  {
+    route: '/auditoria-express-seo-fintech',
+    title:
+      'Auditoría Express SEO Fintech | Diagnóstico en 48h para tu Fintech | Pilar Beleña',
+    description:
+      'Descubre en 48h qué está frenando la visibilidad de tu Fintech. Diagnóstico rápido, técnico y accionable para saber exactamente qué corregir primero. 290€.',
+    canonical: `${BASE_URL}/auditoria-express-seo-fintech`,
+    ogType: 'website',
+    imageSource: 'src/assets/Auditoria Express SEO Fintech Lab.webp',
+  },
+  {
+    route: '/aviso-legal',
+    title: 'Aviso Legal | Pilar Beleña SEO Fintech Lab',
+    description:
+      'Aviso legal de SEO Fintech Lab. Información legal sobre el titular del sitio web, condiciones de uso y responsabilidad.',
+    canonical: `${BASE_URL}/aviso-legal`,
+    ogType: 'website',
+    robots: 'noindex, nofollow',
+  },
+  {
+    route: '/cookies',
+    title: 'Política de Cookies | Pilar Beleña SEO Fintech Lab',
+    description:
+      'Política de cookies de SEO Fintech Lab. Información sobre los tipos de cookies utilizadas y cómo gestionarlas.',
+    canonical: `${BASE_URL}/cookies`,
+    ogType: 'website',
+    robots: 'noindex, nofollow',
+  },
+  {
+    route: '/politica-privacidad',
+    title: 'Política de Privacidad | Pilar Beleña SEO Fintech Lab',
+    description:
+      'Política de privacidad de SEO Fintech Lab. Información sobre el tratamiento de datos personales conforme al RGPD.',
+    canonical: `${BASE_URL}/politica-privacidad`,
+    ogType: 'website',
+    robots: 'noindex, nofollow',
+  },
 ];

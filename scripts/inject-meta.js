@@ -36,7 +36,7 @@ function escapeHtml(str) {
 }
 
 function buildMetaBlock(routeMeta) {
-  const { title, description, canonical, ogType, imageSource, datePublished, category, jsonLd } =
+  const { title, description, canonical, ogType, imageSource, datePublished, category, jsonLd, robots } =
     routeMeta;
 
   const imageUrl = resolveImageUrl(imageSource);
@@ -79,7 +79,7 @@ function buildMetaBlock(routeMeta) {
   return `<title>${safeTitle}</title>
     <meta name="description" content="${safeDesc}" />
     <meta name="author" content="Pilar Beleña" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="${robots ?? 'index, follow'}" />
     <link rel="canonical" href="${canonical}" />
     <meta property="og:title" content="${safeTitle}" />
     <meta property="og:description" content="${safeDesc}" />
