@@ -121,7 +121,7 @@ const ContactSection = () => {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-px bg-gradient-to-r from-transparent via-accent to-transparent" />
 
       <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl 3xl:max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Left Column - Info */}
             <div>

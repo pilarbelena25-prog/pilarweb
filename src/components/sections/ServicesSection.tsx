@@ -41,7 +41,7 @@ const ServicesSection = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl 3xl:max-w-4xl mx-auto mb-16">
           <span className="inline-block font-body text-sm text-secondary uppercase tracking-widest mb-4">
             Servicio
           </span>
@@ -54,7 +54,7 @@ const ServicesSection = () => {
         </div>
 
         {/* Single Service — Two Column Layout */}
-        <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-5xl 3xl:max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
 
           {/* Left: Content */}
           <div>

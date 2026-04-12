@@ -18,7 +18,7 @@ const HeroSection = () => {
       <div className="absolute bottom-40 right-0 w-48 h-px bg-gradient-to-r from-transparent via-accent to-transparent" />
 
       <div className="container mx-auto px-6 relative z-10 pt-10 lg:pt-0">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl 3xl:max-w-5xl mx-auto text-center">
           {/* Tagline */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent bg-background/50 backdrop-blur-sm mb-8 animate-fade-up">
             <span className="text-sm font-body text-foreground-muted">
@@ -36,7 +36,7 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <h2
-            className="font-body text-lg md:text-xl text-foreground-muted max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-up"
+            className="font-body text-lg md:text-xl text-foreground-muted max-w-2xl 3xl:max-w-3xl mx-auto mb-10 leading-relaxed animate-fade-up"
             style={{ animationDelay: "0.2s" }}
           >
             Fundadora SEO Fintech Lab | Auditoría SEO Express que convierte Webs Fintech Estancadas en 10-15 Leads/Mes Orgánicos | Sin depender de Portales ni ADS.
@@ -66,7 +66,7 @@ const HeroSection = () => {
             <img
               src={homeAuditoria}
               alt="Auditoría SEO Express para Webs Fintech"
-              className="w-full max-w-3xl mx-auto rounded-2xl shadow-2xl"
+              className="w-full max-w-3xl 3xl:max-w-4xl mx-auto rounded-2xl shadow-2xl"
             />
           </div>
 
