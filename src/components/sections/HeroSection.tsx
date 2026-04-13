@@ -58,19 +58,6 @@ const HeroSection = () => {
             </GuiaGptModal>
           </div>
 
-          {/* Cover image */}
-          <div
-            className="mt-12 animate-fade-up"
-            style={{ animationDelay: "0.35s" }}
-          >
-            <img
-              src={homeAuditoria}
-              alt="Auditoría SEO Express para Webs Fintech"
-              className="w-full max-w-3xl 3xl:max-w-4xl mx-auto rounded-2xl shadow-2xl"
-              fetchPriority="high"
-            />
-          </div>
-
           {/* Trust indicators */}
           <div
             className="mt-16 pt-10 border-t border-border/50 animate-fade-up"
