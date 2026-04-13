@@ -46,7 +46,7 @@ const ServicesSection = () => {
             Servicio
           </span>
           <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6">
-            Un diagnóstico que te dice <br /> <span className="text-gradient-primary">exactamente qué corregir</span>
+            Auditoría SEO Fintech que te dice <br /> <span className="text-gradient-primary">exactamente qué corregir</span>
           </h2>
           <p className="font-body text-foreground-muted leading-relaxed">
             Sin planes largos ni propuestas confusas. Solo claridad sobre qué está frenando tu Fintech y qué debes priorizar primero.
@@ -102,7 +102,7 @@ const ServicesSection = () => {
             </div>
 
             <div className="bg-card border border-border rounded-2xl p-8 shadow-elegant-lg">
-              <h3 className="font-display text-xl text-primary mb-6">Qué incluye</h3>
+              <h3 className="font-display text-xl text-primary mb-6">Qué incluye la Auditoría SEO</h3>
               <ul className="space-y-5">
                 {includes.map((item, i) => (
                   <li key={i} className="flex items-start gap-3">

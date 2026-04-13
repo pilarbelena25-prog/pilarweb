@@ -56,9 +56,9 @@ const AboutSection = () => {
 
       <div className="container mx-auto px-6 space-y-16">
 
-        <h3 className="font-display text-3xl md:text-4xl text-foreground text-center">
+        <h2 className="font-display text-3xl md:text-4xl text-foreground text-center">
           Nuestro Equipo
-        </h3>
+        </h2>
 
         {/* ── Pilar ── image left · content right */}
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -81,10 +81,10 @@ const AboutSection = () => {
               Quién soy
             </span>
 
-            <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6 leading-tight">
+            <h3 className="font-display text-4xl md:text-5xl text-foreground mb-6 leading-tight">
               La conexión entre <br />
               <span className="text-gradient-primary">Fintech y Visibilidad Digital</span>
-            </h2>
+            </h3>
 
             <div className="space-y-4 mb-10">
               <p className="font-body text-foreground-muted leading-relaxed">
@@ -126,10 +126,10 @@ const AboutSection = () => {
               El equipo técnico
             </span>
 
-            <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6 leading-tight">
+            <h3 className="font-display text-4xl md:text-5xl text-foreground mb-6 leading-tight">
               Desarrollo Web &{" "}
               <span className="text-gradient-primary">SEO Técnico Fintech</span>
-            </h2>
+            </h3>
 
             <div className="space-y-4 mb-10">
               <p className="font-body text-foreground-muted leading-relaxed">

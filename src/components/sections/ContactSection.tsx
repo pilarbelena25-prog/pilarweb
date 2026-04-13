@@ -130,8 +130,8 @@ const ContactSection = () => {
               </span>
 
               <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6 leading-tight">
-                ¿Listo para ganar <br />
-                <span className="text-gradient-primary">visibilidad en Google?</span>
+                ¿Tu Fintech listo para ganar <br />
+                <span className="text-gradient-primary">visibilidad SEO en Google?</span>
               </h2>
 
               <p className="font-body text-lg text-foreground-muted mb-10 leading-relaxed">
@@ -219,7 +219,7 @@ const ContactSection = () => {
 
             {/* Right Column - Form */}
             <div className="bg-card rounded-2xl p-8 shadow-elegant border border-border">
-              <h3 className="font-display text-2xl text-foreground mb-2">Escríbeme</h3>
+              <h3 className="font-display text-2xl text-foreground mb-2">Escríbeme sobre tu Fintech</h3>
               <p className="font-body text-foreground-muted mb-2">
                 Respondo en máximo 4h laborables
               </p>

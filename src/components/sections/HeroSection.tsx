@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import GuiaGptModal from "@/components/sections/GuiaGptModal";
 import homeAuditoria from "@/assets/Home_Auditoría Express Lab.webp";
 
@@ -31,7 +31,7 @@ const HeroSection = () => {
             <span className="text-foreground">Posiciona tu </span>
             <span className="text-gradient-primary">Fintech</span>
             <br />
-            <span className="text-foreground">en el lugar que mereces</span>
+            <span className="text-foreground">con SEO Estratégico</span>
           </h1>
 
           {/* Subtitle */}
@@ -39,7 +39,7 @@ const HeroSection = () => {
             className="font-body text-lg md:text-xl text-foreground-muted max-w-2xl 3xl:max-w-3xl mx-auto mb-10 leading-relaxed animate-fade-up"
             style={{ animationDelay: "0.2s" }}
           >
-            Fundadora SEO Fintech Lab | Auditoría SEO Express que convierte Webs Fintech Estancadas en 10-15 Leads/Mes Orgánicos | Sin depender de Portales ni ADS.
+            Auditoría SEO Express que convierte Fintechs estancadas en 10-15 leads orgánicos al mes, sin depender de portales ni ADS.
           </h2>
 
           {/* CTAs */}
