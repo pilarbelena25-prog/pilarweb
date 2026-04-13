@@ -67,6 +67,7 @@ const HeroSection = () => {
               src={homeAuditoria}
               alt="Auditoría SEO Express para Webs Fintech"
               className="w-full max-w-3xl 3xl:max-w-4xl mx-auto rounded-2xl shadow-2xl"
+              fetchPriority="high"
             />
           </div>
 
@@ -75,9 +76,9 @@ const HeroSection = () => {
             className="mt-16 pt-10 border-t border-border/50 animate-fade-up"
             style={{ animationDelay: "0.4s" }}
           >
-            <h3 className="text-sm text-foreground-muted mb-6 font-body">
+            <p className="text-sm text-foreground-muted mb-6 font-body">
               Más de 5 años acompañando a Marcas Financieras y Startups Fintech a ganar Visibilidad y Autoridad en Google.
-            </h3>
+            </p>
             <div className="flex flex-wrap justify-center gap-8 items-center">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-primary" />

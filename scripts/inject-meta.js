@@ -60,8 +60,8 @@ function buildMetaBlock(routeMeta) {
           sameAs: ['https://linkedin.com/in/pilarbelena'],
         },
         publisher: {
-          '@type': 'Person',
-          name: 'Pilar Beleña',
+          '@type': 'Organization',
+          name: 'SEO Fintech Lab',
           url: BASE_URL,
         },
         url: canonical,

@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(npm install:*)",
-      "Bash(ls -ltr src/pages/blog/*.tsx)"
+      "Bash(ls -ltr src/pages/blog/*.tsx)",
+      "Bash(xargs grep:*)",
+      "Bash(xargs dirname:*)"
     ]
   }
 }

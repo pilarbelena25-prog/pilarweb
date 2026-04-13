@@ -8,27 +8,48 @@ export const routesMeta = [
       'Fundadora SEO Fintech Lab | Auditoría SEO Express que convierte Webs Fintech Estancadas en 10-15 Leads/Mes Orgánicos | Sin depender de Portales ni ADS.',
     canonical: `${BASE_URL}/`,
     ogType: 'website',
+    imageSource: 'src/assets/Home_Auditoría Express Lab.webp',
     jsonLd: {
       '@context': 'https://schema.org',
-      '@type': 'Person',
-      name: 'Pilar Beleña',
-      jobTitle: 'Fundadora y Partner Estratégica SEO Fintech',
-      url: `${BASE_URL}/`,
-      sameAs: ['https://linkedin.com/in/pilarbelena'],
-      knowsAbout: [
-        'SEO',
-        'SEO Fintech',
-        'Fintech',
-        'Banca Digital',
-        'Pagos Digitales',
-        'Insurtech',
-        'Cripto y Web3',
-        'Growth Marketing',
-        'Estrategia Digital',
-        'Inteligencia Artificial aplicada al SEO',
+      '@graph': [
+        {
+          '@type': 'Person',
+          '@id': `${BASE_URL}/#pilar-belena`,
+          name: 'Pilar Beleña',
+          jobTitle: 'Fundadora y Partner Estratégica SEO Fintech',
+          url: `${BASE_URL}/`,
+          sameAs: [
+            'https://www.linkedin.com/in/mar%C3%ADa-pilar-bele%C3%B1a-gasent-178b145a/',
+          ],
+          worksFor: { '@id': `${BASE_URL}/#organization` },
+          knowsAbout: [
+            'SEO',
+            'SEO Fintech',
+            'Fintech',
+            'Banca Digital',
+            'Pagos Digitales',
+            'Insurtech',
+            'Cripto y Web3',
+            'Growth Marketing',
+            'Estrategia Digital',
+            'Inteligencia Artificial aplicada al SEO',
+          ],
+          description:
+            'Fundadora SEO Fintech Lab | Auditoría SEO Express que convierte Webs Fintech Estancadas en 10-15 Leads/Mes Orgánicos | Sin depender de Portales ni ADS.',
+        },
+        {
+          '@type': 'Organization',
+          '@id': `${BASE_URL}/#organization`,
+          name: 'SEO Fintech Lab',
+          url: `${BASE_URL}/`,
+          founder: { '@id': `${BASE_URL}/#pilar-belena` },
+          description:
+            'Consultoría SEO especializada en el sector Fintech y marcas financieras digitales.',
+          sameAs: [
+            'https://www.linkedin.com/in/mar%C3%ADa-pilar-bele%C3%B1a-gasent-178b145a/',
+          ],
+        },
       ],
-      description:
-        'Fundadora SEO Fintech Lab | Auditoría SEO Express que convierte Webs Fintech Estancadas en 10-15 Leads/Mes Orgánicos | Sin depender de Portales ni ADS.',
     },
   },
   {
