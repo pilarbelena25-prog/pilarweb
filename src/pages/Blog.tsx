@@ -11,6 +11,7 @@ import imgDatosEstructurados from "@/assets/blog/articulo-8/8A.webp";
 import imgEscalarSinPerder from "@/assets/blog/articulo-9/9A.webp";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { LazyImage } from "@/components/ui/LazyImage";
 
 interface BlogPost {
   slug: string;
@@ -224,7 +225,7 @@ const Blog = () => {
                       href={`/blog/${post.slug}`}
                       className="block group bg-background border border-border rounded-lg overflow-hidden hover:border-primary transition-colors duration-200"
                     >
-                      <img
+                      <LazyImage
                         src={post.image}
                         alt={post.imageAlt}
                         className="w-full h-56 object-cover"

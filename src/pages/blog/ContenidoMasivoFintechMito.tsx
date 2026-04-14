@@ -4,6 +4,7 @@ import ArticleSeoHead from "@/components/ArticleSeoHead";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { LazyImage } from "@/components/ui/LazyImage";
 
 const CALENDAR_URL = "https://calendly.com/pilarbelena25/30min";
 const AUDITORIA_URL = "https://pilar-belena-seo-fintech-lab.netlify.app/auditoria-seo-fintech";
@@ -32,7 +33,8 @@ const ContenidoMasivoFintechMito = () => {
         <section className="pt-24 bg-background">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
-              <img
+              <LazyImage
+                eager
                 src={imgDestacada}
                 alt="El Mito del Contenido Masivo Fintech: 10 artículos estratégicos vs 100 generados por bots - SEO Fintech Lab"
                 className="w-full rounded-lg object-cover"
@@ -256,7 +258,7 @@ const ContenidoMasivoFintechMito = () => {
 
                 {/* Imagen 7B */}
                 <div>
-                  <img
+                  <LazyImage
                     src={imgContenido}
                     alt="Contenido estratégico vs contenido masivo en Fintech - datos SEO Fintech Lab 2026"
                     className="w-full rounded-lg object-cover"

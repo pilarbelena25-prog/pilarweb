@@ -1,6 +1,7 @@
 import { TrendingUp, Brain, Target, Users, Music, Code2, Globe, Wrench } from "lucide-react";
 import pilarPhoto from "@/assets/pilar-belena.webp";
 import grilloPhoto from "@/assets/img-grillo.webp";
+import { LazyImage } from "@/components/ui/LazyImage";
 
 const AboutSection = () => {
   const pilarHighlights = [
@@ -65,7 +66,7 @@ const AboutSection = () => {
           {/* Image Column */}
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-elegant-lg">
-              <img
+              <LazyImage
                 src={pilarPhoto}
                 alt="Pilar Beleña - Fundadora SEO Fintech Lab | Consultora SEO Fintech España"
                 className="w-full h-auto"
@@ -169,7 +170,7 @@ const AboutSection = () => {
           {/* Image Column (right) */}
           <div className="relative order-1 lg:order-2">
             <div className="rounded-2xl overflow-hidden shadow-elegant-lg">
-              <img
+              <LazyImage
                 src={grilloPhoto}
                 alt="Manuel De León - Socio Técnico SEO Fintech Lab | Desarrollador Web SEO Técnico"
                 className="w-full h-auto"

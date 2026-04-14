@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import logoPB from "@/assets/logo-pb.webp";
+import { LazyImage } from "@/components/ui/LazyImage";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -21,9 +22,10 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="/" className="flex items-center gap-3 group">
-            <img 
-              src={logoPB} 
-              alt="Pilar Beleña Logo" 
+            <LazyImage
+              eager
+              src={logoPB}
+              alt="Pilar Beleña Logo"
               className="h-10 w-10 rounded-lg object-cover"
             />
             <span className="font-display text-3xl font-normal text-foreground group-hover:text-primary transition-colors">

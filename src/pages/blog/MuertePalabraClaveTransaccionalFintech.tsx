@@ -4,6 +4,7 @@ import ArticleSeoHead from "@/components/ArticleSeoHead";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { LazyImage } from "@/components/ui/LazyImage";
 
 const CALENDAR_URL = "https://calendly.com/pilarbelena25/30min";
 const AUDITORIA_URL = "https://pilar-belena-seo-fintech-lab.netlify.app/auditoria-seo-fintech";
@@ -32,7 +33,8 @@ const MuertePalabraClaveTransaccionalFintech = () => {
         <section className="pt-24 bg-background">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
-              <img
+              <LazyImage
+                eager
                 src={imgDestacada}
                 alt="La muerte de la palabra clave transaccional Fintech - SEO de intención LLM 2026"
                 className="w-full rounded-lg object-cover"
@@ -194,7 +196,7 @@ const MuertePalabraClaveTransaccionalFintech = () => {
 
                 {/* Imagen 4B */}
                 <div>
-                  <img
+                  <LazyImage
                     src={imgContenido}
                     alt="SEO de intención para Fintech - Mapa de intenciones LLM 2026"
                     className="w-full rounded-lg object-cover"

@@ -2,6 +2,7 @@ import imgDestacada from "@/assets/blog/articulo-2/2.webp";
 import ArticleSeoHead from "@/components/ArticleSeoHead";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { LazyImage } from "@/components/ui/LazyImage";
 
 const HojaDeRutaSeoFintechLab = () => {
   return (
@@ -20,7 +21,8 @@ const HojaDeRutaSeoFintechLab = () => {
         <section className="pt-24 bg-background">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
-              <img
+              <LazyImage
+                eager
                 src={imgDestacada}
                 alt="De Encontrable a Irremplazable en Fintech - SEO Fintech Lab"
                 className="w-full rounded-lg object-cover"

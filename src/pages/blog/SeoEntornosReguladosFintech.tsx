@@ -4,6 +4,7 @@ import ArticleSeoHead from "@/components/ArticleSeoHead";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { LazyImage } from "@/components/ui/LazyImage";
 
 const SERVICIOS_URL = "https://pilar-belena-seo-fintech-lab.netlify.app/#servicios";
 const AUDITORIA_URL = "https://pilar-belena-seo-fintech-lab.netlify.app/auditoria-seo-fintech";
@@ -32,7 +33,8 @@ const SeoEntornosReguladosFintech = () => {
         <section className="pt-24 bg-background">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
-              <img
+              <LazyImage
+                eager
                 src={imgDestacada}
                 alt="SEO Fintech en Entornos Regulados: innovar sin romper el compliance - SEO Fintech Lab"
                 className="w-full rounded-lg object-cover"
@@ -191,7 +193,7 @@ const SeoEntornosReguladosFintech = () => {
 
                 {/* Imagen 6B */}
                 <div>
-                  <img
+                  <LazyImage
                     src={imgContenido}
                     alt="SEO compatible en Fintech: estrategias con compliance - SEO Fintech Lab"
                     className="w-full rounded-lg object-cover"

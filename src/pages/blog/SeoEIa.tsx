@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/accordion";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { LazyImage } from "@/components/ui/LazyImage";
 
 const CALENDAR_URL = "https://calendly.com/pilarbelena25/30min";
 
@@ -44,7 +45,8 @@ const SeoEIa = () => {
         <section className="pt-24 bg-background">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
-              <img
+              <LazyImage
+                eager
                 src={imgDestacada}
                 alt="SEO e IA - Estrategia SEO Fintech 2026"
                 className="w-full rounded-lg object-cover"
@@ -120,7 +122,7 @@ const SeoEIa = () => {
 
                 {/* Segunda imagen */}
                 <div className="mb-8">
-                  <img
+                  <LazyImage
                     src={imgContenido}
                     alt="SEO Tradicional vs GEO IA 2026"
                     className="w-full rounded-lg object-cover"

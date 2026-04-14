@@ -4,6 +4,7 @@ import ArticleSeoHead from "@/components/ArticleSeoHead";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { LazyImage } from "@/components/ui/LazyImage";
 
 const CALENDAR_URL = "https://calendly.com/pilarbelena25/30min";
 
@@ -31,7 +32,8 @@ const SgeYElNuevoOrdenDeBusqueda = () => {
         <section className="pt-24 bg-background">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
-              <img
+              <LazyImage
+                eager
                 src={imgDestacada}
                 alt="SGE y el nuevo orden de búsqueda Fintech - SEO Fintech Lab"
                 className="w-full rounded-lg object-cover"
@@ -143,7 +145,7 @@ const SgeYElNuevoOrdenDeBusqueda = () => {
 
                 {/* Imagen de contenido */}
                 <div>
-                  <img
+                  <LazyImage
                     src={imgContenido}
                     alt="De Consultor a Socio Estratégico Fintech - SEO Fintech Lab"
                     className="w-full rounded-lg object-cover"
