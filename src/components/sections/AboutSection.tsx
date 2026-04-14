@@ -67,11 +67,11 @@ const AboutSection = () => {
               className="bg-background rounded-2xl border border-border shadow-elegant p-8 text-center group hover:-translate-y-1 transition-all duration-300 flex flex-col items-center"
             >
               {/* Circular photo */}
-              <div className="w-32 h-32 mb-6 flex-shrink-0">
+              <div className="w-52 h-52 mb-6 flex-shrink-0">
                 <LazyImage
                   src={member.photo}
                   alt={member.alt}
-                  className="w-full h-full rounded-full object-cover object-top ring-4 ring-primary/20 group-hover:ring-primary/40 transition-all duration-300 shadow-elegant"
+                  className="w-full h-full rounded-full object-cover object-[50%_50%] ring-4 ring-primary/20 group-hover:ring-primary/40 transition-all duration-300 shadow-elegant"
                 />
               </div>
 
