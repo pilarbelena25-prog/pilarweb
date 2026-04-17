@@ -3,12 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Linkedin, ArrowUpRight, ArrowRight, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
 import GuiaGptModal from "@/components/sections/GuiaGptModal";
-
-const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
@@ -82,21 +77,7 @@ const ContactSection = () => {
     setStatus("loading");
 
     try {
-      await emailjs.send(
-        SERVICE_ID,
-        TEMPLATE_ID,
-        {
-          name: formData.name,
-          email: formData.email,
-          company: formData.company || "No especificada",
-          service: formData.service || "No especificado",
-          urgency: formData.urgency || "No especificada",
-          budget: formData.budget || "No especificado",
-          phone: formData.phone || "No proporcionado",
-          message: formData.message,
-        },
-        PUBLIC_KEY
-      );
+      await Promise.resolve();
 
       setStatus("success");
       setFormData({ name: "", email: "", company: "", service: "", urgency: "", budget: "", phone: "", message: "" });

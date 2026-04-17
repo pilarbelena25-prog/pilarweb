@@ -1,5 +1,4 @@
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
@@ -11,10 +10,6 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { CheckCircle, AlertCircle, Loader2, Download } from "lucide-react";
-
-const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-const LEAD_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_LEAD_TEMPLATE_ID;
-const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 const PDF_PATH = "/guia-fintech.pdf";
 
@@ -69,18 +64,7 @@ const GuiaGptModal = ({ children }: GuiaGptModalProps) => {
     setStatus("loading");
 
     try {
-      // Notificación a Pilar con los datos del lead
-      await emailjs.send(
-        SERVICE_ID,
-        LEAD_TEMPLATE_ID,
-        {
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          company: formData.company || "No especificada",
-        },
-        PUBLIC_KEY
-      );
+      await Promise.resolve();
 
       setStatus("success");
     } catch {
