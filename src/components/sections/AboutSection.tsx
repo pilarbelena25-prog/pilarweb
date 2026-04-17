@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
 import pilarPhoto from "@/assets/pilar.jpeg";
-import grilloPhoto from "@/assets/grillo.jpeg";
 import { LazyImage } from "@/components/ui/LazyImage";
 
 interface TeamMember {
@@ -21,27 +20,6 @@ const team: TeamMember[] = [
     bio: "Especializada en posicionamiento SEO para el sector financiero digital en España. Transformo la complejidad Fintech en estrategias SEO medibles, integrando Inteligencia Artificial para acelerar resultados.",
     tags: ["SEO Fintech", "IA Aplicada", "+5 años", "España"],
   },
-  {
-    photo: grilloPhoto,
-    alt: "Manuel De León - Socio Técnico SEO Fintech Lab | Desarrollador Web SEO Técnico",
-    name: "Manuel De León",
-    role: "Socio Técnico & Desarrollador Web",
-    bio: (
-      <>
-        Ingeniero de Sonido reconvertido en{" "}
-        <a
-          href="https://elgrillo.dev"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary font-medium hover:underline underline-offset-4"
-        >
-          desarrollador web con especialización en SEO Técnico
-        </a>{" "}
-        desde 2020. Responsable de la parte técnica del laboratorio: rendimiento, arquitectura e indexabilidad.
-      </>
-    ),
-    tags: ["SEO Técnico", "Desarrollo Web", "LATAM + España"],
-  },
 ];
 
 const AboutSection = () => {
@@ -60,7 +38,7 @@ const AboutSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div className="max-w-sm mx-auto">
           {team.map((member) => (
             <article
               key={member.name}
