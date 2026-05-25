@@ -140,7 +140,7 @@ const posts: BlogPost[] = [
     excerpt: "Tener mucha información en tu web no es suficiente si el usuario se pierde antes de entender qué haces. En nichos complejos como Fintech & Real Estate, la clave no es publicar más, sino conectar mejor.",
     date: "26 abr 2026",
     category: "SEO Fintech Lab",
-    family: "seo-startups-fintech",
+    family: "seo-empresas-financieras",
     readTime: "5 min de lectura",
     image: "",
     imageAlt: "Arquitectura Web para Nichos Complejos Fintech & Inversión Inmobiliaria - SEO Fintech Lab",
