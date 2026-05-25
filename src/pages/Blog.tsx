@@ -9,9 +9,12 @@ import imgSeoEntornosRegulados from "@/assets/blog/articulo-6/6A.png";
 import imgContenidoMasivo from "@/assets/blog/articulo-7/7A.png";
 import imgDatosEstructurados from "@/assets/blog/articulo-8/8A.png";
 import imgEscalarSinPerder from "@/assets/blog/articulo-9/9A.png";
+import imgPortadaHome from "@/assets/portada-home.png";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { LazyImage } from "@/components/ui/LazyImage";
+
+import { Button } from "@/components/ui/button";
 
 interface BlogPost {
   slug: string;
@@ -175,25 +178,44 @@ const Blog = () => {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-16 bg-gradient-hero">
-          <div className="container mx-auto px-6">
-            <div className="max-w-3xl mx-auto text-center">
-              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 text-primary">
+        <section className="relative pt-32 pb-16 bg-gradient-hero overflow-hidden">
+          {/* Background Image with Opacity */}
+          <div 
+            className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-[0.18]"
+            style={{ backgroundImage: `url(${imgPortadaHome})` }}
+          />
+          {/* Subtle gradient overlay to blend into the main background */}
+          <div className="absolute inset-0 z-0 bg-gradient-to-b from-transparent via-transparent to-background pointer-events-none" />
+
+          <div className="container relative z-10 mx-auto px-6">
+            <div className="max-w-5xl mx-auto text-center">
+              <span className="font-body text-xs font-semibold uppercase tracking-widest text-primary mb-3 block">
                 Blog
+              </span>
+              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 text-primary">
+                Estrategias SEO, Arquitectura Web y EEAT para Fintech & Real Estate
               </h1>
-              <p className="font-display text-xl md:text-2xl text-foreground-muted">
-                Estrategias SEO, marketing Fintech e inteligencia artificial aplicada al posicionamiento digital.
-              </p>
+              <h2 className="font-display text-xl md:text-2xl text-foreground-muted mb-8 max-w-4xl mx-auto font-normal leading-relaxed">
+                Contenido Estratégico para Construir Autoridad, Conectar nichos complejos y Mejorar la Visibilidad Digital con una base sólida.
+              </h2>
+              <div className="flex flex-wrap justify-center gap-4">
+                <Button variant="hero" size="lg" asChild>
+                  <a href="#articulos">Ver artículos</a>
+                </Button>
+                <Button variant="heroOutline" size="lg" asChild>
+                  <a href="#categorias">Explorar categorías</a>
+                </Button>
+              </div>
             </div>
           </div>
         </section>
 
         {/* Article list */}
-        <section className="py-20 bg-background">
+        <section id="articulos" className="py-20 bg-background">
           <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
               {/* Filtros por categoría */}
-              <div className="flex flex-wrap gap-3 mb-12 justify-center">
+              <div id="categorias" className="flex flex-wrap gap-3 mb-12 justify-center">
                 <button
                   onClick={() => handleFiltro(null)}
                   className={`font-body text-sm px-5 py-2 rounded-full border transition-colors duration-200 ${

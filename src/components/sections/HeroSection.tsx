@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import GuiaGptModal from "@/components/sections/GuiaGptModal";
 import homeAuditoria from "@/assets/Home_Auditoría Express Lab.webp";
+import imgPortadaHome from "@/assets/portada-home.png";
 
 const HeroSection = () => {
   return (
@@ -9,6 +10,14 @@ const HeroSection = () => {
       id="inicio"
       className="min-h-screen flex flex-col items-center justify-start lg:justify-center bg-gradient-hero relative overflow-hidden pt-20 lg:pt-32"
     >
+      {/* Background Image with Opacity */}
+      <div 
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-[0.18]"
+        style={{ backgroundImage: `url(${imgPortadaHome})` }}
+      />
+      {/* Subtle gradient overlay to blend into the main background */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-transparent via-transparent to-background pointer-events-none" />
+
       {/* Decorative elements */}
       <div className="absolute top-1/4 right-10 w-72 h-72 bg-tertiary/10 rounded-full blur-3xl animate-pulse-soft" />
       <div className="absolute bottom-1/4 left-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse-soft" />
