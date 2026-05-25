@@ -20,6 +20,7 @@ import SeoEntornosReguladosFintech from "./pages/blog/SeoEntornosReguladosFintec
 import ContenidoMasivoFintechMito from "./pages/blog/ContenidoMasivoFintechMito";
 import DatosEstructuradosEntidadesFintech from "./pages/blog/DatosEstructuradosEntidadesFintech";
 import EscalarSinPerderElAlmaFintech from "./pages/blog/EscalarSinPerderElAlmaFintech";
+import ArquitecturaWebNichosComplejosFintech from "./pages/blog/ArquitecturaWebNichosComplejosFintech";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -70,6 +71,7 @@ const App = () => (
           <Route path="/blog/contenido-masivo-fintech-mito" element={<ContenidoMasivoFintechMito />} />
           <Route path="/blog/datos-estructurados-entidades-fintech" element={<DatosEstructuradosEntidadesFintech />} />
           <Route path="/blog/escalar-sin-perder-el-alma-fintech" element={<EscalarSinPerderElAlmaFintech />} />
+          <Route path="/blog/arquitectura-web-nichos-complejos-fintech" element={<ArquitecturaWebNichosComplejosFintech />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
