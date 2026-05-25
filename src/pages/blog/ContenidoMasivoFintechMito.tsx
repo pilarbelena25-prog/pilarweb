@@ -1,5 +1,5 @@
-import imgDestacada from "@/assets/blog/articulo-7/7A.webp";
-import imgContenido from "@/assets/blog/articulo-7/7B.webp";
+import imgDestacada from "@/assets/blog/articulo-7/7A.png";
+import imgContenido from "@/assets/blog/articulo-7/7B.png";
 import ArticleSeoHead from "@/components/ArticleSeoHead";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/layout/Header";
@@ -20,12 +20,12 @@ const ContenidoMasivoFintechMito = () => {
   return (
     <div className="min-h-screen bg-background">
       <ArticleSeoHead
-        title="El Mito del Contenido Masivo FINTECH: Por qué 10 Artículos Estratégicos baten a 100 generados por bots"
+        title="7. El Mito del Contenido Masivo FINTECH: Por qué 10 Artículos Estratégicos baten a 100 generados por bots"
         description="Saturar tu blog Fintech con posts generados por IA no genera autoridad: genera rebote. Descubre por qué 10 artículos estratégicos con datos B2B reales superan en leads a 100 artículos de bots."
         slug="contenido-masivo-fintech-mito"
         image={imgDestacada}
         datePublished="2026-03-17"
-        category="Consultor SEO Fintech"
+        category="Consultor SEO Fintech & Real Estate"
       />
       <Header />
       <main>
@@ -40,7 +40,7 @@ const ContenidoMasivoFintechMito = () => {
                 className="w-full rounded-lg object-cover"
               />
               <p className="font-body text-sm text-foreground-muted text-center mt-3">
-                Pilar Beleña - Consultora SEO Fintech
+                Pilar Beleña - Consultora SEO Fintech & Real Estate
               </p>
             </div>
           </div>
@@ -58,7 +58,7 @@ const ContenidoMasivoFintechMito = () => {
               </a>
               <div className="flex flex-wrap items-center gap-4 mb-6">
                 <strong className="font-body text-xs font-medium text-primary uppercase tracking-wider">
-                  Contenido Estratégico & SEO Fintech
+                  Consultor SEO Fintech & Real Estate
                 </strong>
                 <span className="font-body text-xs text-foreground-muted">
                   17 de marzo de 2026
@@ -68,7 +68,7 @@ const ContenidoMasivoFintechMito = () => {
                 </span>
               </div>
               <h1 className="font-display text-4xl md:text-5xl leading-tight text-primary mb-8">
-                El Mito del Contenido Masivo FINTECH: Por qué 10 Artículos Estratégicos baten a 100 generados por bots
+                7. El Mito del Contenido Masivo FINTECH: Por qué 10 Artículos Estratégicos baten a 100 generados por bots
               </h1>
             </div>
           </div>

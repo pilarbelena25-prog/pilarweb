@@ -1,5 +1,5 @@
-import imgDestacada from "@/assets/blog/articulo-3/3A.webp";
-import imgContenido from "@/assets/blog/articulo-3/3B.webp";
+import imgDestacada from "@/assets/blog/articulo-3/3A.png";
+import imgContenido from "@/assets/blog/articulo-3/3B.png";
 import ArticleSeoHead from "@/components/ArticleSeoHead";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/layout/Header";
@@ -19,12 +19,12 @@ const SgeYElNuevoOrdenDeBusqueda = () => {
   return (
     <div className="min-h-screen bg-background">
       <ArticleSeoHead
-        title="SGE y el nuevo orden de búsqueda FINTECH: Cómo proteger el tráfico de tu marca financiera este año"
+        title="3. SGE y el nuevo orden de búsqueda FINTECH: Cómo proteger el tráfico de tu marca financiera este año"
         description="La SGE convierte la página de resultados en un panel de respuestas. Para las marcas financieras, el riesgo no es solo perder posiciones: es que la IA se quede con la visibilidad que antes era tuya."
         slug="sge-y-el-nuevo-orden-de-busqueda"
         image={imgDestacada}
         datePublished="2026-01-19"
-        category="SEO para Empresas Financieras"
+        category="SEO para Empresas Fintech & Real Estate"
       />
       <Header />
       <main>
@@ -39,7 +39,7 @@ const SgeYElNuevoOrdenDeBusqueda = () => {
                 className="w-full rounded-lg object-cover"
               />
               <p className="font-body text-sm text-foreground-muted text-center mt-3">
-                Pilar Beleña - Consultora SEO Fintech
+                Pilar Beleña - Consultora SEO Fintech & Real Estate
               </p>
             </div>
           </div>
@@ -57,7 +57,7 @@ const SgeYElNuevoOrdenDeBusqueda = () => {
               </a>
               <div className="flex flex-wrap items-center gap-4 mb-6">
                 <strong className="font-body text-xs font-medium text-primary uppercase tracking-wider">
-                  SGE & Visibilidad Fintech
+                  SEO para Empresas Fintech & Real Estate
                 </strong>
                 <span className="font-body text-xs text-foreground-muted">
                   19 de enero de 2026
@@ -67,7 +67,7 @@ const SgeYElNuevoOrdenDeBusqueda = () => {
                 </span>
               </div>
               <h1 className="font-display text-4xl md:text-5xl leading-tight text-primary mb-8">
-                SGE y el nuevo orden de búsqueda FINTECH: Cómo proteger el tráfico de tu marca financiera este año
+                3. SGE y el nuevo orden de búsqueda FINTECH: Cómo proteger el tráfico de tu marca financiera este año
               </h1>
             </div>
           </div>

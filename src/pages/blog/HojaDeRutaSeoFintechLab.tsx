@@ -1,4 +1,4 @@
-import imgDestacada from "@/assets/blog/articulo-2/2.webp";
+import imgDestacada from "@/assets/blog/articulo-2/2.png";
 import ArticleSeoHead from "@/components/ArticleSeoHead";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -8,12 +8,12 @@ const HojaDeRutaSeoFintechLab = () => {
   return (
     <div className="min-h-screen bg-background">
       <ArticleSeoHead
-        title="De 'Encontrable' a IRREMPLAZABLE en FINTECH: Hoja de ruta desde el SEO Fintech Lab"
+        title="2. De 'Encontrable' a IRREMPLAZABLE en FINTECH: Hoja de ruta desde el SEO Fintech Lab"
         description="Estar en Google ya no es suficiente. En 2026, el verdadero reto del SEO Fintech es volverse irremplazable: que tu marca sea la referencia que los algoritmos eligen citar."
         slug="hoja-de-ruta-seo-fintech-lab"
         image={imgDestacada}
         datePublished="2025-12-30"
-        category="Consultor SEO Fintech"
+        category="Consultor SEO Fintech & Real Estate"
       />
       <Header />
       <main>
@@ -28,7 +28,7 @@ const HojaDeRutaSeoFintechLab = () => {
                 className="w-full rounded-lg object-cover"
               />
               <p className="font-body text-sm text-foreground-muted text-center mt-3">
-                Pilar Beleña - Consultora SEO Fintech
+                Pilar Beleña - Consultora SEO Fintech & Real Estate
               </p>
             </div>
           </div>
@@ -46,7 +46,7 @@ const HojaDeRutaSeoFintechLab = () => {
               </a>
               <div className="flex flex-wrap items-center gap-4 mb-6">
                 <strong className="font-body text-xs font-medium text-primary uppercase tracking-wider">
-                  Autoridad de Marca
+                  Consultor SEO Fintech & Real Estate
                 </strong>
                 <span className="font-body text-xs text-foreground-muted">
                   30 de diciembre de 2025
@@ -56,7 +56,7 @@ const HojaDeRutaSeoFintechLab = () => {
                 </span>
               </div>
               <h1 className="font-display text-4xl md:text-5xl leading-tight text-primary mb-8">
-                De 'Encontrable' a IRREMPLAZABLE en FINTECH: Hoja de ruta desde el SEO Fintech Lab
+                2. De 'Encontrable' a IRREMPLAZABLE en FINTECH: Hoja de ruta desde el SEO Fintech Lab
               </h1>
             </div>
           </div>

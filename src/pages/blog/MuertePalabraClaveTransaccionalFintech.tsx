@@ -1,5 +1,5 @@
-import imgDestacada from "@/assets/blog/articulo-4/4A.webp";
-import imgContenido from "@/assets/blog/articulo-4/4b.webp";
+import imgDestacada from "@/assets/blog/articulo-4/4A.png";
+import imgContenido from "@/assets/blog/articulo-4/4b.png";
 import ArticleSeoHead from "@/components/ArticleSeoHead";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/layout/Header";
@@ -20,12 +20,12 @@ const MuertePalabraClaveTransaccionalFintech = () => {
   return (
     <div className="min-h-screen bg-background">
       <ArticleSeoHead
-        title="La muerte de la palabra clave transaccional FINTECH: SEO de intención en la era de los LLM"
+        title="4. La muerte de la palabra clave transaccional FINTECH: SEO de intención en la era de los LLM"
         description="Las palabras clave transaccionales mueren con LLM y SGE. Aprende SEO de intención para Fintech: protege conversiones ante la nueva búsqueda IA."
         slug="muerte-palabra-clave-transaccional-fintech"
         image={imgDestacada}
         datePublished="2026-01-27"
-        category="Consultor SEO Fintech"
+        category="Consultor SEO Fintech & Real Estate"
       />
       <Header />
       <main>
@@ -40,7 +40,7 @@ const MuertePalabraClaveTransaccionalFintech = () => {
                 className="w-full rounded-lg object-cover"
               />
               <p className="font-body text-sm text-foreground-muted text-center mt-3">
-                Pilar Beleña - Consultora SEO Fintech
+                Pilar Beleña - Consultora SEO Fintech & Real Estate
               </p>
             </div>
           </div>
@@ -58,7 +58,7 @@ const MuertePalabraClaveTransaccionalFintech = () => {
               </a>
               <div className="flex flex-wrap items-center gap-4 mb-6">
                 <strong className="font-body text-xs font-medium text-primary uppercase tracking-wider">
-                  LLM & SEO de Intención
+                  Consultor SEO Fintech & Real Estate
                 </strong>
                 <span className="font-body text-xs text-foreground-muted">
                   27 de enero de 2026
@@ -68,7 +68,7 @@ const MuertePalabraClaveTransaccionalFintech = () => {
                 </span>
               </div>
               <h1 className="font-display text-4xl md:text-5xl leading-tight text-primary mb-8">
-                La Muerte de la Palabra Clave Transaccional FINTECH: SEO de intención en la era de los LLM
+                4. La Muerte de la Palabra Clave Transaccional FINTECH: SEO de intención en la era de los LLM
               </h1>
             </div>
           </div>

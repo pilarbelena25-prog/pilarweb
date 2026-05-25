@@ -1,5 +1,5 @@
-import imgDestacada from "@/assets/blog/articulo-5/5A.webp";
-import imgContenido from "@/assets/blog/articulo-5/5B.webp";
+import imgDestacada from "@/assets/blog/articulo-5/5A.png";
+import imgContenido from "@/assets/blog/articulo-5/5B.png";
 import ArticleSeoHead from "@/components/ArticleSeoHead";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/layout/Header";
@@ -20,12 +20,12 @@ const AuditoriasIaFintechEficienciaEmbudo = () => {
   return (
     <div className="min-h-screen bg-background">
       <ArticleSeoHead
-        title="Auditorías de IA FINTECH: Cómo detectar qué partes de tu embudo financiero están perdiendo eficiencia"
+        title="5. Auditorías de IA FINTECH: Cómo detectar qué partes de tu embudo financiero están perdiendo eficiencia"
         description="Tu embudo financiero pierde entre un 20-40% de eficiencia por problemas invisibles que la IA detecta al instante. Auditorías inteligentes para encontrar dónde se escapa tu conversión orgánica sin violar el cumplimiento."
         slug="auditorias-ia-fintech-eficiencia-embudo"
         image={imgDestacada}
         datePublished="2026-02-08"
-        category="SEO para Startups Fintech"
+        category="SEO para Startups Fintech & Inversión Inmobiliaria"
       />
       <Header />
       <main>
@@ -40,7 +40,7 @@ const AuditoriasIaFintechEficienciaEmbudo = () => {
                 className="w-full rounded-lg object-cover"
               />
               <p className="font-body text-sm text-foreground-muted text-center mt-3">
-                Pilar Beleña - Consultora SEO Fintech
+                Pilar Beleña - Consultora SEO Fintech & Real Estate
               </p>
             </div>
           </div>
@@ -58,7 +58,7 @@ const AuditoriasIaFintechEficienciaEmbudo = () => {
               </a>
               <div className="flex flex-wrap items-center gap-4 mb-6">
                 <strong className="font-body text-xs font-medium text-primary uppercase tracking-wider">
-                  Auditoría IA & Embudo Fintech
+                  SEO para Startups Fintech & Inversión Inmobiliaria
                 </strong>
                 <span className="font-body text-xs text-foreground-muted">
                   8 de febrero de 2026
@@ -68,7 +68,7 @@ const AuditoriasIaFintechEficienciaEmbudo = () => {
                 </span>
               </div>
               <h1 className="font-display text-4xl md:text-5xl leading-tight text-primary mb-8">
-                Auditorías de IA FINTECH: Cómo detectar qué partes de tu embudo financiero están perdiendo eficiencia
+                5. Auditorías de IA FINTECH: Cómo detectar qué partes de tu embudo financiero están perdiendo eficiencia
               </h1>
             </div>
           </div>

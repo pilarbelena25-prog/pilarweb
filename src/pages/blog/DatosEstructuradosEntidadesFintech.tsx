@@ -1,5 +1,5 @@
-import imgDestacada from "@/assets/blog/articulo-8/8A.webp";
-import imgContenido from "@/assets/blog/articulo-8/8B.webp";
+import imgDestacada from "@/assets/blog/articulo-8/8A.png";
+import imgContenido from "@/assets/blog/articulo-8/8B.png";
 import ArticleSeoHead from "@/components/ArticleSeoHead";
 import { Button } from "@/components/ui/button";
 import GuiaGptModal from "@/components/sections/GuiaGptModal";
@@ -21,12 +21,12 @@ const DatosEstructuradosEntidadesFintech = () => {
   return (
     <div className="min-h-screen bg-background">
       <ArticleSeoHead
-        title="Datos Estructurados y Entidades Fintech: La verdadera forma en que la IA entiende tu Marca Financiera"
+        title="8. Datos Estructurados y Entidades Fintech: La verdadera forma en que la IA entiende tu Marca Financiera"
         description="Cuando la IA no tiene claro quién es tu Fintech, mezcla tu marca con otras similares. Los datos estructurados y entidades son la solución para que Google y los LLM te identifiquen correctamente."
         slug="datos-estructurados-entidades-fintech"
         image={imgDestacada}
         datePublished="2026-03-27"
-        category="SEO para Empresas Financieras"
+        category="SEO para Empresas Fintech & Real Estate"
       />
       <Header />
       <main>
@@ -41,7 +41,7 @@ const DatosEstructuradosEntidadesFintech = () => {
                 className="w-full rounded-lg object-cover"
               />
               <p className="font-body text-sm text-foreground-muted text-center mt-3">
-                Pilar Beleña - Consultora SEO Fintech
+                Pilar Beleña - Consultora SEO Fintech & Real Estate
               </p>
             </div>
           </div>
@@ -59,7 +59,7 @@ const DatosEstructuradosEntidadesFintech = () => {
               </a>
               <div className="flex flex-wrap items-center gap-4 mb-6">
                 <strong className="font-body text-xs font-medium text-primary uppercase tracking-wider">
-                  Datos Estructurados & SEO Fintech
+                  SEO para Empresas Fintech & Real Estate
                 </strong>
                 <span className="font-body text-xs text-foreground-muted">
                   27 de marzo de 2026
@@ -69,7 +69,7 @@ const DatosEstructuradosEntidadesFintech = () => {
                 </span>
               </div>
               <h1 className="font-display text-4xl md:text-5xl leading-tight text-primary mb-8">
-                Datos Estructurados y Entidades Fintech: La verdadera forma en que la IA entiende tu Marca Financiera
+                8. Datos Estructurados y Entidades Fintech: La verdadera forma en que la IA entiende tu Marca Financiera
               </h1>
             </div>
           </div>

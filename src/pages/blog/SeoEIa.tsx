@@ -1,6 +1,6 @@
-import imgDestacada from "@/assets/blog/articulo-1/1A.webp";
+import imgDestacada from "@/assets/blog/articulo-1/1A.png";
 import ArticleSeoHead from "@/components/ArticleSeoHead";
-import imgContenido from "@/assets/blog/articulo-1/1B.webp";
+import imgContenido from "@/assets/blog/articulo-1/1B.png";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -32,12 +32,12 @@ const SeoEIa = () => {
   return (
     <div className="min-h-screen bg-background">
       <ArticleSeoHead
-        title="SEO e IA: Por qué la Estrategia importa más que el volumen en SEO Fintech 2026"
+        title="1. SEO e IA: Por qué la Estrategia importa más que el volumen en SEO Fintech 2026"
         description="Con la IA Generativa, cualquier Fintech puede publicar miles de artículos diarios. Pero el volumen masivo no es ventaja competitiva: es un riesgo directo para tu autoridad de marca."
         slug="seo-e-ia"
         image={imgDestacada}
         datePublished="2025-12-28"
-        category="Consultor SEO Fintech"
+        category="Consultor SEO Fintech & Real Estate"
       />
       <Header />
       <main>
@@ -52,7 +52,7 @@ const SeoEIa = () => {
                 className="w-full rounded-lg object-cover"
               />
               <p className="font-body text-sm text-foreground-muted text-center mt-3">
-                Pilar Beleña - Consultora SEO Fintech
+                Pilar Beleña - Consultora SEO Fintech & Real Estate
               </p>
             </div>
           </div>
@@ -70,7 +70,7 @@ const SeoEIa = () => {
               </a>
               <div className="flex flex-wrap items-center gap-4 mb-6">
                 <strong className="font-body text-xs font-medium text-primary uppercase tracking-wider">
-                  SEO Fintech
+                  Consultor SEO Fintech & Real Estate
                 </strong>
                 <span className="font-body text-xs text-foreground-muted">
                   28 de diciembre de 2025
@@ -80,7 +80,7 @@ const SeoEIa = () => {
                 </span>
               </div>
               <h1 className="font-display text-4xl md:text-5xl leading-tight text-primary mb-8">
-                SEO e IA: Por qué la Estrategia importa más que el volumen en SEO Fintech 2026
+                1. SEO e IA: Por qué la Estrategia importa más que el volumen en SEO Fintech 2026
               </h1>
             </div>
           </div>

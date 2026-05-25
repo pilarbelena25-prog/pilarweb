@@ -1,5 +1,5 @@
-import imgDestacada from "@/assets/blog/articulo-9/9A.webp";
-import imgContenido from "@/assets/blog/articulo-9/9B.webp";
+import imgDestacada from "@/assets/blog/articulo-9/9A.png";
+import imgContenido from "@/assets/blog/articulo-9/9B.png";
 import ArticleSeoHead from "@/components/ArticleSeoHead";
 import { Button } from "@/components/ui/button";
 import GuiaGptModal from "@/components/sections/GuiaGptModal";
@@ -21,12 +21,12 @@ const EscalarSinPerderElAlmaFintech = () => {
   return (
     <div className="min-h-screen bg-background">
       <ArticleSeoHead
-        title="Escalar sin perder el alma FINTECH: Cómo entrenar a tu IA con el tono de voz de tu Empresa Financiera"
+        title="9. Escalar sin perder el alma FINTECH: Cómo entrenar a tu IA con el tono de voz de tu Empresa Financiera"
         description="El 78% de las Startups Fintech pierde conversión por sonar 'Genérico-IA'. Aprende la metodología del Lab para entrenar tu IA con tu tono financiero real: datos, compliance y autoridad sectorial."
         slug="escalar-sin-perder-el-alma-fintech"
         image={imgDestacada}
         datePublished="2026-04-06"
-        category="SEO para Startups Fintech"
+        category="SEO para Startups Fintech & Inversión Inmobiliaria"
       />
       <Header />
       <main>
@@ -41,7 +41,7 @@ const EscalarSinPerderElAlmaFintech = () => {
                 className="w-full rounded-lg object-cover"
               />
               <p className="font-body text-sm text-foreground-muted text-center mt-3">
-                Pilar Beleña - Consultora SEO Fintech
+                Pilar Beleña - Consultora SEO Fintech & Real Estate
               </p>
             </div>
           </div>
@@ -59,7 +59,7 @@ const EscalarSinPerderElAlmaFintech = () => {
               </a>
               <div className="flex flex-wrap items-center gap-4 mb-6">
                 <strong className="font-body text-xs font-medium text-primary uppercase tracking-wider">
-                  SEO para Startups Fintech
+                  SEO para Startups Fintech & Inversión Inmobiliaria
                 </strong>
                 <span className="font-body text-xs text-foreground-muted">
                   6 de abril de 2026
@@ -69,7 +69,7 @@ const EscalarSinPerderElAlmaFintech = () => {
                 </span>
               </div>
               <h1 className="font-display text-4xl md:text-5xl leading-tight text-primary mb-8">
-                Escalar sin perder el alma FINTECH: Cómo entrenar a tu IA con el tono de voz de tu Empresa Financiera
+                9. Escalar sin perder el alma FINTECH: Cómo entrenar a tu IA con el tono de voz de tu Empresa Financiera
               </h1>
             </div>
           </div>

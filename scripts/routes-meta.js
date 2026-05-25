@@ -63,110 +63,110 @@ export const routesMeta = [
   {
     route: '/blog/seo-e-ia',
     title:
-      'SEO e IA: Por qué la Estrategia importa más que el volumen en SEO Fintech 2026 | Pilar Beleña SEO Fintech Lab',
+      '1. SEO e IA: Por qué la Estrategia importa más que el volumen en SEO Fintech 2026 | Pilar Beleña SEO Fintech Lab',
     description:
       'Con la IA Generativa, cualquier Fintech puede publicar miles de artículos diarios. Pero el volumen masivo no es ventaja competitiva: es un riesgo directo para tu autoridad de marca.',
     canonical: `${BASE_URL}/blog/seo-e-ia`,
     ogType: 'article',
-    imageSource: 'src/assets/blog/articulo-1/1A.webp',
+    imageSource: 'src/assets/blog/articulo-1/1A.png',
     datePublished: '2025-12-28',
-    category: 'Consultor SEO Fintech',
+    category: 'Consultor SEO Fintech & Real Estate',
   },
   {
     route: '/blog/hoja-de-ruta-seo-fintech-lab',
     title:
-      "De 'Encontrable' a IRREMPLAZABLE en FINTECH: Hoja de ruta desde el SEO Fintech Lab | Pilar Beleña SEO Fintech Lab",
+      "2. De 'Encontrable' a IRREMPLAZABLE en FINTECH: Hoja de ruta desde el SEO Fintech Lab | Pilar Beleña SEO Fintech Lab",
     description:
       'Estar en Google ya no es suficiente. En 2026, el verdadero reto del SEO Fintech es volverse irremplazable: que tu marca sea la referencia que los algoritmos eligen citar.',
     canonical: `${BASE_URL}/blog/hoja-de-ruta-seo-fintech-lab`,
     ogType: 'article',
-    imageSource: 'src/assets/blog/articulo-2/2.webp',
+    imageSource: 'src/assets/blog/articulo-2/2.png',
     datePublished: '2025-12-30',
-    category: 'Consultor SEO Fintech',
+    category: 'Consultor SEO Fintech & Real Estate',
   },
   {
     route: '/blog/sge-y-el-nuevo-orden-de-busqueda',
     title:
-      'SGE y el nuevo orden de búsqueda FINTECH: Cómo proteger el tráfico de tu marca financiera este año | Pilar Beleña SEO Fintech Lab',
+      '3. SGE y el nuevo orden de búsqueda FINTECH: Cómo proteger el tráfico de tu marca financiera este año | Pilar Beleña SEO Fintech Lab',
     description:
       'La SGE convierte la página de resultados en un panel de respuestas. Para las marcas financieras, el riesgo no es solo perder posiciones: es que la IA se quede con la visibilidad que antes era tuya.',
     canonical: `${BASE_URL}/blog/sge-y-el-nuevo-orden-de-busqueda`,
     ogType: 'article',
-    imageSource: 'src/assets/blog/articulo-3/3A.webp',
+    imageSource: 'src/assets/blog/articulo-3/3A.png',
     datePublished: '2026-01-19',
-    category: 'SEO para Empresas Financieras',
+    category: 'SEO para Empresas Fintech & Real Estate',
   },
   {
     route: '/blog/muerte-palabra-clave-transaccional-fintech',
     title:
-      'La muerte de la palabra clave transaccional FINTECH: SEO de intención en la era de los LLM | Pilar Beleña SEO Fintech Lab',
+      '4. La muerte de la palabra clave transaccional FINTECH: SEO de intención en la era de los LLM | Pilar Beleña SEO Fintech Lab',
     description:
-      'Las palabras clave transaccionales mueren con LLM y SGE. Aprende SEO de intención para Fintech: protege conversiones ante la nueva búsqueda IA.',
+      'Las palabras clave transaccionales mueren con LLM and SGE. Aprende SEO de intención para Fintech: protege conversiones ante la nueva búsqueda IA.',
     canonical: `${BASE_URL}/blog/muerte-palabra-clave-transaccional-fintech`,
     ogType: 'article',
-    imageSource: 'src/assets/blog/articulo-4/4A.webp',
+    imageSource: 'src/assets/blog/articulo-4/4A.png',
     datePublished: '2026-01-27',
-    category: 'Consultor SEO Fintech',
+    category: 'Consultor SEO Fintech & Real Estate',
   },
   {
     route: '/blog/auditorias-ia-fintech-eficiencia-embudo',
     title:
-      'Auditorías de IA FINTECH: Cómo detectar qué partes de tu embudo financiero están perdiendo eficiencia | Pilar Beleña SEO Fintech Lab',
+      '5. Auditorías de IA FINTECH: Cómo detectar qué partes de tu embudo financiero están perdiendo eficiencia | Pilar Beleña SEO Fintech Lab',
     description:
       'Tu embudo financiero pierde entre un 20-40% de eficiencia por problemas invisibles que la IA detecta al instante. Auditorías inteligentes para encontrar dónde se escapa tu conversión orgánica sin violar el cumplimiento.',
     canonical: `${BASE_URL}/blog/auditorias-ia-fintech-eficiencia-embudo`,
     ogType: 'article',
-    imageSource: 'src/assets/blog/articulo-5/5A.webp',
+    imageSource: 'src/assets/blog/articulo-5/5A.png',
     datePublished: '2026-02-08',
-    category: 'SEO para Startups Fintech',
+    category: 'SEO para Startups Fintech & Inversión Inmobiliaria',
   },
   {
     route: '/blog/seo-entornos-regulados-fintech',
     title:
-      "SEO FINTECH en Entornos Regulados: Cómo innovar sin romper el 'compliance' desde el Lab | Pilar Beleña SEO Fintech Lab",
+      "6. SEO FINTECH en Entornos Regulados: Cómo innovar sin romper el 'compliance' desde el Lab | Pilar Beleña SEO Fintech Lab",
     description:
       'Aprende cómo las Fintech pueden innovar en SEO sin incumplir la regulación. Estrategias prácticas, ejemplos y herramientas para crecer de forma segura.',
     canonical: `${BASE_URL}/blog/seo-entornos-regulados-fintech`,
     ogType: 'article',
-    imageSource: 'src/assets/blog/articulo-6/6A.webp',
+    imageSource: 'src/assets/blog/articulo-6/6A.png',
     datePublished: '2026-02-26',
-    category: 'SEO para Empresas Financieras',
+    category: 'SEO para Empresas Fintech & Real Estate',
   },
   {
     route: '/blog/contenido-masivo-fintech-mito',
     title:
-      'El Mito del Contenido Masivo FINTECH: Por qué 10 Artículos Estratégicos baten a 100 generados por bots | Pilar Beleña SEO Fintech Lab',
+      '7. El Mito del Contenido Masivo FINTECH: Por qué 10 Artículos Estratégicos baten a 100 generados por bots | Pilar Beleña SEO Fintech Lab',
     description:
       'Saturar tu blog Fintech con posts generados por IA no genera autoridad: genera rebote. Descubre por qué 10 artículos estratégicos con datos B2B reales superan en leads a 100 artículos de bots.',
     canonical: `${BASE_URL}/blog/contenido-masivo-fintech-mito`,
     ogType: 'article',
-    imageSource: 'src/assets/blog/articulo-7/7A.webp',
+    imageSource: 'src/assets/blog/articulo-7/7A.png',
     datePublished: '2026-03-17',
-    category: 'Consultor SEO Fintech',
+    category: 'Consultor SEO Fintech & Real Estate',
   },
   {
     route: '/blog/datos-estructurados-entidades-fintech',
     title:
-      'Datos Estructurados y Entidades Fintech: La verdadera forma en que la IA entiende tu Marca Financiera | Pilar Beleña SEO Fintech Lab',
+      '8. Datos Estructurados y Entidades Fintech: La verdadera forma en que la IA entiende tu Marca Financiera | Pilar Beleña SEO Fintech Lab',
     description:
       'Cuando la IA no tiene claro quién es tu Fintech, mezcla tu marca con otras similares. Los datos estructurados y entidades son la solución para que Google y los LLM te identifiquen correctamente.',
     canonical: `${BASE_URL}/blog/datos-estructurados-entidades-fintech`,
     ogType: 'article',
-    imageSource: 'src/assets/blog/articulo-8/8A.webp',
+    imageSource: 'src/assets/blog/articulo-8/8A.png',
     datePublished: '2026-03-27',
-    category: 'SEO para Empresas Financieras',
+    category: 'SEO para Empresas Fintech & Real Estate',
   },
   {
     route: '/blog/escalar-sin-perder-el-alma-fintech',
     title:
-      'Escalar sin perder el alma FINTECH: Cómo entrenar a tu IA con el tono de voz de tu Empresa Financiera | Pilar Beleña SEO Fintech Lab',
+      '9. Escalar sin perder el alma FINTECH: Cómo entrenar a tu IA con el tono de voz de tu Empresa Financiera | Pilar Beleña SEO Fintech Lab',
     description:
       "El 78% de las Startups Fintech pierde conversión por sonar 'Genérico-IA'. Aprende la metodología del Lab para entrenar tu IA con tu tono financiero real: datos, compliance y autoridad sectorial.",
     canonical: `${BASE_URL}/blog/escalar-sin-perder-el-alma-fintech`,
     ogType: 'article',
-    imageSource: 'src/assets/blog/articulo-9/9A.webp',
+    imageSource: 'src/assets/blog/articulo-9/9A.png',
     datePublished: '2026-04-06',
-    category: 'SEO para Startups Fintech',
+    category: 'SEO para Startups Fintech & Inversión Inmobiliaria',
   },
   {
     route: '/auditoria-express-seo-fintech',
@@ -176,7 +176,7 @@ export const routesMeta = [
       'Descubre en 48h qué está frenando la visibilidad de tu Fintech. Diagnóstico rápido, técnico y accionable para saber exactamente qué corregir primero. 290€.',
     canonical: `${BASE_URL}/auditoria-express-seo-fintech`,
     ogType: 'website',
-    imageSource: 'src/assets/Auditoria Express SEO Fintech Lab.webp',
+    imageSource: 'src/assets/Auditoria Express SEO Fintech Lab.png',
   },
   {
     route: '/aviso-legal',

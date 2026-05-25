@@ -1,5 +1,5 @@
-import imgDestacada from "@/assets/blog/articulo-6/6A.webp";
-import imgContenido from "@/assets/blog/articulo-6/6B.webp";
+import imgDestacada from "@/assets/blog/articulo-6/6A.png";
+import imgContenido from "@/assets/blog/articulo-6/6B.png";
 import ArticleSeoHead from "@/components/ArticleSeoHead";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/layout/Header";
@@ -20,12 +20,12 @@ const SeoEntornosReguladosFintech = () => {
   return (
     <div className="min-h-screen bg-background">
       <ArticleSeoHead
-        title="SEO FINTECH en Entornos Regulados: Cómo innovar sin romper el 'compliance' desde el Lab"
+        title="6. SEO FINTECH en Entornos Regulados: Cómo innovar sin romper el 'compliance' desde el Lab"
         description="Aprende cómo las Fintech pueden innovar en SEO sin incumplir la regulación. Estrategias prácticas, ejemplos y herramientas para crecer de forma segura."
         slug="seo-entornos-regulados-fintech"
         image={imgDestacada}
         datePublished="2026-02-26"
-        category="SEO para Empresas Financieras"
+        category="SEO para Empresas Fintech & Real Estate"
       />
       <Header />
       <main>
@@ -40,7 +40,7 @@ const SeoEntornosReguladosFintech = () => {
                 className="w-full rounded-lg object-cover"
               />
               <p className="font-body text-sm text-foreground-muted text-center mt-3">
-                Pilar Beleña - Consultora SEO Fintech
+                Pilar Beleña - Consultora SEO Fintech & Real Estate
               </p>
             </div>
           </div>
@@ -58,7 +58,7 @@ const SeoEntornosReguladosFintech = () => {
               </a>
               <div className="flex flex-wrap items-center gap-4 mb-6">
                 <strong className="font-body text-xs font-medium text-primary uppercase tracking-wider">
-                  SEO & Compliance Fintech
+                  SEO para Empresas Fintech & Real Estate
                 </strong>
                 <span className="font-body text-xs text-foreground-muted">
                   26 de febrero de 2026
@@ -68,7 +68,7 @@ const SeoEntornosReguladosFintech = () => {
                 </span>
               </div>
               <h1 className="font-display text-4xl md:text-5xl leading-tight text-primary mb-8">
-                SEO FINTECH en Entornos Regulados: Cómo innovar sin romper el 'compliance' desde el Lab
+                6. SEO FINTECH en Entornos Regulados: Cómo innovar sin romper el 'compliance' desde el Lab
               </h1>
             </div>
           </div>
