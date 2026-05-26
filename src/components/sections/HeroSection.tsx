@@ -11,7 +11,7 @@ const HeroSection = () => {
       className="min-h-screen flex flex-col items-center justify-start lg:justify-center bg-gradient-hero relative overflow-hidden pt-20 lg:pt-32"
     >
       {/* Background Image with Opacity */}
-      <div 
+      <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-[0.40]"
         style={{ backgroundImage: `url(${imgPortadaHome})` }}
       />

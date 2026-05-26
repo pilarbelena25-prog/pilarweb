@@ -34,6 +34,7 @@ const FAMILIES = [
   { slug: "consultor-seo-fintech", label: "Consultor SEO Fintech & Real Estate" },
   { slug: "seo-startups-fintech", label: "SEO para Startups Fintech & Inversión Inmobiliaria" },
   { slug: "seo-empresas-financieras", label: "SEO para Empresas Fintech & Real Estate" },
+  { slug: "seo-avanzado-arquitectura-eeat", label: "SEO Avanzado, Arquitectura y EEAT" },
 ];
 
 const posts: BlogPost[] = [
@@ -141,8 +142,8 @@ const posts: BlogPost[] = [
     title: "10. Arquitectura Web para Nichos Complejos Fintech & Inversión Inmobiliaria: Menos es más, si está bien conectado",
     excerpt: "Tener mucha información en tu web no es suficiente si el usuario se pierde antes de entender qué haces. En nichos complejos como Fintech & Real Estate, la clave no es publicar más, sino conectar mejor.",
     date: "26 abr 2026",
-    category: "SEO Fintech Lab",
-    family: "seo-empresas-financieras",
+    category: "SEO Avanzado, Arquitectura y EEAT",
+    family: "seo-avanzado-arquitectura-eeat",
     readTime: "5 min de lectura",
     image: imgArquitecturaWeb,
     imageAlt: "Arquitectura Web para Nichos Complejos Fintech & Inversión Inmobiliaria - SEO Fintech Lab",
@@ -152,8 +153,8 @@ const posts: BlogPost[] = [
     title: "11. EEAT avanzada en Fintech & Real Estate: Cómo demostrar Autoridad cuando el algoritmo es más escéptico que nunca",
     excerpt: "En sectores YMYL como Fintech y Real Estate, ya no basta con parecer experto: hay que probarlo. Descubre cómo demostrar EEAT real y coherente ante el escepticismo algorítmico.",
     date: "26 may 2026",
-    category: "SEO para Startups Fintech & Inversión Inmobiliaria",
-    family: "seo-startups-fintech",
+    category: "SEO Avanzado, Arquitectura y EEAT",
+    family: "seo-avanzado-arquitectura-eeat",
     readTime: "6 min de lectura",
     image: imgEeatAvanzada,
     imageAlt: "EEAT avanzada en Fintech & Real Estate - SEO Fintech Lab",
@@ -193,7 +194,7 @@ const Blog = () => {
         {/* Hero */}
         <section className="relative pt-32 pb-16 bg-gradient-hero overflow-hidden">
           {/* Background Image with Opacity */}
-          <div 
+          <div
             className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-[0.40]"
             style={{ backgroundImage: `url(${imgPortadaHome})` }}
           />
@@ -202,7 +203,7 @@ const Blog = () => {
 
           <div className="container relative z-10 mx-auto px-6">
             <div className="max-w-5xl mx-auto text-center">
-              
+
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 text-primary">
                 Estrategias SEO, Arquitectura Web y EEAT para Fintech & Real Estate
               </h1>
@@ -229,11 +230,10 @@ const Blog = () => {
               <div id="categorias" className="flex flex-wrap gap-3 mb-12 justify-center">
                 <button
                   onClick={() => handleFiltro(null)}
-                  className={`font-body text-sm px-5 py-2 rounded-full border transition-colors duration-200 ${
-                    !categoriaActiva
+                  className={`font-body text-sm px-5 py-2 rounded-full border transition-colors duration-200 ${!categoriaActiva
                       ? "border-primary text-primary"
                       : "border-border text-foreground-muted hover:border-primary hover:text-primary"
-                  }`}
+                    }`}
                 >
                   Todos
                 </button>
@@ -241,11 +241,10 @@ const Blog = () => {
                   <button
                     key={f.slug}
                     onClick={() => handleFiltro(f.slug)}
-                    className={`font-body text-sm px-5 py-2 rounded-full border transition-colors duration-200 ${
-                      categoriaActiva === f.slug
+                    className={`font-body text-sm px-5 py-2 rounded-full border transition-colors duration-200 ${categoriaActiva === f.slug
                         ? "border-primary text-primary"
                         : "border-border text-foreground-muted hover:border-primary hover:text-primary"
-                    }`}
+                      }`}
                   >
                     {f.label}
                   </button>
