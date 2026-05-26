@@ -9,6 +9,7 @@ import imgSeoEntornosRegulados from "@/assets/blog/articulo-6/6A.png";
 import imgContenidoMasivo from "@/assets/blog/articulo-7/7A.png";
 import imgDatosEstructurados from "@/assets/blog/articulo-8/8A.png";
 import imgEscalarSinPerder from "@/assets/blog/articulo-9/9A.png";
+import imgArquitecturaWeb from "@/assets/blog/articulo-10/10A.png";
 import imgPortadaHome from "@/assets/portada-home.png";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -142,7 +143,7 @@ const posts: BlogPost[] = [
     category: "SEO Fintech Lab",
     family: "seo-empresas-financieras",
     readTime: "5 min de lectura",
-    image: "",
+    image: imgArquitecturaWeb,
     imageAlt: "Arquitectura Web para Nichos Complejos Fintech & Inversión Inmobiliaria - SEO Fintech Lab",
   },
 ];

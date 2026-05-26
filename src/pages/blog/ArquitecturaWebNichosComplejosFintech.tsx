@@ -1,8 +1,10 @@
+import imgDestacada from "@/assets/blog/articulo-10/10A.png";
 import ArticleSeoHead from "@/components/ArticleSeoHead";
 import { Button } from "@/components/ui/button";
 import GuiaGptModal from "@/components/sections/GuiaGptModal";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { LazyImage } from "@/components/ui/LazyImage";
 
 const CALENDAR_URL = "https://calendly.com/pilarbelena25/30min";
 const AUDITORIA_URL = "https://pilar-belena-seo-fintech-lab.netlify.app/auditoria-seo-fintech";
@@ -21,14 +23,31 @@ const ArquitecturaWebNichosComplejosFintech = () => {
         title="10. Arquitectura Web para Nichos Complejos Fintech & Inversión Inmobiliaria: Menos es más, si está bien conectado"
         description="En nichos complejos como Fintech & Real Estate, no basta con publicar más contenido: hay que conectarlo mejor. Descubre cómo una arquitectura web bien estructurada mejora la autoridad temática y la conversión."
         slug="arquitectura-web-nichos-complejos-fintech"
-        image=""
+        image={imgDestacada}
         datePublished="2026-04-26"
         category="SEO para Startups Fintech & Inversión Inmobiliaria"
       />
       <Header />
       <main>
+        {/* Featured image */}
+        <section className="pt-24 bg-background">
+          <div className="container mx-auto px-6">
+            <div className="max-w-4xl mx-auto">
+              <LazyImage
+                eager
+                src={imgDestacada}
+                alt="Arquitectura Web para Nichos Complejos Fintech - SEO Fintech Lab"
+                className="w-full rounded-lg object-cover"
+              />
+              <p className="font-body text-sm text-foreground-muted text-center mt-3">
+                Pilar Beleña - Consultora SEO Fintech & Real Estate
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Header del artículo */}
-        <section className="pt-32 pb-4 bg-background">
+        <section className="pt-10 pb-4 bg-background">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl mx-auto">
               <a
