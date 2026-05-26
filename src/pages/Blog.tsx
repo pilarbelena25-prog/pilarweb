@@ -202,9 +202,7 @@ const Blog = () => {
 
           <div className="container relative z-10 mx-auto px-6">
             <div className="max-w-5xl mx-auto text-center">
-              <span className="font-body text-xs font-semibold uppercase tracking-widest text-primary mb-3 block">
-                Blog
-              </span>
+              
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 text-primary">
                 Estrategias SEO, Arquitectura Web y EEAT para Fintech & Real Estate
               </h1>
