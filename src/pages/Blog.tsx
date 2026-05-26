@@ -11,7 +11,7 @@ import imgDatosEstructurados from "@/assets/blog/articulo-8/8A.png";
 import imgEscalarSinPerder from "@/assets/blog/articulo-9/9A.png";
 import imgArquitecturaWeb from "@/assets/blog/articulo-10/10A.png";
 import imgEeatAvanzada from "@/assets/blog/articulo-11/11A.png";
-import imgPortadaHome from "@/assets/portada-home.png";
+import imgBlogFotoBuena from "@/assets/blog-foto-buena.png";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { LazyImage } from "@/components/ui/LazyImage";
@@ -196,7 +196,7 @@ const Blog = () => {
           {/* Background Image with Opacity */}
           <div
             className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-[0.40]"
-            style={{ backgroundImage: `url(${imgPortadaHome})` }}
+            style={{ backgroundImage: `url(${imgBlogFotoBuena})` }}
           />
           {/* Subtle gradient overlay to blend into the main background */}
           <div className="absolute inset-0 z-0 bg-gradient-to-b from-transparent via-transparent to-background pointer-events-none" />
