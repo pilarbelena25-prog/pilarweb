@@ -357,35 +357,6 @@ const LabPilarBelena = () => {
                 </div>
               </article>
 
-              {/* Keywords Section */}
-              <article className="pt-8 border-t border-border">
-                <h3 className="font-body text-xs font-semibold text-primary uppercase tracking-wider mb-4">
-                  Áreas de Especialización del Lab
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {[
-                    "Pilar Beleña Lab",
-                    "SEO Fintech",
-                    "Inversión inmobiliaria",
-                    "Real Estate",
-                    "Obra nueva",
-                    "Auditoría SEO Express",
-                    "Arquitectura web",
-                    "Autoridad digital",
-                    "Leads orgánicos",
-                    "IA aplicada al SEO",
-                    "Lead generation B2B",
-                    "Proyectos premium",
-                  ].map((keyword) => (
-                    <span
-                      key={keyword}
-                      className="px-3 py-1 bg-soft-pink text-primary text-xs font-body rounded-full border border-border"
-                    >
-                      {keyword}
-                    </span>
-                  ))}
-                </div>
-              </article>
 
             </div>
           </div>
