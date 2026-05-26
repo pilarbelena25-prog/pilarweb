@@ -10,6 +10,7 @@ import imgContenidoMasivo from "@/assets/blog/articulo-7/7A.png";
 import imgDatosEstructurados from "@/assets/blog/articulo-8/8A.png";
 import imgEscalarSinPerder from "@/assets/blog/articulo-9/9A.png";
 import imgArquitecturaWeb from "@/assets/blog/articulo-10/10A.png";
+import imgEeatAvanzada from "@/assets/blog/articulo-11/11A.png";
 import imgPortadaHome from "@/assets/portada-home.png";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -145,6 +146,17 @@ const posts: BlogPost[] = [
     readTime: "5 min de lectura",
     image: imgArquitecturaWeb,
     imageAlt: "Arquitectura Web para Nichos Complejos Fintech & Inversión Inmobiliaria - SEO Fintech Lab",
+  },
+  {
+    slug: "eeat-avanzada-fintech-real-estate",
+    title: "11. EEAT avanzada en Fintech & Real Estate: Cómo demostrar Autoridad cuando el algoritmo es más escéptico que nunca",
+    excerpt: "En sectores YMYL como Fintech y Real Estate, ya no basta con parecer experto: hay que probarlo. Descubre cómo demostrar EEAT real y coherente ante el escepticismo algorítmico.",
+    date: "26 may 2026",
+    category: "SEO para Startups Fintech & Inversión Inmobiliaria",
+    family: "seo-startups-fintech",
+    readTime: "6 min de lectura",
+    image: imgEeatAvanzada,
+    imageAlt: "EEAT avanzada en Fintech & Real Estate - SEO Fintech Lab",
   },
 ];
 
