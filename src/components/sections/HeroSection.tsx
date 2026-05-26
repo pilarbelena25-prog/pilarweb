@@ -36,7 +36,7 @@ const HeroSection = () => {
           </div>
 
           {/* Main Headline */}
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-tight mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
             <span className="text-foreground">Posiciona tu </span>
             <span className="text-gradient-primary">Fintech</span>
             <br />
@@ -45,7 +45,7 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <h2
-            className="font-body text-lg md:text-xl text-foreground-muted max-w-2xl 3xl:max-w-3xl mx-auto mb-10 leading-relaxed animate-fade-up"
+            className="font-body text-base sm:text-lg md:text-xl text-foreground-muted max-w-2xl 3xl:max-w-3xl mx-auto mb-10 leading-relaxed animate-fade-up"
             style={{ animationDelay: "0.2s" }}
           >
             Auditoría SEO Express que convierte Fintechs estancadas en 10-15 leads orgánicos al mes, sin depender de portales ni ADS.
@@ -53,15 +53,15 @@ const HeroSection = () => {
 
           {/* CTAs */}
           <div
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-up"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-up px-4 sm:px-0"
             style={{ animationDelay: "0.3s" }}
           >
-            <Button variant="hero" size="xl" className="group">
+            <Button variant="hero" size="xl" className="group w-full sm:w-auto">
               Descubrir mi enfoque
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <GuiaGptModal>
-              <Button variant="heroOutline" size="xl">
+              <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
                 Descargar guía IA gratuita
               </Button>
             </GuiaGptModal>

@@ -42,7 +42,7 @@ const AboutSection = () => {
           {team.map((member) => (
             <article
               key={member.name}
-              className="bg-background rounded-2xl border border-border shadow-elegant p-8 text-center group hover:-translate-y-1 transition-all duration-300 flex flex-col items-center"
+              className="bg-background rounded-2xl border border-border shadow-elegant p-6 sm:p-8 text-center group hover:-translate-y-1 transition-all duration-300 flex flex-col items-center"
             >
               {/* Circular photo */}
               <div className="w-48 h-48 mb-6 flex-shrink-0">

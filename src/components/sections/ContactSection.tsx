@@ -199,7 +199,7 @@ const ContactSection = () => {
             </div>
 
             {/* Right Column - Form */}
-            <div className="bg-card rounded-2xl p-8 shadow-elegant border border-border">
+            <div className="bg-card rounded-2xl p-6 sm:p-8 shadow-elegant border border-border">
               <h3 className="font-display text-2xl text-foreground mb-2">Escríbeme sobre tu Fintech</h3>
               <p className="font-body text-foreground-muted mb-2">
                 Respondo en máximo 4h laborables

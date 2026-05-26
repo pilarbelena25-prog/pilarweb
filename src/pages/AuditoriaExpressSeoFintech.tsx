@@ -259,18 +259,18 @@ const AuditoriaExpressSeoFintech = () => {
                 {includesItems.map((item, i) => {
                   const Icon = item.icon;
                   return (
-                    <div key={i} className="flex items-start gap-8 p-8 rounded-2xl bg-card border border-border">
+                    <div key={i} className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 sm:gap-8 p-6 sm:p-8 rounded-2xl bg-card border border-border">
                       <div className="flex-shrink-0">
                         <Icon />
                       </div>
                       <div>
-                        <div className="flex items-center gap-3 mb-3">
+                        <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-3 mb-3">
                           <span className="font-display text-2xl text-primary/30">{String(i + 1).padStart(2, "0")}</span>
                           <h3 className="font-display text-xl text-foreground">{item.title}</h3>
                         </div>
                         <ul className="space-y-2">
                           {item.points.map((point, j) => (
-                            <li key={j} className="flex items-start gap-2 font-body text-foreground-muted text-sm">
+                            <li key={j} className="flex items-start justify-center sm:justify-start gap-2 font-body text-foreground-muted text-sm">
                               <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
                               {point}
                             </li>
@@ -326,7 +326,7 @@ const AuditoriaExpressSeoFintech = () => {
                 Una sola inversión para obtener claridad total sobre lo que necesita tu Fintech para empezar a posicionar con foco.
               </p>
 
-              <div className="bg-background rounded-2xl border border-border shadow-elegant-lg p-10 mb-8 relative overflow-hidden">
+              <div className="bg-background rounded-2xl border border-border shadow-elegant-lg p-6 sm:p-10 mb-8 relative overflow-hidden">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-px bg-gradient-to-r from-transparent via-primary to-transparent" />
                 <p className="font-display text-6xl text-primary mb-2">290 €</p>
                 <p className="font-body text-foreground-muted text-sm mb-8">Precio único · IVA no incluido</p>
