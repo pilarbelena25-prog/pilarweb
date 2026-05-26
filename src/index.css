@@ -7,19 +7,19 @@
 @layer base {
   /* Keep custom HSL variables and other settings as is */
   :root {
-    /* Fondos - Morado claro más definido */
-    --background: 280 35% 95%;
-    --background-secondary: 280 30% 90%;
+    /* Fondos - Morado claro más intenso y distinguible */
+    --background: 280 45% 93%;
+    --background-secondary: 280 35% 88%;
     
     /* Textos - Gris antracita y grises */
     --foreground: 0 0% 18%;
     --foreground-muted: 0 0% 35%;
     
     /* Cards y superficies */
-    --card: 280 35% 95%;
+    --card: 280 45% 93%;
     --card-foreground: 0 0% 18%;
 
-    --popover: 280 35% 95%;
+    --popover: 280 45% 93%;
     --popover-foreground: 0 0% 18%;
     
     /* Primario - Granate intenso */
@@ -35,15 +35,15 @@
     --tertiary-foreground: 0 0% 18%;
 
     /* Rosa suave - para secciones destacadas */
-    --soft-pink: 280 40% 88%;
+    --soft-pink: 280 50% 84%;
     --soft-pink-foreground: 0 0% 22%;
 
     /* Acento - Plata metálico */
-    --accent: 280 10% 70%;
+    --accent: 280 15% 66%;
     --accent-foreground: 0 0% 18%;
     
     /* Muted */
-    --muted: 280 30% 90%;
+    --muted: 280 35% 88%;
     --muted-foreground: 0 0% 30%;
     
     /* Destructive */
@@ -51,8 +51,8 @@
     --destructive-foreground: 35 33% 97%;
     
     /* Borders y inputs */
-    --border: 280 20% 84%;
-    --input: 280 20% 84%;
+    --border: 280 25% 80%;
+    --input: 280 25% 80%;
     --ring: 345 55% 35%;
     
     --radius: 0.5rem;
