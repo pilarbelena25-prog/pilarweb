@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import GuiaGptModal from "@/components/sections/GuiaGptModal";
 import homeAuditoria from "@/assets/Home_Auditoría Express Lab.webp";
-import imgPortadaHome from "@/assets/portada-home.png";
+import imgPortadaHome from "@/assets/blog-foto-buena.png";
 
 const HeroSection = () => {
   return (
