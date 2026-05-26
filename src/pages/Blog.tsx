@@ -194,7 +194,7 @@ const Blog = () => {
         <section className="relative pt-32 pb-16 bg-gradient-hero overflow-hidden">
           {/* Background Image with Opacity */}
           <div 
-            className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-[0.18]"
+            className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-[0.40]"
             style={{ backgroundImage: `url(${imgPortadaHome})` }}
           />
           {/* Subtle gradient overlay to blend into the main background */}
