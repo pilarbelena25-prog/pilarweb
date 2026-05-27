@@ -1,9 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Linkedin, ArrowUpRight, ArrowRight, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
+import { Mail, Linkedin, ArrowUpRight, Check, AlertCircle, Loader2 } from "lucide-react";
 import { useState } from "react";
-import GuiaGptModal from "@/components/sections/GuiaGptModal";
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
@@ -12,16 +11,8 @@ interface FormErrors {
   email?: string;
   company?: string;
   service?: string;
-  urgency?: string;
-  budget?: string;
+  message?: string;
 }
-
-const CheckIcon = () => (
-  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-green-600 flex-shrink-0">
-    <rect x="2" y="2" width="20" height="20" rx="4" fill="currentColor" fillOpacity="0.1" stroke="currentColor" strokeWidth="2"/>
-    <path d="M7 12l3 3 7-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-  </svg>
-);
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -29,8 +20,6 @@ const ContactSection = () => {
     email: "",
     company: "",
     service: "",
-    urgency: "",
-    budget: "",
     phone: "",
     message: "",
   });
@@ -54,15 +43,7 @@ const ContactSection = () => {
     }
 
     if (!formData.service) {
-      newErrors.service = "Selecciona un servicio.";
-    }
-
-    if (!formData.urgency) {
-      newErrors.urgency = "Selecciona el nivel de urgencia.";
-    }
-
-    if (!formData.budget) {
-      newErrors.budget = "Selecciona un rango de presupuesto.";
+      newErrors.service = "Selecciona un servicio / área de interés.";
     }
 
     setErrors(newErrors);
@@ -77,13 +58,13 @@ const ContactSection = () => {
     setStatus("loading");
 
     try {
-      await Promise.resolve();
+      // Simula el envío de formulario
+      await new Promise((resolve) => setTimeout(resolve, 800));
 
       setStatus("success");
-      setFormData({ name: "", email: "", company: "", service: "", urgency: "", budget: "", phone: "", message: "" });
+      setFormData({ name: "", email: "", company: "", service: "", phone: "", message: "" });
       setErrors({});
-    } catch (error){
-      // console.log("EmailJS error: ", error);
+    } catch (error) {
       setStatus("error");
     }
   };
@@ -97,179 +78,217 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contacto" className="py-24 bg-background relative">
-      {/* Decorative top border */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-px bg-gradient-to-r from-transparent via-accent to-transparent" />
+    <section id="contacto" className="py-24 bg-background relative border-t border-border/50">
+      {/* Decorative top border gradient */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-72 h-px bg-gradient-to-r from-transparent via-accent to-transparent pointer-events-none" />
 
       <div className="container mx-auto px-6">
         <div className="max-w-6xl 3xl:max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16">
-            {/* Left Column - Info */}
-            <div>
-              <span className="inline-block font-body text-sm text-secondary uppercase tracking-widest mb-4">
-                Contacto
-              </span>
+          
+          {/* Header elements (Title & Subtitle) */}
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="inline-block font-body text-sm font-semibold text-primary bg-primary/10 px-4 py-1.5 rounded-full mb-6 uppercase tracking-wider">
+              Hablemos
+            </span>
+            <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6 leading-tight">
+              <span>Contacta con </span>
+              <span className="text-gradient-primary">Pilar Beleña Lab</span>
+            </h2>
+            <p className="font-body text-lg sm:text-xl text-foreground-muted leading-relaxed">
+              Cuéntame tu proyecto y vemos juntas cómo darle más claridad, visibilidad y dirección con una estrategia pensada para crecer con criterio.
+            </p>
+          </div>
 
-              <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6 leading-tight">
-                ¿Tu Fintech listo para ganar <br />
-                <span className="text-gradient-primary">visibilidad SEO en Google?</span>
-              </h2>
+          <div className="grid lg:grid-cols-12 gap-12 items-start">
+            
+            {/* Left Column: Info blocks (7 cols) */}
+            <div className="lg:col-span-7 space-y-10">
+              
+              {/* Texto de cabecera */}
+              <div className="bg-card border border-border/60 rounded-2xl p-6 sm:p-8 shadow-elegant">
+                <p className="font-display text-lg text-foreground font-semibold mb-4 leading-relaxed">
+                  ¿Tienes un proyecto Fintech, Inmobiliario o Digital que quieres trabajar con más enfoque?
+                </p>
+                <p className="font-body text-base text-foreground-muted leading-relaxed">
+                  Escríbeme y vemos si puedo ayudarte a <strong>Ordenar ideas</strong>, <strong>Detectar oportunidades</strong> y <strong>Convertir tu web o tu marca</strong> en algo más sólido y visible.
+                </p>
+              </div>
 
-              <p className="font-body text-lg text-foreground-muted mb-10 leading-relaxed">
-                Cuéntame sobre tu Proyecto Fintech. Como Consultora SEO Fintech Especializada en el sector Financiero Digital, analizaré tu situación actual y te propondré un plan de acción personalizado para atraer Clientes Cualificados y construir Autoridad de Marca.
-              </p>
+              {/* Grid: En qué puedo ayudarte & Cómo prefiero trabajar */}
+              <div className="grid sm:grid-cols-2 gap-6">
+                
+                {/* En qué puedo ayudarte */}
+                <div className="bg-card border border-border/60 rounded-2xl p-6 shadow-elegant">
+                  <h3 className="font-display text-base font-bold text-primary uppercase tracking-wider mb-4 border-b border-border pb-2">
+                    En qué puedo ayudarte
+                  </h3>
+                  <ul className="space-y-2">
+                    {[
+                      "SEO Fintech.",
+                      "Inversión Inmobiliaria.",
+                      "Real Estate.",
+                      "Obra nueva.",
+                      "Segunda mano.",
+                      "Auditoría SEO Express.",
+                      "Estrategia digital.",
+                      "Autoridad y Visibilidad online."
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-center gap-2.5 font-body text-sm text-foreground-muted">
+                        <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
 
-              {/* Contact methods */}
-              <div className="space-y-6 mb-10">
+                {/* Cómo prefiero trabajar */}
+                <div className="bg-card border border-border/60 rounded-2xl p-6 shadow-elegant flex flex-col justify-between">
+                  <div>
+                    <h3 className="font-display text-base font-bold text-primary uppercase tracking-wider mb-4 border-b border-border pb-2">
+                      Cómo prefiero trabajar
+                    </h3>
+                    <div className="space-y-4 font-body text-sm text-foreground-muted leading-relaxed">
+                      <p>
+                        Trabajo con proyectos que necesitan claridad, criterio y resultados medibles.
+                      </p>
+                      <p>
+                        Si buscas una Solución Ordenada, Estratégica y pensada para generar impacto real, este puede ser un buen punto de partida.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              {/* Qué puedes escribirme */}
+              <div className="bg-card border border-border/60 rounded-2xl p-6 sm:p-8 shadow-elegant">
+                <h3 className="font-display text-base font-bold text-primary uppercase tracking-wider mb-4 border-b border-border pb-2">
+                  Qué puedes escribirme
+                </h3>
+                <p className="font-body text-sm text-foreground-muted mb-4 font-semibold">
+                  Puedes contactarme si:
+                </p>
+                <ul className="grid sm:grid-cols-2 gap-3">
+                  {[
+                    "Tu web no genera Leads.",
+                    "Quieres revisar tu Posicionamiento SEO.",
+                    "Buscas una Auditoría exprés.",
+                    "Tienes un proyecto de Obra nueva o de Segunda mano.",
+                    "Te interesa explorar Oportunidades Inmobiliarias Internacionales.",
+                    "Quieres mejorar la Visibilidad de tu marca Fintech o Real Estate."
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-2.5 font-body text-sm text-foreground-muted">
+                      <Check className="w-4 h-4 text-[#710426] flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Cierre */}
+              <div className="bg-[#710426]/5 border border-[#710426]/10 rounded-2xl p-6 sm:p-8 shadow-elegant text-center sm:text-left">
+                <p className="font-body text-base text-foreground-muted leading-relaxed mb-4">
+                  Si te resuena lo que ves en el Lab, escríbeme y cuéntame tu caso.
+                </p>
+                <p className="font-body text-base text-foreground font-medium">
+                  Vemos juntas si tu proyecto encaja con esta nueva etapa y cuál puede ser el mejor siguiente paso.
+                </p>
+              </div>
+
+              {/* Direct contact methods links */}
+              <div className="flex flex-wrap gap-4 pt-2">
                 <a
                   href="mailto:pilarbelena25@gmail.com"
-                  className="flex items-center gap-4 p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-muted/50 transition-all group"
+                  className="flex items-center gap-3 px-5 py-3 rounded-xl border border-border bg-card hover:border-[#710426]/40 transition-all font-body text-sm text-foreground-muted hover:text-foreground group"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <Mail className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-body text-sm text-foreground-muted">Email</p>
-                  </div>
-                  <ArrowUpRight className="w-5 h-5 text-foreground-muted ml-auto group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                  <Mail className="w-4 h-4 text-primary" />
+                  <span>pilarbelena25@gmail.com</span>
+                  <ArrowUpRight className="w-4 h-4 opacity-50 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
                 </a>
 
                 <a
                   href="https://www.linkedin.com/in/mar%C3%ADa-pilar-bele%C3%B1a-gasent-178b145a/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 rounded-xl border border-border hover:border-secondary/50 hover:bg-muted/50 transition-all group"
+                  className="flex items-center gap-3 px-5 py-3 rounded-xl border border-border bg-card hover:border-[#710426]/40 transition-all font-body text-sm text-foreground-muted hover:text-foreground group"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center">
-                    <Linkedin className="w-5 h-5 text-secondary" />
-                  </div>
-                  <div>
-                    <p className="font-body text-sm text-foreground-muted">LinkedIn</p>
-                  </div>
-                  <ArrowUpRight className="w-5 h-5 text-foreground-muted ml-auto group-hover:text-secondary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                  <Linkedin className="w-4 h-4 text-secondary" />
+                  <span>María Pilar Beleña</span>
+                  <ArrowUpRight className="w-4 h-4 opacity-50 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
                 </a>
               </div>
 
-              {/* Microcopy + flecha hacia el formulario */}
-              <div className="flex items-center gap-3 mb-6">
-                <p className="font-body text-sm text-foreground-muted">
-                  ¿Presupuesto aproximado para SEO este año? Ayuda a preparar estrategia a tu medida
-                </p>
-                <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 rotate-90 lg:rotate-0" />
-              </div>
-
-              {/* Quote */}
-              <div className="p-6 rounded-xl bg-background-secondary border-l-4 border-primary mb-8">
-                <p className="font-display text-lg text-foreground italic mb-2">
-                  "El SEO Fintech no es solo Posicionamiento. Es construir Autoridad de Marca y Confianza."
-                </p>
-                <p className="font-body text-sm text-foreground-muted">— Pilar Beleña, Laboratorio SEO Fintech.</p>
-              </div>
-
-              {/* Checklist de beneficios */}
-              <div className="space-y-4 mb-6">
-                {[
-                  "Diagnóstico inicial GRATIS en 15min",
-                  "Roadmap ejecutable primera semana",
-                  "Resultados medibles mes 1",
-                ].map((item) => (
-                  <div key={item} className="flex items-start gap-3">
-                    <CheckIcon />
-                    <p className="font-body text-foreground">{item}</p>
-                  </div>
-                ))}
-              </div>
-
-              {/* CTA descarga guía */}
-              <GuiaGptModal>
-                <Button variant="heroOutline" size="lg" className="w-full mb-6">
-                  Descarga guía IA gratuita
-                </Button>
-              </GuiaGptModal>
-
-              {/* Microcopy de confianza */}
-              <div className="space-y-1">
-                <p className="font-body text-sm text-foreground-muted">
-                  Tu información está 100% protegida
-                </p>
-                <p className="font-body text-sm text-foreground-muted">
-                  No spam. Solo estrategia real.
-                </p>
-              </div>
             </div>
 
-            {/* Right Column - Form */}
-            <div className="bg-card rounded-2xl p-6 sm:p-8 shadow-elegant border border-border">
-              <h3 className="font-display text-2xl text-foreground mb-2">Escríbeme sobre tu Fintech</h3>
-              <p className="font-body text-foreground-muted mb-2">
-                Respondo en máximo 4h laborables
-              </p>
-              <p className="font-body text-foreground-muted mb-2">
-                95% de Fintechs agendan tras primera llamada
-              </p>
-              <p className="font-body text-foreground-muted mb-8">
-                Solo trabajo con Fintechs (no disperso foco)
+            {/* Right Column: Interactive Form (5 cols) */}
+            <div className="lg:col-span-5 bg-card rounded-2xl p-6 sm:p-8 shadow-elegant border border-border relative overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-secondary to-tertiary" />
+              
+              <h3 className="font-display text-2xl text-foreground mb-1">Cuéntame tu proyecto</h3>
+              <p className="font-body text-sm text-foreground-muted mb-6">
+                Respondo habitualmente en menos de 24 horas.
               </p>
 
               {status === "success" ? (
                 <div className="flex flex-col items-center justify-center gap-4 py-12 text-center">
-                  <CheckCircle className="w-14 h-14 text-primary" />
-                  <h4 className="font-display text-xl text-foreground">¡Mensaje enviado!</h4>
-                  <p className="font-body text-foreground-muted">
-                    Gracias por escribirme. Te responderé en menos de 24 horas laborables.
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                    <Check className="w-6 h-6" />
+                  </div>
+                  <h4 className="font-display text-xl text-foreground">¡Mensaje enviado con éxito!</h4>
+                  <p className="font-body text-sm text-foreground-muted">
+                    Gracias por escribirme. Analizaré tu propuesta y te contactaré muy pronto para valorar los siguientes pasos.
                   </p>
                   <Button variant="outline" onClick={() => setStatus("idle")} className="mt-4">
                     Enviar otro mensaje
                   </Button>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-6" noValidate>
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div>
-                      <label htmlFor="name" className="block font-body text-sm text-foreground mb-2">
-                        Nombre *
-                      </label>
-                      <Input
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        placeholder="Tu nombre"
-                        className={`bg-background ${errors.name ? "border-red-500 focus-visible:ring-red-500" : ""}`}
-                      />
-                      {errors.name && (
-                        <p className="mt-1 text-xs text-red-500 font-body">{errors.name}</p>
-                      )}
-                    </div>
-                    <div>
-                      <label htmlFor="email" className="block font-body text-sm text-foreground mb-2">
-                        Email *
-                      </label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        placeholder="tu@email.com"
-                        className={`bg-background ${errors.email ? "border-red-500 focus-visible:ring-red-500" : ""}`}
-                      />
-                      {errors.email && (
-                        <p className="mt-1 text-xs text-red-500 font-body">{errors.email}</p>
-                      )}
-                    </div>
+                <form onSubmit={handleSubmit} className="space-y-5" noValidate>
+                  <div>
+                    <label htmlFor="name" className="block font-body text-xs font-semibold text-foreground uppercase tracking-wider mb-2">
+                      Nombre completo *
+                    </label>
+                    <Input
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      placeholder="Tu nombre"
+                      className={`bg-background ${errors.name ? "border-red-500 focus-visible:ring-red-500" : ""}`}
+                    />
+                    {errors.name && (
+                      <p className="mt-1 text-xs text-red-500 font-body">{errors.name}</p>
+                    )}
                   </div>
 
                   <div>
-                    <label htmlFor="company" className="block font-body text-sm text-foreground mb-2">
-                      Empresa / Proyecto *
+                    <label htmlFor="email" className="block font-body text-xs font-semibold text-foreground uppercase tracking-wider mb-2">
+                      Correo electrónico *
+                    </label>
+                    <Input
+                      id="email"
+                      name="email"
+                      type="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      placeholder="tu@email.com"
+                      className={`bg-background ${errors.email ? "border-red-500 focus-visible:ring-red-500" : ""}`}
+                    />
+                    {errors.email && (
+                      <p className="mt-1 text-xs text-red-500 font-body">{errors.email}</p>
+                    )}
+                  </div>
+
+                  <div>
+                    <label htmlFor="company" className="block font-body text-xs font-semibold text-foreground uppercase tracking-wider mb-2">
+                      Proyecto o Empresa *
                     </label>
                     <Input
                       id="company"
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
-                      placeholder="Nombre de tu empresa o startup"
+                      placeholder="Nombre de tu proyecto o marca"
                       className={`bg-background ${errors.company ? "border-red-500 focus-visible:ring-red-500" : ""}`}
                     />
                     {errors.company && (
@@ -278,8 +297,8 @@ const ContactSection = () => {
                   </div>
 
                   <div>
-                    <label htmlFor="service" className="block font-body text-sm text-foreground mb-2">
-                      ¿Qué servicio te interesa? *
+                    <label htmlFor="service" className="block font-body text-xs font-semibold text-foreground uppercase tracking-wider mb-2">
+                      ¿Qué área te interesa trabajar? *
                     </label>
                     <select
                       id="service"
@@ -288,11 +307,12 @@ const ContactSection = () => {
                       onChange={handleChange}
                       className={`flex h-10 w-full rounded-md border bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 font-body text-foreground ${errors.service ? "border-red-500 focus-visible:ring-red-500" : "border-input focus-visible:ring-ring"}`}
                     >
-                      <option value="">Selecciona un servicio</option>
-                      <option value="Auditoría SEO Fintech">Auditoría SEO Fintech</option>
-                      <option value="Posicionamiento SEO Fintech">Posicionamiento SEO Fintech</option>
-                      <option value="Consultoría SEO Estratégica">Consultoría SEO Estratégica</option>
-                      <option value="Guía GPT Gratis">Guía GPT Gratis</option>
+                      <option value="">Selecciona un área de interés</option>
+                      <option value="SEO Fintech">SEO Fintech</option>
+                      <option value="Inversión Inmobiliaria / Real Estate">Inversión Inmobiliaria / Real Estate</option>
+                      <option value="Auditoría SEO Express">Auditoría SEO Express</option>
+                      <option value="Estrategia Digital General">Estrategia Digital General</option>
+                      <option value="Otros">Otros temas / Colaboraciones</option>
                     </select>
                     {errors.service && (
                       <p className="mt-1 text-xs text-red-500 font-body">{errors.service}</p>
@@ -300,52 +320,8 @@ const ContactSection = () => {
                   </div>
 
                   <div>
-                    <label htmlFor="urgency" className="block font-body text-sm text-foreground mb-2">
-                      Nivel de urgencia *
-                    </label>
-                    <select
-                      id="urgency"
-                      name="urgency"
-                      value={formData.urgency}
-                      onChange={handleChange}
-                      className={`flex h-10 w-full rounded-md border bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 font-body text-foreground ${errors.urgency ? "border-red-500 focus-visible:ring-red-500" : "border-input focus-visible:ring-ring"}`}
-                    >
-                      <option value="">Selecciona una opción</option>
-                      <option value="Inmediata (Esta semana)">Inmediata (Esta semana)</option>
-                      <option value="15 días">15 días</option>
-                      <option value="30 días">30 días</option>
-                      <option value="Explorando opciones">Explorando opciones</option>
-                    </select>
-                    {errors.urgency && (
-                      <p className="mt-1 text-xs text-red-500 font-body">{errors.urgency}</p>
-                    )}
-                  </div>
-
-                  <div>
-                    <label htmlFor="budget" className="block font-body text-sm text-foreground mb-2">
-                      Presupuesto aproximado *
-                    </label>
-                    <select
-                      id="budget"
-                      name="budget"
-                      value={formData.budget}
-                      onChange={handleChange}
-                      className={`flex h-10 w-full rounded-md border bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 font-body text-foreground ${errors.budget ? "border-red-500 focus-visible:ring-red-500" : "border-input focus-visible:ring-ring"}`}
-                    >
-                      <option value="">Selecciona un rango</option>
-                      <option value="0-5k € (startup validation)">0-5k € (startup validation)</option>
-                      <option value="5-20k € (scale-up growth)">5-20k € (scale-up growth)</option>
-                      <option value="20k+ € (enterprise)">20k+ € (enterprise)</option>
-                      <option value="A definir">A definir</option>
-                    </select>
-                    {errors.budget && (
-                      <p className="mt-1 text-xs text-red-500 font-body">{errors.budget}</p>
-                    )}
-                  </div>
-
-                  <div>
-                    <label htmlFor="phone" className="block font-body text-sm text-foreground mb-2">
-                      Teléfono (opcional)
+                    <label htmlFor="phone" className="block font-body text-xs font-semibold text-foreground uppercase tracking-wider mb-2">
+                      Teléfono de contacto (Opcional)
                     </label>
                     <Input
                       id="phone"
@@ -353,22 +329,22 @@ const ContactSection = () => {
                       type="tel"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="+34 600 000 000"
+                      placeholder="Ej: +34 600 000 000"
                       className="bg-background"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block font-body text-sm text-foreground mb-2">
-                      ¿En qué puedo ayudarte? (opcional)
+                    <label htmlFor="message" className="block font-body text-xs font-semibold text-foreground uppercase tracking-wider mb-2">
+                      Cuéntame tu caso / detalles del proyecto (Opcional)
                     </label>
                     <Textarea
                       id="message"
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Cuéntame brevemente tu situación actual y qué objetivos tienes..."
-                      rows={5}
+                      placeholder="Describe brevemente tu situación o tus objetivos..."
+                      rows={4}
                       className="bg-background resize-none"
                     />
                   </div>
@@ -376,8 +352,8 @@ const ContactSection = () => {
                   {status === "error" && (
                     <div className="flex items-center gap-2 p-3 rounded-lg bg-red-500/10 border border-red-500/30">
                       <AlertCircle className="w-4 h-4 text-red-500 shrink-0" />
-                      <p className="text-sm font-body text-red-500">
-                        Hubo un error al enviar el mensaje. Inténtalo de nuevo o escríbeme directamente a pilarbelena25@gmail.com.
+                      <p className="text-xs font-body text-red-500">
+                        Error al enviar. Inténtalo de nuevo o escribe a pilarbelena25@gmail.com.
                       </p>
                     </div>
                   )}
@@ -395,13 +371,13 @@ const ContactSection = () => {
                         Enviando...
                       </>
                     ) : (
-                      "Enviar mensaje"
+                      "Enviar Mensaje"
                     )}
                   </Button>
 
-                  <p className="text-xs font-body text-foreground-muted text-center">
-                    Al enviar aceptas que te contacte para responder a tu consulta y tratar tus datos según la{" "}
-                    <a href="/politica-privacidad" className="text-primary">
+                  <p className="text-[10px] font-body text-foreground-muted text-center leading-normal">
+                    Tratamiento de datos conforme a nuestra{" "}
+                    <a href="/politica-privacidad" className="text-primary underline">
                       Política de Privacidad
                     </a>
                     .
@@ -409,6 +385,7 @@ const ContactSection = () => {
                 </form>
               )}
             </div>
+
           </div>
         </div>
       </div>

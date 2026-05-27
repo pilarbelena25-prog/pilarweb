@@ -148,7 +148,7 @@ const ServicesSection = () => {
                   "Hallazgos priorizados.",
                   "Problemas críticos detectados.",
                   "Acciones recomendadas.",
-                  "Victories rápidas.",
+                  "Mejoras rápidas.",
                   "Siguiente paso sugerido."
                 ].map((item, index) => (
                   <li key={index} className="flex items-center gap-3 font-body text-sm text-foreground">

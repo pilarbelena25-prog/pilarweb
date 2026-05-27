@@ -3,374 +3,331 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import heroImage from "@/assets/Auditoria Express SEO Fintech Lab.webp";
 import { LazyImage } from "@/components/ui/LazyImage";
+import { 
+  Check, 
+  ArrowRight, 
+  Search, 
+  Compass, 
+  FileText, 
+  Target, 
+  Sparkles 
+} from "lucide-react";
 
 const CALENDLY_URL = "https://calendly.com/pilarbelena25/30min";
 
-// SVG Icons
-const WebIcon = () => (
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 text-primary">
-    <rect x="8" y="14" width="48" height="36" rx="3" stroke="currentColor" strokeWidth="2" fill="none" />
-    <path d="M8 22h48" stroke="currentColor" strokeWidth="2" />
-    <circle cx="16" cy="18" r="2" fill="currentColor" />
-    <circle cx="23" cy="18" r="2" fill="currentColor" />
-    <circle cx="30" cy="18" r="2" fill="currentColor" />
-    <path d="M16 30h32M16 37h20M16 44h26" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-  </svg>
-);
-
-const TechnicalIcon = () => (
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 text-primary">
-    <circle cx="32" cy="32" r="20" stroke="currentColor" strokeWidth="2" fill="none" />
-    <path d="M32 16v4M32 44v4M16 32h4M44 32h4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-    <circle cx="32" cy="32" r="8" stroke="currentColor" strokeWidth="2" fill="none" />
-    <path d="M32 28v4l3 3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-  </svg>
-);
-
-const FocusIcon = () => (
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 text-primary">
-    <path d="M12 24V16a4 4 0 014-4h8M40 12h8a4 4 0 014 4v8M52 40v8a4 4 0 01-4 4h-8M24 52h-8a4 4 0 01-4-4v-8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-    <circle cx="32" cy="32" r="10" stroke="currentColor" strokeWidth="2" fill="none" />
-    <circle cx="32" cy="32" r="4" fill="currentColor" fillOpacity="0.2" stroke="currentColor" strokeWidth="2" />
-  </svg>
-);
-
-const ReportIcon = () => (
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 text-primary">
-    <rect x="12" y="8" width="32" height="40" rx="2" stroke="currentColor" strokeWidth="2" fill="none" />
-    <path d="M20 18h16M20 26h16M20 34h10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-    <path d="M36 38l6 6M38 44l6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-    <circle cx="43" cy="47" r="8" stroke="currentColor" strokeWidth="2" fill="none" />
-    <path d="M40 47l2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-  </svg>
-);
-
-const DeliveryIcon = () => (
-  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 text-primary">
-    <path d="M12 32h24l4-16h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M36 32l4 12H12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-    <circle cx="20" cy="48" r="4" stroke="currentColor" strokeWidth="2" fill="none" />
-    <circle cx="40" cy="48" r="4" stroke="currentColor" strokeWidth="2" fill="none" />
-    <path d="M28 20v-8M24 16l4-4 4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-  </svg>
-);
-
-const CheckIcon = () => (
-  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 flex-shrink-0 text-primary">
-    <rect x="2" y="2" width="20" height="20" rx="4" fill="currentColor" fillOpacity="0.1" stroke="currentColor" strokeWidth="1.5" />
-    <path d="M7 12l3 3 7-7" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
-  </svg>
-);
-
-const XIcon = () => (
-  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 flex-shrink-0 text-foreground-muted">
-    <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="1.5" fill="none" strokeOpacity="0.3" />
-    <path d="M9 9l6 6M15 9l-6 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeOpacity="0.6" />
-  </svg>
-);
-
-const includesItems = [
-  {
-    icon: WebIcon,
-    title: "Revisión de la web",
-    points: [
-      "Estructura y arquitectura de páginas",
-      "Títulos, metas y claridad de propuesta",
-      "Enlazado interno y llamadas a la acción",
-    ],
-  },
-  {
-    icon: TechnicalIcon,
-    title: "SEO técnico esencial",
-    points: [
-      "Indexación, rastreo y velocidad",
-      "Errores visibles y señales on-page críticas",
-      "Señales básicas de autoridad de dominio",
-    ],
-  },
-  {
-    icon: FocusIcon,
-    title: "Revisión del enfoque comercial",
-    points: [
-      "Si la web explica bien qué haces y para quién",
-      "Si la propuesta diferencia a tu Fintech",
-      "Si el mensaje conecta con un líder Fintech real",
-    ],
-  },
-  {
-    icon: ReportIcon,
-    title: "Informe priorizado",
-    points: [
-      "Problemas críticos y victorias rápidas",
-      "Acciones ordenadas por impacto",
-      "Siguiente paso recomendado con claridad",
-    ],
-  },
-  {
-    icon: DeliveryIcon,
-    title: "Entrega rápida",
-    points: [
-      "En 24–48 horas desde el inicio",
-      "En PDF o vídeo breve según prefierais",
-      "Lenguaje claro, sin tecnicismos innecesarios",
-    ],
-  },
-];
-
-const notItems = [
-  "Una auditoría de 40 páginas que nadie lee.",
-  "Una estrategia mensual ni consultoría continua.",
-  "Implementación ni ejecución de cambios.",
-  "Un plan enorme que te marea antes de empezar.",
-  "Un informe genérico que podría ser de cualquier web.",
-];
-
-const forWhom = [
-  {
-    title: "Tienes web pero no ves resultados",
-    description: "Llevas tiempo online pero el tráfico no llega o el que llega no convierte.",
-  },
-  {
-    title: "Has invertido sin claridad",
-    description: "Has tocado contenido o SEO, pero no tienes certeza de qué está funcionando ni qué falla.",
-  },
-  {
-    title: "Necesitas una visión externa rápida",
-    description: "No tienes tiempo para una consultoría larga y quieres una respuesta directa y accionable.",
-  },
-  {
-    title: "No sabes si el problema es técnico o de enfoque",
-    description: "El síntoma está claro —sin leads, sin llamadas, sin señales— pero la causa no.",
-  },
-];
-
 const AuditoriaExpressSeoFintech = () => {
+  // Función para hacer scroll hasta la sección de contacto / "Empieza aquí"
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("empieza-aquí");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
       <main>
+        {/* 1. Hero Section */}
+        <section className="pt-32 pb-24 bg-gradient-hero relative overflow-hidden">
+          {/* Decorative gradients */}
+          <div className="absolute top-1/4 right-0 w-80 h-80 bg-tertiary/10 rounded-full blur-3xl animate-pulse-soft pointer-events-none" />
+          <div className="absolute bottom-10 left-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
 
-        {/* Hero Section */}
-        <section className="pt-32 pb-20 bg-gradient-hero">
-          <div className="container mx-auto px-6">
+          <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <span className="inline-block font-body text-sm text-secondary uppercase tracking-widest mb-6">
+              <span className="inline-block font-body text-sm font-semibold text-primary bg-primary/10 px-4 py-1.5 rounded-full mb-6 uppercase tracking-wider">
                 Auditoría Express · 290 €
               </span>
-              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 text-primary">
-                Descubre en 48 h qué está frenando la visibilidad de tu Fintech
+              
+              <h1 className="font-display text-4xl sm:text-5xl md:text-6xl leading-tight mb-8 text-foreground">
+                <span>Auditoría SEO Express para </span>
+                <span className="text-gradient-primary">Fintech & Inversión Inmobiliaria</span>
               </h1>
-              <p className="font-body text-xl text-foreground-muted mb-10 max-w-2xl mx-auto leading-relaxed">
-                Un diagnóstico rápido, técnico y accionable para saber exactamente qué corregir primero. Sin planes largos. Sin confusión. Solo claridad y foco.
+              
+              <p className="font-body text-lg sm:text-xl text-foreground-muted mb-12 max-w-3xl mx-auto leading-relaxed">
+                Descubre qué está frenando tu Web, qué debes corregir primero y cómo convertir tu Presencia Digital en una fuente real de Autoridad, Visibilidad y Leads Orgánicos.
               </p>
 
-              <ul className="space-y-3 mb-10 max-w-xl mx-auto text-left">
-                {[
-                  "Tu web recibe visitas pero sin leads ni llamadas.",
-                  "Has invertido en SEO o contenido sin ver retorno claro.",
-                  "No sabes si el bloqueo es técnico, estructural o de mensaje.",
-                  "No tienes tiempo para una consultoría larga ahora mismo.",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 font-body text-foreground">
-                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4 sm:px-0 mb-16">
+                <Button variant="hero" size="xl" className="w-full sm:w-auto" asChild>
+                  <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+                    Solicitar Auditoría
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </a>
+                </Button>
+                <Button 
+                  variant="heroOutline" 
+                  size="xl" 
+                  className="w-full sm:w-auto hover:bg-primary/5"
+                  onClick={scrollToContact}
+                >
+                  Quiero revisar mi web
+                </Button>
+              </div>
 
-              <Button variant="hero" size="xl" asChild>
-                <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
-                  Solicitar mi Auditoría Express
-                </a>
-              </Button>
-
-              <div className="mt-12">
+              <div className="relative max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-elegant-lg border border-border bg-card">
                 <LazyImage
                   eager
                   src={heroImage}
-                  alt="Auditoría Express SEO Fintech - Diagnóstico rápido para tu Fintech"
-                  className="w-full max-w-3xl mx-auto rounded-2xl shadow-2xl"
+                  alt="Auditoría Express SEO Fintech e Inversión Inmobiliaria"
+                  className="w-full h-auto object-cover"
                 />
               </div>
             </div>
           </div>
         </section>
 
-        {/* Qué es Section */}
-        <section className="py-20 bg-soft-pink">
+        {/* 2. Qué es la Auditoría SEO Express */}
+        <section className="py-24 bg-card border-t border-b border-border/50 relative">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl mx-auto">
-              <h2 className="font-display text-3xl md:text-4xl text-primary mb-8 text-center">
-                Qué es la Auditoría Express SEO Fintech
+              <div className="flex items-center gap-3 mb-6 justify-center sm:justify-start">
+                <Search className="w-6 h-6 text-primary" />
+                <span className="font-body text-sm font-semibold uppercase tracking-wider text-primary">Diagnóstico Estratégico</span>
+              </div>
+              
+              <h2 className="font-display text-3xl md:text-4xl text-foreground mb-8 text-center sm:text-left">
+                Qué es la Auditoría SEO Express
               </h2>
-              <p className="font-body text-soft-pink-foreground leading-relaxed text-lg mb-6">
-                No es una consultoría larga. No es una estrategia mensual.
-              </p>
-              <p className="font-body text-soft-pink-foreground leading-relaxed mb-8">
-                Es una auditoría especializada en Fintech que te dice, con claridad, qué está bloqueando tu SEO, qué errores están frenando tu web, qué ganancias rápidas puedes aplicar ya, y qué tendría que pasar después si quieres escalar.
-              </p>
-              <blockquote className="border-l-4 border-primary pl-6 py-2">
-                <p className="font-display text-xl text-primary italic">
-                  "Un diagnóstico rápido para tomar decisiones. Sin marearte con un plan enorme."
+              
+              <div className="space-y-6 font-body text-base sm:text-lg text-foreground-muted leading-relaxed">
+                <p>
+                  La Auditoría SEO Express es un <strong>Diagnóstico rápido, técnico y accionable</strong> para marcas Fintech, Proyectos Inmobiliarios y Negocios que necesitan entender por qué su web no está generando resultados. Está pensada para detectar bloqueos reales y convertir la complejidad en un plan claro de acción.
                 </p>
-              </blockquote>
+                <p>
+                  No se trata solo de revisar una web, sino de entender qué está impidiendo que gane Visibilidad, Autoridad y Oportunidades de negocio. El objetivo es darte una visión clara de lo que está pasando y de qué hay que mover primero para empezar a mejorar.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Para quién es Section */}
-        <section className="py-20 bg-background">
+        {/* 3. Qué revisamos */}
+        <section className="py-24 bg-background">
           <div className="container mx-auto px-6">
-            <div className="max-w-5xl mx-auto">
-              <h2 className="font-display text-3xl md:text-4xl text-center mb-4 text-foreground">
-                Para quién es
-              </h2>
-              <p className="font-body text-foreground-muted text-center mb-14 max-w-2xl mx-auto">
-                Está pensado para Fintechs que ya tienen web pero no están obteniendo los resultados que deberían.
-              </p>
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="font-display text-3xl md:text-4xl text-foreground mb-6">
+                  Qué revisamos
+                </h2>
+                <p className="font-body text-foreground-muted text-lg max-w-2xl mx-auto">
+                  En la Auditoría analizamos los puntos que más impacto tienen en el rendimiento de una web:
+                </p>
+              </div>
 
-              <div className="grid md:grid-cols-2 gap-6">
-                {forWhom.map((item, i) => (
-                  <div key={i} className="flex items-start gap-4 p-6 rounded-2xl bg-card border border-border">
-                    <CheckIcon />
-                    <div>
-                      <h3 className="font-body font-semibold text-foreground mb-1">{item.title}</h3>
-                      <p className="font-body text-foreground-muted text-sm leading-relaxed">{item.description}</p>
+              <div className="grid md:grid-cols-2 gap-6 mb-12">
+                {[
+                  "Estructura y arquitectura web.",
+                  "Indexación y rastreo.",
+                  "Títulos, meta descripciones y encabezados.",
+                  "Enlazado interno.",
+                  "Contenidos y alineación con la intención de búsqueda.",
+                  "Autoridad temática y señales de confianza.",
+                  "Claridad de la propuesta de valor.",
+                  "Oportunidades de captación de leads orgánicos."
+                ].map((item, i) => (
+                  <div key={i} className="flex items-start gap-4 p-5 rounded-xl bg-card border border-border/60 shadow-elegant">
+                    <div className="w-6 h-6 rounded-lg bg-primary/10 flex items-center justify-center text-primary flex-shrink-0 mt-0.5">
+                      <Check className="w-4 h-4" />
                     </div>
+                    <p className="font-body text-foreground text-base font-medium">{item}</p>
                   </div>
                 ))}
               </div>
-            </div>
-          </div>
-        </section>
 
-        {/* Qué incluye Section */}
-        <section className="py-20 bg-background-secondary">
-          <div className="container mx-auto px-6">
-            <div className="max-w-5xl mx-auto">
-              <h2 className="font-display text-3xl md:text-4xl text-center mb-4 text-primary">
-                Qué incluye
-              </h2>
-              <p className="font-body text-foreground-muted text-center mb-14 max-w-2xl mx-auto">
-                Cinco áreas de análisis para darte una imagen completa y priorizada de lo que necesita tu Fintech.
-              </p>
-
-              <div className="space-y-8">
-                {includesItems.map((item, i) => {
-                  const Icon = item.icon;
-                  return (
-                    <div key={i} className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 sm:gap-8 p-6 sm:p-8 rounded-2xl bg-card border border-border">
-                      <div className="flex-shrink-0">
-                        <Icon />
-                      </div>
-                      <div>
-                        <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-3 mb-3">
-                          <span className="font-display text-2xl text-primary/30">{String(i + 1).padStart(2, "0")}</span>
-                          <h3 className="font-display text-xl text-foreground">{item.title}</h3>
-                        </div>
-                        <ul className="space-y-2">
-                          {item.points.map((point, j) => (
-                            <li key={j} className="flex items-start justify-center sm:justify-start gap-2 font-body text-foreground-muted text-sm">
-                              <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                              {point}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-
-              <div className="text-center mt-12">
-                <Button variant="hero" size="lg" asChild>
-                  <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
-                    Solicitar mi Auditoría Express
-                  </a>
-                </Button>
+              <div className="bg-primary/5 rounded-2xl p-6 sm:p-8 border border-primary/20 text-center">
+                <p className="font-body text-foreground-muted text-base sm:text-lg leading-relaxed">
+                  También valoramos si la web está bien conectada con el tipo de usuario que quieres atraer, ya sea en <strong>Fintech, Inversión Inmobiliaria, Real Estate, Obra nueva o Segunda mano.</strong>
+                </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Qué NO es Section */}
-        <section className="py-20 bg-background">
+        {/* 4. Cómo trabajamos */}
+        <section className="py-24 bg-background-secondary border-t border-b border-border/50">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl mx-auto">
-              <h2 className="font-display text-3xl md:text-4xl text-center mb-4 text-foreground">
-                Qué NO es
+              <div className="flex items-center gap-3 mb-6 justify-center sm:justify-start">
+                <Compass className="w-6 h-6 text-primary" />
+                <span className="font-body text-sm font-semibold uppercase tracking-wider text-primary">Metodología y Enfoque</span>
+              </div>
+              
+              <h2 className="font-display text-3xl md:text-4xl text-foreground mb-8 text-center sm:text-left">
+                Cómo trabajamos
               </h2>
-              <p className="font-body text-foreground-muted text-center mb-12">
-                Decirlo también ayuda a vender sin confusión.
-              </p>
-              <ul className="space-y-4">
-                {notItems.map((item, i) => (
-                  <li key={i} className="flex items-center gap-4 font-body text-foreground-muted py-4 border-b border-border last:border-0">
-                    <XIcon />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Precio + CTA Section */}
-        <section className="py-20 bg-soft-pink">
-          <div className="container mx-auto px-6">
-            <div className="max-w-xl mx-auto text-center">
-              <h2 className="font-display text-3xl md:text-4xl text-primary mb-4">
-                Precio único. Sin sorpresas.
-              </h2>
-              <p className="font-body text-soft-pink-foreground mb-10 leading-relaxed">
-                Una sola inversión para obtener claridad total sobre lo que necesita tu Fintech para empezar a posicionar con foco.
-              </p>
-
-              <div className="bg-background rounded-2xl border border-border shadow-elegant-lg p-6 sm:p-10 mb-8 relative overflow-hidden">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-px bg-gradient-to-r from-transparent via-primary to-transparent" />
-                <p className="font-display text-6xl text-primary mb-2">290 €</p>
-                <p className="font-body text-foreground-muted text-sm mb-8">Precio único · IVA no incluido</p>
-                <ul className="space-y-3 text-left mb-8">
-                  {[
-                    "Entrega en 24–48 horas",
-                    "Informe priorizado por impacto",
-                    "Lenguaje claro, sin tecnicismos",
-                    "Siguiente paso recomendado incluido",
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-center gap-3 font-body text-foreground-muted text-sm">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <Button variant="hero" size="xl" className="w-full" asChild>
-                  <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
-                    Reservar mi Auditoría — 290 €
-                  </a>
-                </Button>
+              
+              <div className="space-y-6 font-body text-base sm:text-lg text-foreground-muted leading-relaxed mb-8">
+                <p>
+                  Primero identificamos el bloqueo principal. Después priorizamos las acciones y, por último, te entregamos una visión clara para avanzar con tu equipo o conmigo.
+                </p>
+                <p>
+                  Mi enfoque combina diagnóstico, criterio y estrategia. No busco darte una lista infinita de tareas, sino decirte qué mover primero para que la web empiece a generar impacto real.
+                </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* CTA Final Section */}
-        <section className="py-20 bg-background">
+        {/* 5. Qué recibirás */}
+        <section className="py-24 bg-background">
           <div className="container mx-auto px-6">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="font-display text-3xl md:text-4xl mb-6 text-primary">
-                Si tu Fintech no está generando resultados, no necesitas más ruido.
+            <div className="max-w-3xl mx-auto">
+              <div className="text-center mb-16">
+                <div className="inline-flex items-center gap-2 bg-primary/10 text-primary font-body text-sm px-4 py-1.5 rounded-full mb-4">
+                  <FileText className="w-4 h-4" /> Entregables Clave
+                </div>
+                <h2 className="font-display text-3xl md:text-4xl text-foreground mb-6">
+                  Qué recibirás
+                </h2>
+                <p className="font-body text-foreground-muted text-lg">
+                  Recibirás un informe claro, práctico y sin tecnicismos innecesarios, con:
+                </p>
+              </div>
+
+              <div className="space-y-4 mb-10">
+                {[
+                  "Hallazgos priorizados.",
+                  "Problemas críticos detectados.",
+                  "Acciones recomendadas.",
+                  "Victorias rápidas.",
+                  "Siguiente paso sugerido."
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center gap-4 p-4 rounded-xl bg-card border border-border">
+                    <span className="font-display text-lg font-bold text-primary bg-primary/10 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                      {i + 1}
+                    </span>
+                    <p className="font-body text-foreground font-medium text-base">{item}</p>
+                  </div>
+                ))}
+              </div>
+
+              <p className="font-body text-foreground text-center text-lg italic font-medium bg-card p-6 rounded-xl border border-border shadow-elegant">
+                "La idea es que salgas sabiendo qué ocurre, por qué ocurre y cómo resolverlo."
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 6. Para quién es */}
+        <section className="py-24 bg-card border-t border-b border-border/50">
+          <div className="container mx-auto px-6">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-16">
+                <div className="inline-flex items-center gap-2 bg-primary/10 text-primary font-body text-sm px-4 py-1.5 rounded-full mb-4">
+                  <Target className="w-4 h-4" /> Perfil Ideal
+                </div>
+                <h2 className="font-display text-3xl md:text-4xl text-foreground mb-6">
+                  Para quién es
+                </h2>
+                <p className="font-body text-foreground-muted text-lg max-w-2xl mx-auto">
+                  Esta Auditoría es ideal para marcas que buscan rentabilidad y crecimiento estructurado:
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6 mb-12">
+                {[
+                  "Empresas Fintech.",
+                  "Proyectos de Inversión Inmobiliaria.",
+                  "Webs estancadas.",
+                  "Marcas que dependen demasiado de los portales.",
+                  "Negocios que quieren captar leads orgánicos sin improvisar.",
+                  "Proyectos de Obra Nueva, Segunda Mano y Real Estate Premium."
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center gap-3 p-4 rounded-xl bg-background border border-border/60">
+                    <div className="w-2.5 h-2.5 rounded-full bg-primary flex-shrink-0" />
+                    <p className="font-body text-foreground text-base font-semibold">{item}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="bg-primary/5 rounded-2xl p-6 sm:p-8 border border-primary/20 text-center">
+                <p className="font-body text-foreground-muted text-base sm:text-lg leading-relaxed">
+                  Si tu web tiene tráfico pero no convierte, o si aún no está bien posicionada para el nicho que quieres trabajar, esta propuesta encaja muy bien.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 7. Por qué el Lab */}
+        <section className="py-24 bg-background">
+          <div className="container mx-auto px-6">
+            <div className="max-w-3xl mx-auto">
+              <div className="flex items-center gap-3 mb-6 justify-center sm:justify-start">
+                <Sparkles className="w-6 h-6 text-primary" />
+                <span className="font-body text-sm font-semibold uppercase tracking-wider text-primary">Diferencial</span>
+              </div>
+              
+              <h2 className="font-display text-3xl md:text-4xl text-foreground mb-8 text-center sm:text-left">
+                Por qué el Lab
               </h2>
-              <p className="font-body text-foreground-muted mb-4 leading-relaxed">
-                Necesitas una Auditoría Express que detecte el bloqueo y te diga exactamente qué corregir primero.
+              
+              <div className="space-y-6 font-body text-base sm:text-lg text-foreground-muted leading-relaxed">
+                <p>
+                  Porque el Lab une SEO, Contenido, IA y Visión de negocio. No trabajamos sólo para mejorar rankings, sino para construir visibilidad, credibilidad y oportunidades reales que duren.
+                </p>
+                <p>
+                  Aquí el enfoque no es hacer SEO por hacer; sino entender qué necesita cada proyecto para crecer con criterio, con una base digital sólida y con una estrategia adaptada a su sector.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 8. Empieza aquí (Pricing / CTA Final) */}
+        <section id="empieza-aquí" className="py-24 bg-gradient-hero border-t border-border/50 relative">
+          <div className="container mx-auto px-6">
+            <div className="max-w-2xl mx-auto text-center">
+              <span className="inline-block font-body text-sm font-semibold text-primary bg-primary/10 px-4 py-1.5 rounded-full mb-6 uppercase tracking-wider">
+                El Punto de Partida
+              </span>
+              
+              <h2 className="font-display text-3xl sm:text-4xl text-foreground mb-8">
+                Empieza aquí
+              </h2>
+              
+              <p className="font-body text-lg sm:text-xl text-foreground-muted mb-10 leading-relaxed">
+                Si tu web está estancada y quieres entender qué está pasando de verdad, la Auditoría SEO Express puede ser tu mejor punto de partida.
               </p>
-              <p className="font-body text-foreground-muted mb-10 leading-relaxed">
-                Menos dudas. Más claridad. Más foco.
-              </p>
-              <Button variant="hero" size="xl" asChild>
-                <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
-                  Solicitar mi Auditoría Express SEO Fintech
-                </a>
-              </Button>
+
+              <div className="bg-card rounded-2xl border border-border shadow-elegant-lg p-8 sm:p-10 mb-8 relative overflow-hidden">
+                <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary via-secondary to-tertiary" />
+                
+                <p className="font-display text-sm font-semibold text-foreground-muted uppercase tracking-widest mb-4">
+                  Auditoría Express
+                </p>
+                <p className="font-display text-5xl sm:text-6xl text-primary font-bold mb-2">
+                  290 €
+                </p>
+                <p className="font-body text-sm text-foreground-muted mb-8">
+                  Precio único · Sin cuotas mensuales · IVA no incluido
+                </p>
+
+                <div className="border-t border-border/80 pt-8 mb-8 text-left max-w-md mx-auto">
+                  <p className="font-body text-foreground font-semibold text-center text-lg mb-6">
+                    Escríbeme <span className="text-[#710426] underline font-bold">“AUDITORÍA”</span> y lo vemos.
+                  </p>
+                  
+                  <div className="flex flex-col gap-4">
+                    <Button variant="hero" size="lg" className="w-full" asChild>
+                      <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+                        Reservar mi Auditoría — 290 €
+                      </a>
+                    </Button>
+                    <Button variant="heroOutline" size="lg" className="w-full" asChild>
+                      <a href="mailto:pilarbelena25@gmail.com?subject=AUDITOR%C3%8DA&body=Hola%20Pilar%2C%20quiero%20solicitar%20la%20Auditor%C3%ADa%20SEO%20Express%20para%20mi%20web.">
+                        Enviar Correo "AUDITORÍA"
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+                
+                <p className="font-body text-xs text-foreground-muted">
+                  Entrega garantizada en 24-48 horas tras recibir los accesos necesarios.
+                </p>
+              </div>
             </div>
           </div>
         </section>

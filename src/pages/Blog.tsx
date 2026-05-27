@@ -204,8 +204,9 @@ const Blog = () => {
           <div className="container relative z-10 mx-auto px-6">
             <div className="max-w-5xl mx-auto text-center">
 
-              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 text-primary">
-                Estrategias SEO, Arquitectura Web y EEAT para Fintech & Real Estate
+              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 text-foreground">
+                <span>Estrategias SEO, Arquitectura Web y EEAT para </span>
+                <span className="text-gradient-primary">Fintech & Real Estate</span>
               </h1>
               <h2 className="font-display text-xl md:text-2xl text-foreground-muted mb-8 max-w-4xl mx-auto font-normal leading-relaxed">
                 Contenido Estratégico para Construir Autoridad, Conectar nichos complejos y Mejorar la Visibilidad Digital con una base sólida.
