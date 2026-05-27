@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import logoPB from "@/assets/logo-pb.webp";
 import { LazyImage } from "@/components/ui/LazyImage";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -10,10 +11,10 @@ const Header = () => {
   const navLinks = [
     { href: "/#inicio", label: "Home" },
     { href: "/lab", label: "Lab" },
-    { href: "/#servicios", label: "Servicios" },
+    { href: "/servicios", label: "Servicios" },
     // { href: "/#guia-gpt", label: "Guía GPT" },
     { href: "/blog", label: "Blog" },
-    { href: "/#contacto", label: "Contacto" },
+    { href: "/contacto", label: "Contacto" },
   ];
 
   return (
@@ -45,9 +46,9 @@ const Header = () => {
               </a>
             ))}
             <Button variant="hero" size="sm" asChild>
-              <a href="https://calendly.com/pilarbelena25/30min" target="_blank" rel="noopener noreferrer">
+              <Link to="/contacto">
                 Hablemos
-              </a>
+              </Link>
             </Button>
           </nav>
 
@@ -76,9 +77,9 @@ const Header = () => {
                 </a>
               ))}
               <Button variant="hero" className="mt-4" asChild>
-                <a href="https://calendly.com/pilarbelena25/30min" target="_blank" rel="noopener noreferrer">
+                <Link to="/contacto" onClick={() => setIsMobileMenuOpen(false)}>
                   Hablemos
-                </a>
+                </Link>
               </Button>
             </div>
           </nav>

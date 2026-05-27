@@ -179,6 +179,22 @@ export const routesMeta = [
     imageSource: 'src/assets/Auditoria Express SEO Fintech Lab.png',
   },
   {
+    route: '/servicios',
+    title: 'Servicios de Consultoría SEO Fintech | Pilar Beleña',
+    description:
+      'Servicios de posicionamiento SEO y estrategia de contenidos con IA para Fintech, banca digital y sector inmobiliario en España. Auditoría SEO Express.',
+    canonical: `${BASE_URL}/servicios`,
+    ogType: 'website',
+  },
+  {
+    route: '/contacto',
+    title: 'Contacto con Pilar Beleña | SEO Fintech Lab',
+    description:
+      'Contacta con Pilar Beleña para impulsar el posicionamiento SEO de tu Fintech, Startup Financiera o marca de Inversión Inmobiliaria. Agenda una consulta.',
+    canonical: `${BASE_URL}/contacto`,
+    ogType: 'website',
+  },
+  {
     route: '/aviso-legal',
     title: 'Aviso Legal | Pilar Beleña SEO Fintech Lab',
     description:
