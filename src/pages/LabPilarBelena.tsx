@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet-async";
 import imgPortadaHome from "@/assets/portada-home.png";
 import { LazyImage } from "@/components/ui/LazyImage";
 import { ArrowRight, CheckCircle, ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ArrowIcon = () => (
   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -349,10 +350,10 @@ const LabPilarBelena = () => {
                   </h3>
                   
                   <Button variant="hero" size="xl" className="group" asChild>
-                    <a href="mailto:pilar@pilarbeleña.com?subject=LAB%20-%20Solicitud%20de%20consulta">
+                    <Link to="/contacto">
                       Contactar con el Lab
                       <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                    </a>
+                    </Link>
                   </Button>
                 </div>
               </article>
