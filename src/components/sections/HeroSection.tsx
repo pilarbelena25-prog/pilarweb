@@ -31,24 +31,21 @@ const HeroSection = () => {
           {/* Tagline */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent bg-background/50 backdrop-blur-sm mb-8 animate-fade-up">
             <span className="text-sm font-body text-foreground-muted">
-              SEO Fintech con IA para Marcas Financieras
+              SEO Fintech e Inversión Inmobiliaria con IA
             </span>
           </div>
 
           {/* Main Headline */}
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            <span className="text-foreground">Posiciona tu </span>
-            <span className="text-gradient-primary">Fintech</span>
-            <br />
-            <span className="text-foreground">con SEO Estratégico</span>
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6 animate-fade-up text-[#710426] dark:text-[#e08aa0]" style={{ animationDelay: "0.1s" }}>
+            Posiciona tu Marca Fintech & Inversión Inmobiliaria con SEO Estratégico
           </h1>
 
           {/* Subtitle */}
           <h2
-            className="font-body text-base sm:text-lg md:text-xl text-foreground-muted max-w-2xl 3xl:max-w-3xl mx-auto mb-10 leading-relaxed animate-fade-up"
+            className="font-body text-base sm:text-lg md:text-xl text-[#5d349d] dark:text-[#b498e6] max-w-3xl mx-auto mb-10 leading-relaxed animate-fade-up font-medium"
             style={{ animationDelay: "0.2s" }}
           >
-            Auditoría SEO Express que convierte Fintechs estancadas en 10-15 leads orgánicos al mes, sin depender de portales ni ADS.
+            Auditoría SEO express para convertir marcas estancadas en una fuente constante de leads orgánicos, sin depender de portales ni ADS
           </h2>
 
           {/* CTAs */}
@@ -72,10 +69,10 @@ const HeroSection = () => {
             className="mt-16 pt-10 border-t border-border/50 animate-fade-up"
             style={{ animationDelay: "0.4s" }}
           >
-            <p className="text-sm text-foreground-muted mb-6 font-body">
-              Más de 5 años acompañando a Marcas Financieras y Startups Fintech a ganar Visibilidad y Autoridad en Google.
+            <p className="text-sm text-foreground-muted mb-6 font-body max-w-3xl mx-auto">
+              Más de 5 años ayudando a Marcas Financieras, Startups Fintech y proyectos de Inversión Inmobiliaria a ganar Visibilidad, Autoridad y Oportunidades reales en Google.
             </p>
-            <div className="flex flex-wrap justify-center gap-8 items-center">
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-4 items-center">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-primary" />
                 <p className="text-sm font-body text-foreground">Banca Digital</p>
@@ -90,7 +87,15 @@ const HeroSection = () => {
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-accent" />
-                <p className="text-sm font-body text-foreground">Cripto y activos digitales</p>
+                <p className="text-sm font-body text-foreground">Cripto y Activos Digitales</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-[#710426]" />
+                <p className="text-sm font-body text-foreground">Inversión Inmobiliaria</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-[#5d349d]" />
+                <p className="text-sm font-body text-foreground">Real Estate</p>
               </div>
             </div>
           </div>
