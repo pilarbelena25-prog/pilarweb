@@ -9,63 +9,63 @@ const CALENDLY_URL = "https://calendly.com/pilarbelena25/30min";
 // SVG Icons
 const WebIcon = () => (
   <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 text-primary">
-    <rect x="8" y="14" width="48" height="36" rx="3" stroke="currentColor" strokeWidth="2" fill="none"/>
-    <path d="M8 22h48" stroke="currentColor" strokeWidth="2"/>
-    <circle cx="16" cy="18" r="2" fill="currentColor"/>
-    <circle cx="23" cy="18" r="2" fill="currentColor"/>
-    <circle cx="30" cy="18" r="2" fill="currentColor"/>
-    <path d="M16 30h32M16 37h20M16 44h26" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+    <rect x="8" y="14" width="48" height="36" rx="3" stroke="currentColor" strokeWidth="2" fill="none" />
+    <path d="M8 22h48" stroke="currentColor" strokeWidth="2" />
+    <circle cx="16" cy="18" r="2" fill="currentColor" />
+    <circle cx="23" cy="18" r="2" fill="currentColor" />
+    <circle cx="30" cy="18" r="2" fill="currentColor" />
+    <path d="M16 30h32M16 37h20M16 44h26" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
   </svg>
 );
 
 const TechnicalIcon = () => (
   <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 text-primary">
-    <circle cx="32" cy="32" r="20" stroke="currentColor" strokeWidth="2" fill="none"/>
-    <path d="M32 16v4M32 44v4M16 32h4M44 32h4" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-    <circle cx="32" cy="32" r="8" stroke="currentColor" strokeWidth="2" fill="none"/>
-    <path d="M32 28v4l3 3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    <circle cx="32" cy="32" r="20" stroke="currentColor" strokeWidth="2" fill="none" />
+    <path d="M32 16v4M32 44v4M16 32h4M44 32h4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+    <circle cx="32" cy="32" r="8" stroke="currentColor" strokeWidth="2" fill="none" />
+    <path d="M32 28v4l3 3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 
 const FocusIcon = () => (
   <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 text-primary">
-    <path d="M12 24V16a4 4 0 014-4h8M40 12h8a4 4 0 014 4v8M52 40v8a4 4 0 01-4 4h-8M24 52h-8a4 4 0 01-4-4v-8" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-    <circle cx="32" cy="32" r="10" stroke="currentColor" strokeWidth="2" fill="none"/>
-    <circle cx="32" cy="32" r="4" fill="currentColor" fillOpacity="0.2" stroke="currentColor" strokeWidth="2"/>
+    <path d="M12 24V16a4 4 0 014-4h8M40 12h8a4 4 0 014 4v8M52 40v8a4 4 0 01-4 4h-8M24 52h-8a4 4 0 01-4-4v-8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+    <circle cx="32" cy="32" r="10" stroke="currentColor" strokeWidth="2" fill="none" />
+    <circle cx="32" cy="32" r="4" fill="currentColor" fillOpacity="0.2" stroke="currentColor" strokeWidth="2" />
   </svg>
 );
 
 const ReportIcon = () => (
   <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 text-primary">
-    <rect x="12" y="8" width="32" height="40" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
-    <path d="M20 18h16M20 26h16M20 34h10" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-    <path d="M36 38l6 6M38 44l6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-    <circle cx="43" cy="47" r="8" stroke="currentColor" strokeWidth="2" fill="none"/>
-    <path d="M40 47l2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <rect x="12" y="8" width="32" height="40" rx="2" stroke="currentColor" strokeWidth="2" fill="none" />
+    <path d="M20 18h16M20 26h16M20 34h10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+    <path d="M36 38l6 6M38 44l6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+    <circle cx="43" cy="47" r="8" stroke="currentColor" strokeWidth="2" fill="none" />
+    <path d="M40 47l2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 
 const DeliveryIcon = () => (
   <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 text-primary">
-    <path d="M12 32h24l4-16h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-    <path d="M36 32l4 12H12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-    <circle cx="20" cy="48" r="4" stroke="currentColor" strokeWidth="2" fill="none"/>
-    <circle cx="40" cy="48" r="4" stroke="currentColor" strokeWidth="2" fill="none"/>
-    <path d="M28 20v-8M24 16l4-4 4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M12 32h24l4-16h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M36 32l4 12H12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <circle cx="20" cy="48" r="4" stroke="currentColor" strokeWidth="2" fill="none" />
+    <circle cx="40" cy="48" r="4" stroke="currentColor" strokeWidth="2" fill="none" />
+    <path d="M28 20v-8M24 16l4-4 4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 
 const CheckIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 flex-shrink-0 text-primary">
-    <rect x="2" y="2" width="20" height="20" rx="4" fill="currentColor" fillOpacity="0.1" stroke="currentColor" strokeWidth="1.5"/>
-    <path d="M7 12l3 3 7-7" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
+    <rect x="2" y="2" width="20" height="20" rx="4" fill="currentColor" fillOpacity="0.1" stroke="currentColor" strokeWidth="1.5" />
+    <path d="M7 12l3 3 7-7" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 
 const XIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 flex-shrink-0 text-foreground-muted">
-    <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="1.5" fill="none" strokeOpacity="0.3"/>
-    <path d="M9 9l6 6M15 9l-6 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeOpacity="0.6"/>
+    <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="1.5" fill="none" strokeOpacity="0.3" />
+    <path d="M9 9l6 6M15 9l-6 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeOpacity="0.6" />
   </svg>
 );
 
