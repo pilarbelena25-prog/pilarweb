@@ -36,13 +36,17 @@ const HeroSection = () => {
           </div>
 
           {/* Main Headline */}
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6 animate-fade-up text-[#710426] dark:text-[#e08aa0]" style={{ animationDelay: "0.1s" }}>
-            Posiciona tu Marca Fintech & Inversión Inmobiliaria con SEO Estratégico
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6 animate-fade-up text-foreground" style={{ animationDelay: "0.1s" }}>
+            <span className="text-gradient-primary">Posiciona</span>
+            <span> tu Marca </span>
+            <span className="text-gradient-primary">Fintech & Inversión Inmobiliaria</span>
+            <br />
+            <span>con SEO Estratégico</span>
           </h1>
 
           {/* Subtitle */}
           <h2
-            className="font-body text-base sm:text-lg md:text-xl text-[#5d349d] dark:text-[#b498e6] max-w-3xl mx-auto mb-10 leading-relaxed animate-fade-up font-medium"
+            className="font-body text-base sm:text-lg md:text-xl text-foreground-muted max-w-3xl mx-auto mb-10 leading-relaxed animate-fade-up"
             style={{ animationDelay: "0.2s" }}
           >
             Auditoría SEO express para convertir marcas estancadas en una fuente constante de leads orgánicos, sin depender de portales ni ADS
