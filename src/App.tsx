@@ -25,6 +25,7 @@ import EeatAvanzadaFintechRealEstate from "./pages/blog/EeatAvanzadaFintechRealE
 import LabPilarBelena from "./pages/LabPilarBelena";
 import Servicios from "./pages/Servicios";
 import Contacto from "./pages/Contacto";
+import SeoFintech from "./pages/SeoFintech";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -80,6 +81,7 @@ const App = () => (
           <Route path="/lab" element={<LabPilarBelena />} />
           <Route path="/servicios" element={<Servicios />} />
           <Route path="/contacto" element={<Contacto />} />
+          <Route path="/seo-fintech" element={<SeoFintech />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

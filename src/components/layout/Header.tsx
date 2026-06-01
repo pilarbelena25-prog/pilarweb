@@ -12,6 +12,7 @@ const Header = () => {
     { href: "/#inicio", label: "Home" },
     { href: "/lab", label: "Lab" },
     { href: "/servicios", label: "Servicios" },
+    { href: "/seo-fintech", label: "SEO Fintech" },
     // { href: "/#guia-gpt", label: "Guía GPT" },
     { href: "/blog", label: "Blog" },
     { href: "/contacto", label: "Contacto" },
