@@ -26,6 +26,7 @@ import LabPilarBelena from "./pages/LabPilarBelena";
 import Servicios from "./pages/Servicios";
 import Contacto from "./pages/Contacto";
 import SeoFintech from "./pages/SeoFintech";
+import Inmobiliaria from "./pages/Inmobiliaria";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -82,6 +83,7 @@ const App = () => (
           <Route path="/servicios" element={<Servicios />} />
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/seo-fintech" element={<SeoFintech />} />
+          <Route path="/inmobiliaria" element={<Inmobiliaria />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

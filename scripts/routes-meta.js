@@ -195,6 +195,15 @@ export const routesMeta = [
     ogType: 'website',
   },
   {
+    route: '/inmobiliaria',
+    title: 'SEO Inmobiliaria & Real Estate | Pilar Beleña SEO Lab',
+    description:
+      'Estrategia SEO premium para inmobiliarias, Real Estate, promociones de obra nueva, segunda mano e inversión. Diseña una web clara y estructurada para captar leads.',
+    canonical: `${BASE_URL}/inmobiliaria`,
+    ogType: 'website',
+    imageSource: 'src/assets/inmobiliaria-portada.png',
+  },
+  {
     route: '/aviso-legal',
     title: 'Aviso Legal | Pilar Beleña SEO Fintech Lab',
     description:
