@@ -48,36 +48,72 @@ const Servicios = () => {
           <div className="container mx-auto px-6 relative z-10">
             
             {/* H1 & Subtitle */}
-            <div className="text-center max-w-3xl 3xl:max-w-4xl mx-auto mb-20">
+            <div className="text-center max-w-3xl 3xl:max-w-4xl mx-auto mb-16">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary font-body text-sm px-4 py-1.5 rounded-full mb-6">
-                Auditoría Express SEO Fintech e Inversión Inmobiliaria
+                Servicios del SEO Fintech Lab
               </div>
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
-                Servicios de <br />
-                <span className="text-gradient-primary font-semibold">Auditoría SEO Express</span>
+                Nuestros <br />
+                <span className="text-gradient-primary font-semibold">Servicios SEO</span>
               </h1>
               <p className="font-body text-lg sm:text-xl text-foreground-muted leading-relaxed max-w-3xl mx-auto">
-                Descubre qué está frenando tu Web, qué debes corregir primero y cómo convertir tu Presencia Digital en una fuente real de Autoridad, Visibilidad y Leads Orgánicos.
+                Ofrecemos soluciones directas, técnicas y estratégicas para marcas Fintech y proyectos de Real Estate que quieren liderar el canal orgánico con criterio.
               </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
-                <Button variant="hero" size="lg" className="group" asChild>
-                  <Link to="/auditoria-express-seo-fintech">
-                    Solicitar Auditoría
-                    <ArrowUpRight className="w-4 h-4 ml-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                  </Link>
-                </Button>
-                <Button variant="heroOutline" size="lg" asChild>
-                  <Link to="/#contacto">
-                    Quiero revisar mi web
-                  </Link>
-                </Button>
+            </div>
+
+            {/* Dos Servicios Principales */}
+            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
+              {/* Auditoría SEO Express */}
+              <div className="bg-card border border-border/80 rounded-2xl p-8 shadow-elegant flex flex-col justify-between hover:border-primary/50 transition-colors">
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <Activity className="w-6 h-6 text-primary" />
+                    <h2 className="font-display text-xl text-foreground font-semibold">Auditoría SEO Express</h2>
+                  </div>
+                  <p className="font-body text-sm text-foreground-muted leading-relaxed mb-6">
+                    Diagnóstico rápido, técnico y accionable para detectar bloqueos en tu web y priorizar acciones por su nivel de impacto real.
+                  </p>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-3 mt-4">
+                  <Button variant="hero" size="sm" className="group w-full sm:w-auto" asChild>
+                    <Link to="/auditoria-express-seo-fintech">
+                      Ver Auditoría
+                      <ArrowUpRight className="w-4 h-4 ml-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    </Link>
+                  </Button>
+                  <Button variant="heroOutline" size="sm" className="w-full sm:w-auto" asChild>
+                    <a href="#detalle-auditoria">
+                      Ver detalles
+                    </a>
+                  </Button>
+                </div>
+              </div>
+
+              {/* Consultoría SEO Estratégica */}
+              <div className="bg-card border border-border/80 rounded-2xl p-8 shadow-elegant flex flex-col justify-between hover:border-primary/50 transition-colors">
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <Target className="w-6 h-6 text-primary" />
+                    <h2 className="font-display text-xl text-foreground font-semibold">Consultoría SEO Estratégica</h2>
+                  </div>
+                  <p className="font-body text-sm text-foreground-muted leading-relaxed mb-6">
+                    Una sesión de trabajo de 1 a 1 para analizar tu contexto, detectar bloqueos y definir prioridades claras sin tecnicismos ni rodeos.
+                  </p>
+                </div>
+                <div className="mt-4">
+                  <Button variant="hero" size="sm" className="group w-full sm:w-auto" asChild>
+                    <Link to="/consultoria-seo-estrategica">
+                      Ver Consultoría
+                      <ArrowUpRight className="w-4 h-4 ml-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    </Link>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="py-20 bg-background relative z-10">
+        <section id="detalle-auditoria" className="py-20 bg-background relative z-10 scroll-mt-24">
           <div className="container mx-auto px-6">
             <div className="max-w-5xl mx-auto space-y-16">
               

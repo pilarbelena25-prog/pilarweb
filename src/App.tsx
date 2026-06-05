@@ -7,6 +7,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Index from "./pages/Index";
 import AuditoriaExpressSeoFintech from "./pages/AuditoriaExpressSeoFintech";
+import ConsultoriaSeoEstrategica from "./pages/ConsultoriaSeoEstrategica";
 import Cookies from "./pages/Cookies";
 import AvisoLegal from "./pages/AvisoLegal";
 import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
@@ -64,6 +65,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/auditoria-express-seo-fintech" element={<AuditoriaExpressSeoFintech />} />
+          <Route path="/consultoria-seo-estrategica" element={<ConsultoriaSeoEstrategica />} />
           <Route path="/cookies" element={<Cookies />} />
           <Route path="/politica-privacidad" element={<PoliticaPrivacidad />} />
           <Route path="/aviso-legal" element={<AvisoLegal />} />
