@@ -7,7 +7,8 @@ import {
   Zap, 
   Gift, 
   Target, 
-  Award 
+  Award,
+  Compass
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -37,18 +38,18 @@ const ServicesSection = () => {
         <div className="max-w-5xl mx-auto space-y-16">
           
           {/* Grid de Servicios */}
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             
             {/* Servicio 1: Auditoría SEO Express */}
-            <div className="bg-card border border-border/80 rounded-2xl p-8 shadow-elegant flex flex-col justify-between hover:border-primary/50 transition-colors">
+            <div className="bg-card border border-border/80 rounded-2xl p-6 shadow-elegant flex flex-col justify-between hover:border-primary/50 transition-colors">
               <div>
                 <div className="flex items-center gap-3 mb-6">
                   <Activity className="w-6 h-6 text-primary" />
-                  <h3 className="font-display text-2xl text-foreground font-semibold">
+                  <h3 className="font-display text-xl text-foreground font-semibold">
                     Auditoría SEO Express
                   </h3>
                 </div>
-                <div className="space-y-4 font-body text-sm text-foreground-muted leading-relaxed mb-6">
+                <div className="space-y-4 font-body text-xs text-foreground-muted leading-relaxed mb-6">
                   <p>
                     Un <strong>diagnóstico rápido, técnico y accionable</strong> pensado para detectar los bloqueos reales que impiden que tu web gane visibilidad y genere resultados.
                   </p>
@@ -59,7 +60,7 @@ const ServicesSection = () => {
                       "Priorización de mejoras rápidas",
                       "Informe claro y directo, sin rodeos"
                     ].map((bullet, idx) => (
-                      <li key={idx} className="flex items-center gap-2 text-xs">
+                      <li key={idx} className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-primary bg-primary/10 rounded-full p-0.5 flex-shrink-0" />
                         <span>{bullet}</span>
                       </li>
@@ -69,8 +70,8 @@ const ServicesSection = () => {
               </div>
               <div className="pt-4 border-t border-border/60">
                 <Button variant="hero" size="lg" className="w-full group" asChild>
-                  <Link to="/auditoria-express-seo-fintech">
-                    Ver Auditoría SEO Express
+                  <Link to="/auditoria-seo-express">
+                    Ver Auditoría
                     <ArrowUpRight className="w-4 h-4 ml-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   </Link>
                 </Button>
@@ -78,15 +79,15 @@ const ServicesSection = () => {
             </div>
 
             {/* Servicio 2: Consultoría SEO Estratégica */}
-            <div className="bg-card border border-border/80 rounded-2xl p-8 shadow-elegant flex flex-col justify-between hover:border-primary/50 transition-colors">
+            <div className="bg-card border border-border/80 rounded-2xl p-6 shadow-elegant flex flex-col justify-between hover:border-primary/50 transition-colors">
               <div>
                 <div className="flex items-center gap-3 mb-6">
                   <Target className="w-6 h-6 text-primary" />
-                  <h3 className="font-display text-2xl text-foreground font-semibold">
+                  <h3 className="font-display text-xl text-foreground font-semibold">
                     Consultoría SEO Estratégica
                   </h3>
                 </div>
-                <div className="space-y-4 font-body text-sm text-foreground-muted leading-relaxed mb-6">
+                <div className="space-y-4 font-body text-xs text-foreground-muted leading-relaxed mb-6">
                   <p>
                     Una <strong>sesión de trabajo 1 a 1</strong> para analizar tu situación actual, detectar bloqueos estratégicos y definir prioridades claras para tu proyecto.
                   </p>
@@ -97,7 +98,7 @@ const ServicesSection = () => {
                       "Especial para Fintech y Real Estate",
                       "Conversación honesta y orientada a negocio"
                     ].map((bullet, idx) => (
-                      <li key={idx} className="flex items-center gap-2 text-xs">
+                      <li key={idx} className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-primary bg-primary/10 rounded-full p-0.5 flex-shrink-0" />
                         <span>{bullet}</span>
                       </li>
@@ -108,7 +109,45 @@ const ServicesSection = () => {
               <div className="pt-4 border-t border-border/60">
                 <Button variant="hero" size="lg" className="w-full group" asChild>
                   <Link to="/consultoria-seo-estrategica">
-                    Ver Consultoría Estratégica
+                    Ver Consultoría
+                    <ArrowUpRight className="w-4 h-4 ml-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Servicio 3: Estrategia de Contenido */}
+            <div className="bg-card border border-border/80 rounded-2xl p-6 shadow-elegant flex flex-col justify-between hover:border-primary/50 transition-colors">
+              <div>
+                <div className="flex items-center gap-3 mb-6">
+                  <Compass className="w-6 h-6 text-primary" />
+                  <h3 className="font-display text-xl text-foreground font-semibold">
+                    Estrategia de Contenido
+                  </h3>
+                </div>
+                <div className="space-y-4 font-body text-xs text-foreground-muted leading-relaxed mb-6">
+                  <p>
+                    Creación de <strong>piezas útiles, bien estructuradas</strong> y alineadas con la intención de búsqueda, para atraer tráfico y construir autoridad temática sólida.
+                  </p>
+                  <ul className="space-y-2.5">
+                    {[
+                      "Estudio de audiencia y competencia",
+                      "Definición de temas y landings clave",
+                      "Planificación editorial y enlazado",
+                      "Narrativa útil y conectada al negocio"
+                    ].map((bullet, idx) => (
+                      <li key={idx} className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-primary bg-primary/10 rounded-full p-0.5 flex-shrink-0" />
+                        <span>{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <div className="pt-4 border-t border-border/60">
+                <Button variant="hero" size="lg" className="w-full group" asChild>
+                  <Link to="/estrategia-contenido">
+                    Ver Estrategia
                     <ArrowUpRight className="w-4 h-4 ml-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   </Link>
                 </Button>

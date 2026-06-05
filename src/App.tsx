@@ -7,7 +7,9 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Index from "./pages/Index";
 import AuditoriaExpressSeoFintech from "./pages/AuditoriaExpressSeoFintech";
+import AuditoriaSeoExpress from "./pages/AuditoriaSeoExpress";
 import ConsultoriaSeoEstrategica from "./pages/ConsultoriaSeoEstrategica";
+import EstrategiaContenido from "./pages/EstrategiaContenido";
 import Cookies from "./pages/Cookies";
 import AvisoLegal from "./pages/AvisoLegal";
 import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
@@ -64,8 +66,10 @@ const App = () => (
         <ScrollToHash />
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/auditoria-express-seo-fintech" element={<AuditoriaExpressSeoFintech />} />
+          <Route path="/auditoria-express-seo-fintech" element={<AuditoriaSeoExpress />} />
+          <Route path="/auditoria-seo-express" element={<AuditoriaSeoExpress />} />
           <Route path="/consultoria-seo-estrategica" element={<ConsultoriaSeoEstrategica />} />
+          <Route path="/estrategia-contenido" element={<EstrategiaContenido />} />
           <Route path="/cookies" element={<Cookies />} />
           <Route path="/politica-privacidad" element={<PoliticaPrivacidad />} />
           <Route path="/aviso-legal" element={<AvisoLegal />} />

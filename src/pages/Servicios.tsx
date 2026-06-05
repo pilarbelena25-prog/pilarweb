@@ -10,7 +10,8 @@ import {
   Zap, 
   Gift, 
   Target, 
-  Award 
+  Award,
+  Compass
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import imgServiciosPortada from "@/assets/servicios-portada.png";
@@ -61,8 +62,8 @@ const Servicios = () => {
               </p>
             </div>
 
-            {/* Dos Servicios Principales */}
-            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
+            {/* Tres Servicios Principales */}
+            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
               {/* Auditoría SEO Express */}
               <div className="bg-card border border-border/80 rounded-2xl p-8 shadow-elegant flex flex-col justify-between hover:border-primary/50 transition-colors">
                 <div>
@@ -75,8 +76,8 @@ const Servicios = () => {
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3 mt-4">
-                  <Button variant="hero" size="sm" className="group w-full sm:w-auto" asChild>
-                    <Link to="/auditoria-express-seo-fintech">
+                  <Button variant="hero" size="sm" className="group w-full sm:w-auto animate-fade-up" asChild>
+                    <Link to="/auditoria-seo-express">
                       Ver Auditoría
                       <ArrowUpRight className="w-4 h-4 ml-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                     </Link>
@@ -101,9 +102,30 @@ const Servicios = () => {
                   </p>
                 </div>
                 <div className="mt-4">
-                  <Button variant="hero" size="sm" className="group w-full sm:w-auto" asChild>
+                  <Button variant="hero" size="sm" className="group w-full" asChild>
                     <Link to="/consultoria-seo-estrategica">
                       Ver Consultoría
+                      <ArrowUpRight className="w-4 h-4 ml-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    </Link>
+                  </Button>
+                </div>
+              </div>
+
+              {/* Estrategia de Contenido */}
+              <div className="bg-card border border-border/80 rounded-2xl p-8 shadow-elegant flex flex-col justify-between hover:border-primary/50 transition-colors">
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <Compass className="w-6 h-6 text-primary" />
+                    <h2 className="font-display text-xl text-foreground font-semibold">Estrategia de Contenido</h2>
+                  </div>
+                  <p className="font-body text-sm text-foreground-muted leading-relaxed mb-6">
+                    Creación de piezas útiles, bien estructuradas y alineadas con la intención de búsqueda para atraer tráfico y construir autoridad.
+                  </p>
+                </div>
+                <div className="mt-4">
+                  <Button variant="hero" size="sm" className="group w-full" asChild>
+                    <Link to="/estrategia-contenido">
+                      Ver Estrategia
                       <ArrowUpRight className="w-4 h-4 ml-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                     </Link>
                   </Button>
