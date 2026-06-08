@@ -11,6 +11,7 @@ import imgDatosEstructurados from "@/assets/blog/articulo-8/8A.png";
 import imgEscalarSinPerder from "@/assets/blog/articulo-9/9A.png";
 import imgArquitecturaWeb from "@/assets/blog/articulo-10/10A.png";
 import imgEeatAvanzada from "@/assets/blog/articulo-11/11A.png";
+import imgAtribucionDarkSocial from "@/assets/blog/articulo-12/12A.png";
 import imgBlogFotoBuena from "@/assets/blog-foto-buena.png";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -158,6 +159,17 @@ const posts: BlogPost[] = [
     readTime: "6 min de lectura",
     image: imgEeatAvanzada,
     imageAlt: "EEAT avanzada en Fintech & Real Estate - SEO Fintech Lab",
+  },
+  {
+    slug: "atribucion-dark-social-fintech-real-estate",
+    title: "12. Atribución en la era del Dark Social para Fintech & Inversión Inmobiliaria: ¿Realmente sabes de dónde vienen tus Leads Financieros y de Propiedades?",
+    excerpt: "En Fintech y en Inversión Inmobiliaria, gran parte de la conversación comercial ya no ocurre en el analytics clásico. Aprende a dominar la atribución en la era del Dark Social.",
+    date: "8 jun 2026",
+    category: "SEO para Empresas Fintech & Real Estate",
+    family: "seo-empresas-financieras",
+    readTime: "7 min de lectura",
+    image: imgAtribucionDarkSocial,
+    imageAlt: "Atribución en la era del Dark Social para Fintech & Inversión Inmobiliaria - SEO Fintech Lab",
   },
 ];
 

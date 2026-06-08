@@ -169,6 +169,42 @@ export const routesMeta = [
     category: 'SEO para Startups Fintech & Inversión Inmobiliaria',
   },
   {
+    route: '/blog/arquitectura-web-nichos-complejos-fintech',
+    title:
+      '10. Arquitectura Web para Nichos Complejos Fintech & Inversión Inmobiliaria: Menos es más, si está bien conectado | Pilar Beleña SEO Fintech Lab',
+    description:
+      'Tener mucha información en tu web no es suficiente si el usuario se pierde antes de entender qué haces. En nichos complejos como Fintech & Real Estate, la clave no es publicar más, sino conectar mejor.',
+    canonical: `${BASE_URL}/blog/arquitectura-web-nichos-complejos-fintech`,
+    ogType: 'article',
+    imageSource: 'src/assets/blog/articulo-10/10A.png',
+    datePublished: '2026-04-26',
+    category: 'SEO Avanzado, Arquitectura y EEAT',
+  },
+  {
+    route: '/blog/eeat-avanzada-fintech-real-estate',
+    title:
+      '11. EEAT avanzada en Fintech & Real Estate: Cómo demostrar Autoridad cuando el algoritmo es más escéptico que nunca | Pilar Beleña SEO Fintech Lab',
+    description:
+      'En sectores YMYL como Fintech y Real Estate, ya no basta con parecer experto: hay que probarlo. Descubre cómo demostrar EEAT real y coherente ante el escepticismo algorítmico.',
+    canonical: `${BASE_URL}/blog/eeat-avanzada-fintech-real-estate`,
+    ogType: 'article',
+    imageSource: 'src/assets/blog/articulo-11/11A.png',
+    datePublished: '2026-05-26',
+    category: 'SEO Avanzado, Arquitectura y EEAT',
+  },
+  {
+    route: '/blog/atribucion-dark-social-fintech-real-estate',
+    title:
+      '12. Atribución en la era del Dark Social para Fintech & Inversión Inmobiliaria: ¿Realmente sabes de dónde vienen tus Leads Financieros y de Propiedades? | Pilar Beleña SEO Fintech Lab',
+    description:
+      'En Fintech y en Inversión Inmobiliaria, gran parte de la conversación comercial ya no ocurre en el analytics clásico. Aprende a dominar la atribución en la era del Dark Social.',
+    canonical: `${BASE_URL}/blog/atribucion-dark-social-fintech-real-estate`,
+    ogType: 'article',
+    imageSource: 'src/assets/blog/articulo-12/12A.png',
+    datePublished: '2026-06-08',
+    category: 'SEO para Empresas Fintech & Real Estate',
+  },
+  {
     route: '/auditoria-express-seo-fintech',
     title:
       'Auditoría Express SEO Fintech | Diagnóstico en 48h para tu Fintech | Pilar Beleña',
