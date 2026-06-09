@@ -57,9 +57,11 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-up px-4 sm:px-0"
             style={{ animationDelay: "0.3s" }}
           >
-            <Button variant="hero" size="xl" className="group w-full sm:w-auto">
-              Descubrir mi enfoque
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            <Button variant="hero" size="xl" className="group w-full sm:w-auto" asChild>
+              <a href="#descubre-el-lab">
+                Descubrir mi enfoque
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
             <GuiaGptModal>
               <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
