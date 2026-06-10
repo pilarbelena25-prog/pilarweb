@@ -10,10 +10,9 @@ import { Helmet } from "react-helmet-async";
 import imgContactoPortada from "@/assets/contacto-portada.png";
 
 // ─── EmailJS credentials ───────────────────────────────────────────────────
-// Replace these three placeholders with your real IDs from emailjs.com
-const EMAILJS_SERVICE_ID  = "YOUR_SERVICE_ID";   // e.g. "service_xxxxxxx"
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";  // e.g. "template_xxxxxxx"
-const EMAILJS_PUBLIC_KEY  = "YOUR_PUBLIC_KEY";   // e.g. "aBcDeFgHiJkLmNoPq"
+const EMAILJS_SERVICE_ID = "service_9zey8ci";
+const EMAILJS_TEMPLATE_ID = "template_xkmmoa7";
+const EMAILJS_PUBLIC_KEY = "y2o4mcc-1KI21_ocB";
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
