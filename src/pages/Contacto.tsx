@@ -10,10 +10,9 @@ import { Helmet } from "react-helmet-async";
 import imgContactoPortada from "@/assets/contacto-portada.png";
 
 // ─── EmailJS credentials ───────────────────────────────────────────────────
-// Replace these three placeholders with your real IDs from emailjs.com
-const EMAILJS_SERVICE_ID  = "YOUR_SERVICE_ID";   // e.g. "service_xxxxxxx"
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";  // e.g. "template_xxxxxxx"
-const EMAILJS_PUBLIC_KEY  = "YOUR_PUBLIC_KEY";   // e.g. "aBcDeFgHiJkLmNoPq"
+const EMAILJS_SERVICE_ID  = "service_9zey8ci";
+const EMAILJS_TEMPLATE_ID = "template_xkmmoa7";
+const EMAILJS_PUBLIC_KEY  = "y2o4mcc-1KI21_ocB";
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
@@ -243,7 +242,9 @@ const Contacto = () => {
                   {/* Direct contact methods links */}
                   <div className="flex flex-wrap gap-4 pt-2">
                     <a
-                      href="mailto:pilarbelena25@gmail.com"
+                      href="https://mail.google.com/mail/?view=cm&fs=1&to=pilarbelena25@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex items-center gap-3 px-5 py-3 rounded-xl border border-border bg-card hover:border-[#710426]/40 transition-all font-body text-sm text-foreground-muted hover:text-foreground group"
                     >
                       <Mail className="w-4 h-4 text-primary" />
