@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -7,6 +8,12 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, Linkedin, ArrowUpRight, Check, AlertCircle, Loader2 } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import imgContactoPortada from "@/assets/contacto-portada.png";
+
+// ─── EmailJS credentials ───────────────────────────────────────────────────
+// Replace these three placeholders with your real IDs from emailjs.com
+const EMAILJS_SERVICE_ID  = "YOUR_SERVICE_ID";   // e.g. "service_xxxxxxx"
+const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";  // e.g. "template_xxxxxxx"
+const EMAILJS_PUBLIC_KEY  = "YOUR_PUBLIC_KEY";   // e.g. "aBcDeFgHiJkLmNoPq"
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
@@ -19,6 +26,7 @@ interface FormErrors {
 }
 
 const Contacto = () => {
+  const formRef = useRef<HTMLFormElement>(null);
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
@@ -59,20 +67,26 @@ const Contacto = () => {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+    e.preventDefault(); // Evita recarga y errores de ruta en Netlify
 
     if (!validate()) return;
+    if (!formRef.current) return;
 
     setStatus("loading");
 
     try {
-      // Simula el envío de formulario
-      await new Promise((resolve) => setTimeout(resolve, 800));
+      await emailjs.sendForm(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        { publicKey: EMAILJS_PUBLIC_KEY }
+      );
 
       setStatus("success");
       setFormData({ name: "", email: "", company: "", service: "", phone: "", message: "" });
       setErrors({});
     } catch (error) {
+      console.error("EmailJS error:", error);
       setStatus("error");
     }
   };
@@ -274,7 +288,7 @@ const Contacto = () => {
                       </Button>
                     </div>
                   ) : (
-                    <form onSubmit={handleSubmit} className="space-y-5" noValidate>
+                    <form ref={formRef} onSubmit={handleSubmit} className="space-y-5" noValidate>
                       <div>
                         <label htmlFor="name" className="block font-body text-xs font-semibold text-foreground uppercase tracking-wider mb-2">
                           Nombre completo *
