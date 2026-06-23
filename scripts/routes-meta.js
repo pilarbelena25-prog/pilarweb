@@ -205,6 +205,18 @@ export const routesMeta = [
     category: 'SEO para Empresas Fintech & Real Estate',
   },
   {
+    route: '/blog/ia-predictiva-seo-fintech-real-estate',
+    title:
+      '13. IA Predictiva aplicada al SEO en Fintech & Real Estate: Anticipando Tendencias Financieras y de Inversión Inmobiliaria antes de que sean Tendencia | Pilar Beleña SEO Fintech Lab',
+    description:
+      'La IA predictiva cambia la lógica del SEO en Fintech y Real Estate: ayuda a detectar señales tempranas, patrones de búsqueda y cambios de comportamiento para anticipar contenido, arquitectura y oportunidades.',
+    canonical: `${BASE_URL}/blog/ia-predictiva-seo-fintech-real-estate`,
+    ogType: 'article',
+    imageSource: 'src/assets/blog/articulo-13/13A.jpg',
+    datePublished: '2026-06-23',
+    category: 'SEO Avanzado, Arquitectura y EEAT',
+  },
+  {
     route: '/auditoria-express-seo-fintech',
     title:
       'Auditoría Express SEO Fintech | Diagnóstico en 48h para tu Fintech | Pilar Beleña',

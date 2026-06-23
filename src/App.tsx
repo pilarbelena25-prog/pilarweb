@@ -26,6 +26,7 @@ import EscalarSinPerderElAlmaFintech from "./pages/blog/EscalarSinPerderElAlmaFi
 import ArquitecturaWebNichosComplejosFintech from "./pages/blog/ArquitecturaWebNichosComplejosFintech";
 import EeatAvanzadaFintechRealEstate from "./pages/blog/EeatAvanzadaFintechRealEstate";
 import AtribucionDarkSocialFintechRealEstate from "./pages/blog/AtribucionDarkSocialFintechRealEstate";
+import IaPredictivaSeoFintechRealEstate from "./pages/blog/IaPredictivaSeoFintechRealEstate";
 import LabPilarBelena from "./pages/LabPilarBelena";
 import Servicios from "./pages/Servicios";
 import Contacto from "./pages/Contacto";
@@ -87,6 +88,7 @@ const App = () => (
           <Route path="/blog/arquitectura-web-nichos-complejos-fintech" element={<ArquitecturaWebNichosComplejosFintech />} />
           <Route path="/blog/eeat-avanzada-fintech-real-estate" element={<EeatAvanzadaFintechRealEstate />} />
           <Route path="/blog/atribucion-dark-social-fintech-real-estate" element={<AtribucionDarkSocialFintechRealEstate />} />
+          <Route path="/blog/ia-predictiva-seo-fintech-real-estate" element={<IaPredictivaSeoFintechRealEstate />} />
           <Route path="/lab" element={<LabPilarBelena />} />
           <Route path="/servicios" element={<Servicios />} />
           <Route path="/contacto" element={<Contacto />} />

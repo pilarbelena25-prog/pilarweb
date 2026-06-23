@@ -12,6 +12,7 @@ import imgEscalarSinPerder from "@/assets/blog/articulo-9/9A.png";
 import imgArquitecturaWeb from "@/assets/blog/articulo-10/10A.png";
 import imgEeatAvanzada from "@/assets/blog/articulo-11/11A.png";
 import imgAtribucionDarkSocial from "@/assets/blog/articulo-12/12A.png";
+import imgIaPredictiva from "@/assets/blog/articulo-13/13A.jpg";
 import imgBlogFotoBuena from "@/assets/blog-foto-buena.png";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -170,6 +171,17 @@ const posts: BlogPost[] = [
     readTime: "7 min de lectura",
     image: imgAtribucionDarkSocial,
     imageAlt: "Atribución en la era del Dark Social para Fintech & Inversión Inmobiliaria - SEO Fintech Lab",
+  },
+  {
+    slug: "ia-predictiva-seo-fintech-real-estate",
+    title: "13. IA Predictiva aplicada al SEO en Fintech & Real Estate: Anticipando Tendencias Financieras y de Inversión Inmobiliaria antes de que sean Tendencia",
+    excerpt: "La IA predictiva cambia la lógica del SEO en Fintech y Real Estate: ayuda a detectar señales tempranas, patrones de búsqueda y cambios de comportamiento para anticipar contenido, arquitectura y oportunidades.",
+    date: "23 jun 2026",
+    category: "SEO Avanzado, Arquitectura y EEAT",
+    family: "seo-avanzado-arquitectura-eeat",
+    readTime: "6 min de lectura",
+    image: imgIaPredictiva,
+    imageAlt: "IA Predictiva aplicada al SEO en Fintech & Real Estate - SEO Fintech Lab",
   },
 ];
 
